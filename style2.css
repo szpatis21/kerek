@@ -115,8 +115,10 @@
         justify-content: center;}
 
         .nagyikon p{text-align: center;}
+        
 
         @media screen and (min-width:201px) and (max-width:1037px){
+
             #alcikk {grid-template-columns: 100%}
             #tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
                 margin: 50px;

@@ -210,7 +210,8 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
           text-align: center;
           margin: 15px auto;
           font-weight: normal;
-          font-size: 12px;}
+          font-size: 12px;
+        width: 100%;}
           
   #instrukcio {margin: 15px;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
