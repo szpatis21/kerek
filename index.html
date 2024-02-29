@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
+    <title>Kerek Világ Alapítvány</title>
+    
+</head>
+
+<body>
+
+    <header>
+            <p class="cim">KEREK VILÁG ALAPÍTVÁNY</p> 
+                <p class="alcim"> Speciális igényű gyermekek és felnőttek <br> ellátása és fejlesztése.
+            </p>
+    </header>
+
+    <nav>
+        <div class="navcont">
+
+        <div class="logobar">
+            <a class="logo"><i>Kövessen minket:</i>  
+                <p class="cim">KEREK VILÁG ALAPÍTVÁNY</p><span> ...mindennek életnek értelme  és célja van"</span>
+                <img src="./media/face.png" alt="">
+                <img src="./media/600px-Instagram_icon.png" alt="">
+                <img src="./media/youtube.svg" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-bar" >
+        <label for="menu-bar">	
+                <button class="menu" id="menu-bar2" onclick="this.classList.toggle('opened');checkUncheck();this.setAttribute('aria-expanded',this.classList.contains('opened'))">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" /></svg>
+                </button>
+        </label>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="">Főoldal</a></li>
+                <li><a href="">Rólunk</a></li>
+                <li><a href="">Hírek</a></li><li>
+                <li><a href="./kerek.html">Tevékenységeink</a></li><li>
+
+                <li class="almenu"><a>Pályázatok <img class="arrow" src="./media/1737285.png" alt=""></a>
+                    <ul>
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-3.1.6-16-2017-00007</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>	
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-4.1.6-16-2017-00009</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-4-1-6-16-2017-00009 </a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">CNK-KP-1-2020-1-000071 </a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">Gyógyító zene A MOL támogatásával a sérült gyermekekért</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>	
+                <li class="almenu"><a >Médiatár <img class="arrow" src="./media/1737285.png" alt=""></a>
+                    <ul>
+                        <li><a style="font-size: 10px;" href="">grid gallery </a></li>
+                        <li><a style="font-size: 10px;" href="">flex gallery</a></li>
+                    </ul>
+                </li>
+                 <li><a href="">Dokumentumtár</a></li>
+                 <li><a href="">Karrier</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="kotelezo_fent"> 
+        <button onclick="kikapcs()" >X</button>
+        <img id="kotelezo_fentimg"  src="./media/fenti.png" alt="" width="280" height="180">
+    </div>
+    </nav>
+    <div id="linear"></div>
+
+
+    <article id="foldal">
+
+        <span class="info_mob0">
+            Ha érdeklődik Alapítványunk intézményei<br> iránt,
+             koppintson a logora. 
+        </span>
+        <div class="info_mob">
+            <p>Szociális intézmény <br><br>
+                Alap szociális szolgáltatások és intézmények.
+
+                <p>Általános Iskola <br><br>
+                Általános Iskola és óvoda különleges bánásmódú gyermekeknek.
+               </p>  
+        </div>
+        <div class="intezmenyvalaszto">
+            <div class="egyes">
+                <span class="info">
+                    Ha érdeklődik Alapítványunk intézményei iránt, <br>
+                     mozgassa az egeret a választott intézmény fölé majd kattintson. 
+                </span>
+                <p class="pp">Szociális intézmény <br><br>
+                    Ismerkedjen meg szociális intézményünkkel,<br>
+                    szolgáltatásainkkal és kapjon betekintést<br>
+                    szervezetünk mindennapjaiba.
+                </p>
+                <img class="kep" src="./media/1.png" alt="">
+            </div>
+            <div class="kettes"> 
+                <img class="kep2" src="./media/3.png" alt="">
+                <span class="info2">
+                    "Hitvallásunk szerint <br>a teremtett világban...
+                    <br></span>
+                <p class="pp2">Általános Iskola <br><br>
+                     Tekintse meg modern és jól felszerelt iskolánkat,<br>
+                      és nézze meg a gyermekek fejlődését<br>
+                      és ellátását segítő terápiánkat <br> 
+                      és foglalkozásinkat.
+                </p>
+            </div>
+            <div class="harmas">
+                <span class="info4">
+                    Köszönjük ha támogat minket!<br><br>
+                    Adószámunk:<br>19031628-1-02 <br><br>
+                    Bankszámlaszámunk: <br>Takarékbank Zrt. 71800264-16026209</span>
+                <p class="pp3">Támogató szolgálat <br><br>
+                    Keresse támogató szolgálatunkat, ha <br>
+                    megváltozott munkaképességű vagy ápolásra szorul.<br> 
+                    Korszerű mikrobuszaink és tapaszalt ápolóink <br>
+                    a repertoárunk részét képezik.
+                </p>
+                <img class="kep3" src="./media/4.png" alt="">
+            </div>
+            <div class="negyes">
+                <img class="kep4" src="./media/2.png" alt="">
+                <span class="info3">
+                    ...mindennek életnek értelme <br> és célja van"
+                </span>
+                <p class="pp4">Lakó otthon<br><br>
+                    Berek utcai lakóotthonunk lehetőséget <br>
+                    kívál a megváltozott munkaképességű,<br>
+                     fogyatékkal élő felnőtteknek<br>
+                    az önálló életvitel megvalósítására.
+                </p>    
+            </div>
+        </div>
+        <div class="info_mob2">
+            <p>Támogató szolgálat <br><br>
+                Szolgáltatlások ápolásra szoruló és fogyatékkal élő személyeknek. 
+            </p><p>Lakó otthon<br><br>
+                Berek utcai lakóotthon, felnőtt fogyatékkal élők részére.
+            </p> 
+        </div>
+    
+
+    <div id="hirek">
+        <p> Aktuális:</p>
+    </div>
+
+<div class="container">
+
+  <div class="gallery-wrap">
+    <div class="item item-1"></div>
+    <div class="item item-2"></div>
+    <div class="item item-3"></div>
+    <div class="item item-4"></div>
+    <div class="item item-5"></div>
+    <div class="item item-6"></div>
+  </div>
+ </div>
+
+
+    <div class="tamop">
+        <div class="sor1">
+            <p>Köszönjük</p>
+            <img src="./media/tamog/tm (1).jpg" alt="">
+            <img src="./media/tamog/tm (2).jpg" alt="">
+            <img src="./media/tamog/tm (3).jpg" alt="">
+            <img src="./media/tamog/tm (4).jpg" alt="">
+            <img src="./media/tamog/tm (5).jpg" alt="">        
+        </div>
+        <div class="sor2">
+            <p>támogatóink</p>
+            <img src="./media/tamog/tm (6).jpg" alt="">
+            <img src="./media/tamog/tm (7).jpg" alt="">
+            <img src="./media/tamog/tm (8).jpg" alt="">
+            <img src="./media/tamog/tm (10).jpg" alt="">
+            <img src="./media/tamog/tm (9).jpg" alt="">
+        </div>
+        <div class="sor3">
+            <p> segítségét!</p>
+            <img src="./media/tamog/tm (12).jpg" alt="">
+            <img src="./media/tamog/tm (13).jpg" alt="">
+            <img src="./media/tamog/tm (14).jpg" alt="">
+            <img src="./media/tamog/tm (15).jpg" alt="">
+            <img src="./media/tamog/tm (16).jpg" alt="">
+        </div>
+    </div>    
+        
+    </article>
+
+   
+     <footer class="footer-distributed">
+
+        <div id="kotelezo_lent"> <button onclick="kikapcs()" >X</button>
+            <img id="kotelezo_lentimg"  src="./media/lenti.png" id="kotelezo2" alt="" width="280" height="180">
+        </div>
+            <div class="footer-left">
+                <h3>Kerek <span>a világ</span></h3>
+                <p class="footer-links">
+                    <a href="#" class="link-1">Főoldal</a>
+                    <a href="#">Intézményeink</a>
+                    <a href="#">Tevékenységeink</a>
+                    <a href="#">Hírek</a>
+                    <a href="#">Dokumentumtár</a>
+                    <a href="#">Adatkezelés</a>
+                </p>
+                <p class="footer-company-name">Kerek VIlág Alapítvány © 2023</p>
+            </div>
+        
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>7627</span> Pécs, Gesztenyés u. 2</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+3620 400.....</p>
+                </div>
+                    <i class="fa fa-envelope"></i>
+                    <p>kerek.vilag.alapitvany@gmail.com</p>
+                </div>
+           
+        
+            <div class="footer-right">
+                <p class="footer-company-about">
+                Minden támogatással kerekebb a világunk!
+                    <br> <br>Adószámunk:<br>19031628-1-02 <br><br>
+                    Bankszámlaszámunk: <br>Takarékbank Zrt. 71800264-16026209
+                </p>
+            </div>
+        
+    </footer>
+
+    <script src="./kerek.js"></script>
+</body>
+</html>

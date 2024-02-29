@@ -1,0 +1,148 @@
+#linear{    height: 40px;
+    background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
+/* Szociális inézmények */
+#valaszto { margin: 5px;}
+#valaszto p{ color: gold;
+    font-size: x-large;
+    margin: 15px;
+    text-shadow: 1px 1px 5px black;} 
+#almenuk div, #almenukkicsi div{
+    color: white;
+    font-size: large;
+    text-decoration: overline;
+    text-shadow: 1px 1px 5px black;
+    display: grid;
+    justify-items: center;
+}
+#almenukkicsi { margin-top: -15px;}
+#almenukkicsi div{font-size:medium; justify-items:end; margin:-15px auto 40px auto;}
+#almenukkicsi img { width: 90%;}     
+#almenuk {display: flex; margin: -3% auto 1% auto;}
+#menuikon {display:flex; align-items: flex-start; width: 100%;}
+#valaszto img {width: 6%;
+     height: 100%;
+     border-radius: 50px; 
+     border: rgb(255, 255, 255) 2px solid; 
+     border-radius: 100px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px 1px;}
+
+ #isknepk #valaszto img, #tagozatok #valaszto img, #terapiak #valaszto img { box-shadow: rgb(255, 0, 0) 0px 0px 10px 3px; background-color: rgba(255, 0, 0, 0.54); }
+ #szocik #valaszto img, #tamopk #valaszto img, #fejfogk #valaszto img { box-shadow: rgb(255, 225, 0) 0px 0px 10px 3px; background-color: rgba(225, 255, 0, 0.54); }
+
+
+#szocik, #tamopk, #fejfogk, #isknepk, #tagozatok, #terapiak {margin-top: -5px; display: none;}
+
+#almenuk img {cursor: pointer;width: 30%; border: 2px solid white; border-radius: 45px; transition: 0.5s;}
+    #almenuk img:hover{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px; width: 35%; border: gold 2px solid;}
+
+   
+#tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
+    margin: 50px;
+    grid-column-gap: 30px;
+   grid-template-columns: 70% 30%; }
+   
+.alcikk, #alcikktart3 {display: none;
+     margin: 50px;
+     grid-column-gap: 30px;
+    grid-template-columns: 70% 30%;
+    background: white;
+    border-left: gold 5px solid;
+    padding: 10px;
+}
+#alcikktart3 { grid-template-columns: 100%;
+
+}
+.ter_kep{
+    text-align: center;
+}
+
+.content ul {
+    color: black;
+    font-style: italic;
+   margin-left: 10%;
+}
+.content li {margin: 5px auto}
+
+#tagozatok #almenuk {grid-template-columns: 50% 50%; }
+
+#almenuk p {text-align: center; height: 60px;}
+
+.kijelolt{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px;}
+
+.belso_tart{display: none; text-align:justify; color: black; text-shadow: none;}
+#pszitart, #ertaktart, #fejnevtart {grid-template-columns: 80% 20%; transition: 0.5s;}
+
+#cimp{
+    color:rgb(18, 85, 116);
+    margin: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+#alp{margin: 40px;}
+
+#el{
+    margin-right: 35px;
+    color: rgb(54, 158, 255);
+    text-align: right;
+    }
+
+#kozben {text-align: center; 
+    padding-bottom: 80px; 
+    color: gold; 
+    text-shadow: -2px 1px 13px black;    
+    margin: auto 150px;
+}
+
+.listakurzor{ cursor: pointer; }
+.listakurzor li { padding: 2px; color: #040eff;}
+.belso_tart p { margin: 20px 4px} 
+
+    #kep, #kep2 {display: none;     
+        border-bottom-left-radius: 50px;
+        margin-right: -15px;
+        display: none;
+        border: rgb(252, 227, 3) 5px solid;
+    margin-top: 5px;}
+    #al-al{
+        display: flex;
+    }
+
+    .kephely_5, .kephely_6, #kephely_4{    
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        justify-content: center;}
+        #map{width: 200px; height: 100px;
+            margin: 5px;
+            box-shadow: blue 0px 0px 6px 1px;
+            position: absolute;
+            
+        }
+
+        @media screen and (min-width:201px) and (max-width:1037px){
+            #alcikk {grid-template-columns: 100%}
+            #tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
+                margin: 50px;
+                grid-template-columns: repeat(1,100%);}
+                .alcikk, #alcikktart3{margin: 5px;}
+
+                #terapiak #kozben{ margin: auto 15px; font-size: small; }
+                #terapiak #almenuk{     display: grid;
+                    grid-template-columns: repeat(4,25%);}
+                #terapiak #almenuk img{width: 80%;}
+            #almenukkicsi img, #almenuk img { width: 70%;}
+            #el{ display: grid; grid-template-columns: repeat(2,50%); margin: 10% auto;}
+            
+            #tagozatok #almenuk, .alcikk {grid-template-columns: 100%; }
+            #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt{
+               grid-template-columns: 100%; }
+               #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
+               #el {    margin: auto 0px;grid-template-columns: 100%}
+                #almenukkicsi #kep, #almenukkicsi #kep2 {width: 0%; margin: 0; border: none;}
+                #almenuk p {font-size: small;}
+                #almenuk img {width: 40%; margin-bottom: 10%;}
+                #map{width: 50%; height: 50%;}         
+        }
+
+       

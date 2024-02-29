@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
+    <title>Kerek Világ Alapítvány</title>
+    
+</head>
+
+<body>
+
+    <header>
+            <p class="cim">KEREK VILÁG ALAPÍTVÁNY</p> 
+                <p class="alcim"> Speciális igényű gyermekek és felnőttek <br> ellátása és fejlesztése.
+            </p>
+    </header>
+
+    <nav>
+        <div class="navcont">
+
+        <div class="logobar">
+            <a class="logo"><i>Kövessen minket:</i>  
+                <p class="cim">KEREK VILÁG ALAPÍTVÁNY</p><span> ...mindennek életnek értelme  és célja van"</span>
+                <img src="./media/face.png" alt="">
+                <img src="./media/600px-Instagram_icon.png" alt="">
+                <img src="./media/youtube.svg" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-bar" >
+        <label for="menu-bar">	
+                <button class="menu" id="menu-bar2" onclick="this.classList.toggle('opened');checkUncheck();this.setAttribute('aria-expanded',this.classList.contains('opened'))">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                    <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" /></svg>
+                </button>
+        </label>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="./index.html">Főoldal</a></li>
+                <li><a href="">Rólunk</a></li>
+                <li><a href="">Hírek</a></li><li>
+                <li class="almenu"><a>Pályázatok <img class="arrow" src="./media/1737285.png" alt=""></a>
+                    <ul>
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-3.1.6-16-2017-00007</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>	
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-4.1.6-16-2017-00009</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">EFOP-4-1-6-16-2017-00009 </a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">CNK-KP-1-2020-1-000071 </a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                        <li class="almenu"><a style="font-size: 10px;">Gyógyító zene A MOL támogatásával a sérült gyermekekért</a>
+                            <ul>
+                                <li><a style="font-size: 10px;" href="">Pályázati hírek </a></li>
+                                <li><a style="font-size: 10px;" href="">Galléria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>	
+                <li class="almenu"><a >Médiatár <img class="arrow" src="./media/1737285.png" alt=""></a>
+                    <ul>
+                        <li><a style="font-size: 10px;" href="">grid gallery </a></li>
+                        <li><a style="font-size: 10px;" href="">flex gallery</a></li>
+                    </ul>
+                </li>
+                 <li><a href="">Dokumentumtár</a></li>
+                 <li><a href="">Karrier</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="kotelezo_fent"> 
+        <button onclick="kikapcs()" >X</button>
+        <img id="kotelezo_fentimg"  src="./media/fenti.png" alt="" width="280" height="180">
+    </div>
+    </nav>        
+    <div id="linear"></div>
+
+    <div class="tevekenysegvalaszto">
+
+        <div class="tevval1" id="szoci" >
+            <div class="nagyikon" >
+                <img src="./media/icons/szoc.szolg.svg" alt="">
+                <p>Szociális alapszolgáltatások</p>
+            </div>
+            <div class="kisikon" id="szoci2">
+                <img id="elint" src="./media/icons/nappaliintezmenyek.svg" alt="" >
+                <img id="taszo" src="./media/icons/tam.szolg.svg" alt="">
+                <img id="fejfog" src="./media/icons/heart.svg" alt="">
+                <p>Ellátó intézmények</p>
+                <p>Támogató szolgálat</p>
+                <p>Fejlesztő szolgáltatások</p>
+             </div>
+        </div>
+        <div class="tevval2" id="isk">
+            <div class="nagyikon">
+                <img src="./media/icons/alt.isk.svg" alt="">
+                <p>Általános Iskola</p>
+            </div>
+                 <div class="kisikon" id="isk2">
+                    <img id="isknep" src="./media/icons/nephagyomany.svg" alt="">
+                    <img id="ter" src="./media/icons/terapiak.svg" alt="">
+                    <img id="tag" src="./media/icons/edit.svg" alt="">
+                    <p>Néphagyomány örzés</p>
+                    <p>Terápiák</p>
+                    <p>Tagozatok</p>
+                 </div>
+        </div>
+        <div class="tevval3" id="erz">
+            <div class="nagyikon">
+                <img src="./media/icons/erzekenyites.svg" alt="">
+                <p>Érzékenyítés</p>
+            </div>
+            <div class="kisikon" id="erz2">
+                <img src="./media/icons/felnoteknek.svg" alt="">
+                <img src="./media/icons/iskolasoknak.svg" alt="">
+                <img src="./media/icons/elokonytar.svg" alt="">
+                <p>Csoportoknak</p>
+                <p>Iskoláknak</p>
+                <p>Élő könyvár</p>
+             </div>
+        </div>
+       <!--  <div class="tevval4" id="akr">
+            <div class="nagyikon">
+                <img src="./media/icons/akkreditalt fog.svg" alt="">
+                <p>Akkreditált foglalkozások</p>
+            </div>
+            <div class="kisikon" id="akr2">
+                <img src="./media/icons/edit.svg" alt="">
+                <img src="./media/icons/edit.svg" alt="">
+                <img src="./media/icons/edit.svg" alt="">
+                <p>Akkreditált1</p>
+                <p>Akkreditált2</p>
+                <p>Akkreditált3</p>
+             </div>
+        </div> -->
+    </div>
+        
+    <article id="placeholder"></article>
+
+        <article id="szocik" class="content">
+
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                <img src="./media/icons/nappaliintezmenyek.svg" alt="">
+                <p>Ellátó intézményeink</p>
+                </div>
+            </div>
+
+            <div id="almenuk">
+                <div>
+                    <span id="geszkep" class="kephely_5"> </span>
+                    <p>Ellátó intézményünk Pécsbányán a Gesztenyés utcában</p>
+                </div><div>
+                    <span id="krisztkep" class="kephely_6"> </span>
+                    <p>Ellátó intézményünk Kertárosban a Krisztina téren</p>
+                </div>
+            </div>
+
+            <div id="alcikktart"></div>
+                    <div id="geszt" class="alcikk">
+                        <div>
+                            <p> Intézményünkben a harmadik életévüket betöltött, önkiszolgálásra részben képes vagy önellátásra nem képes, 
+                                de felügyeletre szoruló fogyatékos személyek részére biztosítunk lehetőséget a napközbeni tartózkodásra a 
+                                jogszabályi előírásoknak megfelelve: 
+                                <em> a hét öt munkanapján <strong> 7.30-15.30</strong>-ig.</em>
+
+                                <strong><br><br>A nyújtott szolgáltatáselemek a következők:<br></strong><br>
+                                    <ul>
+                                    <li>Meleg ebéd, reggeli, valamint uzsonna biztosítása</li>
+                                    <li>Egészségügyi alapellátáshoz valamint gyógyászati segédeszközökhöz való hozzájutás megszervezése, biztosítása</li>
+                                    <li>Hivatalos ügyek intézésének segítése, tanácsadás</li>
+                                    <strong><br>Általánosan biztosított terápiák: <br><br></strong>
+                                        <ul>
+                                        <li>egyéni és csoportos gyógytorna</li>
+                                        <li>egyéni és csoportos konduktív nevelés</li>
+                                        <li>egyéni és csoportos gyógypedagógiai fejlesztés</li>
+                                        <li>logopédia</li>
+                                        <li>alternatív és augmentatív kommunikációfejlesztés (AAK)</li>
+                                        <li>látásfejlesztés</li>
+                                        <li>zeneterápia</li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                    <br>
+                                        Szabadidős programokat szervezünk heti óra felosztásban (kosárlabda, népi játékok, táncfoglalkozás, báb- és kézműves műhely, filmklub)
+                                        Évente pályázati támogatással nyári táborban vesznek részt a fiataljaink, gyermekeink.
+                                        Székhelyünk intézményi keretei között, jelenleg négy csoport ellátását biztosítjuk:
+                                    
+                                        <p id="cimp">Óvodás korú és a fejlesztő nevelés-oktatást egyéni formában teljesítő gyermekek csoportja:</p> 
+                                        <p id="alp">
+                                        Az óvodás korúak esetében, a szülők kifejezett kérésére olyan súlyosan, halmozottan sérült, illetve mozgáskorlátozott kisgyermekek óvoda jellegű ellátását biztosítjuk, akiknek az iskoláskort megelőző életszakaszban integrált nevelésük nem biztosítható. Törekszünk ebben az életszakaszban egyéni és csoportos foglalkozások keretében biztosítani az értelmi és mozgásállapotuknak, valamint szociális készségeiknek a fejlesztését. A csoportos foglalkozások délelőttönként zajlanak életkorukhoz és terhelhetőségükhöz igazodva. Főbb területei: szűkebb-tágabb környezet, munkatevékenység (ábrázolás, ének-zene, játékra nevelés), mozgásnevelés. A fejlesztő gondozás, – mely az önkiszolgálásra nevelést alapozza meg – áthatja a napi tevékenységeket. A tanköteles kor elérésekor a Szakértői Bizottság vizsgálata határozza meg, hogy értelmileg vagy tanulásban akadályozott tagozaton illetve fejlesztő nevelés-oktatás keretében iskolázható-e be a gyermek. Természetesen mindezek mellett az integrációra is lehetőség nyílik.
+                                        A fejlesztő nevelés-oktatást egyéni formában teljesítő tanulók differenciált, egyéni és csoportos fejlesztésben vesznek részt.
+                                    <br><br> A csoportos napi foglalkozások, az
+                                        <em>értelmi,képességbeli,
+                                        és készségfejlesztést szolgálják.</em>
+                                        Mindezeket a terápiás munkatársak irányítják, amit a gondozók szakszerű munkája egészít ki. <br>
+                                        A fejlesztés keretét az évszakok váltakozása és az évkörhöz kapcsolódó ünnepek határozzák meg. 
+                                        Tevékenységünk fontos részét képezik az egyéni foglalkozások. 
+                                        Az egyéni terápiákat a gyermek állapotához igazodóan szakértői team határozza meg a szakértői bizottság
+                                        javaslatának figyelembe vételével.
+                                        </p>
+                                        <p id="cimp">Halmozottan sérült fiatalok és ép értelmű mozgáskorlátozottak csoportja</p>
+
+                                        <p id="alp">Fő célunk,  a fizikai állapot és a korábban megszerzett tudásanyag napi szinten tartása mellett,
+                                            személyiségük fejlesztése és jövőjük megalapozása. Valamint, az erre alkalmas, vagy alkalmassá tehető fiatalok
+                                            rehabilitációs célú foglalkoztatásának elősegítése. Fontosnak látjuk önálló életre való nevelésüket, a végzendő munkában,
+                                            feladatokban való kitartásuk és gyakorlati készségeik elmélyítését, önmagukért és társaikért való
+                                                felelősségvállalás tudatosításának erősítését. Célunk még, hogy sok közösségi élményhez jussanak, kortárskapcsolataik bővüljenek.
+                                        Intézményünk egyéb ünnepei a néphagyomány gyökereire építkeznek, abból táplálkoznak. Ezekre az alkalmakra való 
+                                        felkészülés áthatja mindennapjainkat: visszaköszön az egyes foglalkozások témái közt. Az ünnepi események lehetőséget 
+                                        teremtenek a szülők, gyermekek, fiatalok, dolgozók bensőséges együttlétére, máskor pedig alkalmat adnak értékeink mások 
+                                        előtt való megmutatására is.
+                                        Minden alkalmat kihasználunk arra, hogy gondozottainkat eljuttassuk közintézményekbe,
+                                        kulturális programokra, városi rendezvényekre. Meghívott csoportokkal való közös programjaink,
+                                        integrált táboraink is azt a célt szolgálják, hogy gyermekeink, fiataljaink ne szigetelődjenek el,
+                                        hanem élő kortárs kapcsolatokkal is rendelkezzenek. Ezzel nem csak arra törekszünk, hogy látókörük 
+                                        szélesedjen, integrációjuk javuljon, hanem arra is, hogy a többségi társadalom fogyatékkal élőkkel 
+                                        szembeni érzékenységét növeljük.
+                                        </p>                          
+                            </p> 
+                        </div>
+
+                        <div id="el">
+                            Elérhetőségünk:
+                            <br><br>
+
+                            Schneider-Király Kinga
+                            <br>
+                            <a href="tel:+36204006714">06-20-400-6714</a>
+                            <br>
+                           <a href="mailto:kerek.vilag.alapitvany@gmail.com"> kerek.vilag.alapitvany@gmail.com</a>
+                            <br>
+                            <div id="maphely">
+                                
+                            7627 Pécs, Gesztenyés u.2.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="kriszt" class="alcikk">
+                            <div>
+                            <p><strong>
+                            Nappali Intézményünk működtetése által a Pécsi, Mohácsi, Siklósi és a Komlói kistérségben élő, önellátásra legalább részben képes felnőtt fogyatékos személyek nappali ellátását biztosítjuk.
+                            <br><br>
+                            <em>Szolgáltatás elemeink:</em></strong>
+
+                            <ul>
+                                <li>Szociális, egészségi, mentális állapotnak megfelelő napi életritmus biztosítása</li>
+                                <li>Közösségi programok szervezése</li>
+                                <li>Tanácsadás</li>
+                                <li>Készségfejlesztés</li>
+                                <li>Háztartási vagy háztartást pótló segítségnyújtás (az igénybe vevő segítése mindennapi életvitelében, mindennapi ügyeinek intézésében)</li>
+                                <li>Étkeztetés biztosítása</li>
+                                <li>Esetkezelés</li>
+                                <li>Felügyelet nyújtása</li>
+                                <li>Gondozás</li>
+                                <li>Közösségi fejlesztés</li>
+                                <li>Gyógypedagógiai segítségnyújtás (gyógytorna biztosítása)</li>
+                                <li>Zeneterápia</li>
+                                <li>... és még sok más!</li>
+                            </ul>
+                            <br><strong>
+                            Szociális intézmény napi tevékenysége</strong>
+                            <br>
+                            <p id="cimp">Programjaink:</p>
+                            <p id="alp">
+                            Napi munkánk során fontosnak tartjuk, hogy a fogyatékkal élő emberek és hozzátartozóik ne szigetelődjenek el, ne maradjanak magukra problémájukkal. A közösségbe való tartozás lehetőségét kínáljuk fel. Nem csupán a napközbeni tartózkodásra biztosítunk lehetőséget, hanem oda figyelünk a társas kapcsolatok kialakítására, a szabadidő hasznos eltöltésére is. Számos kirándulást szerveztünk mind közeli (pl.: Zsályaliget, Pécsi Állatkert, Cserkút, Szigetvár stb.), mind távoli helyekre (Budapest, Balaton – nyári tábor), helyi kulturális rendezvényeken veszünk részt (pl.: színház, mozi, koncert, előadások).
+                            </p>
+                            <p id="cimp">Rendszeres programjaink: </p>
+                            <p id="alp">
+                            A hetet a „hétnyitogató” együttlétünk indítja, ahol szűkebb és tágabb környezetünk aktualitásai, hírei, megosztásra szánt személyes élmények, az előttünk álló hét jeles napjainak ismertetése és a mindennapokat érintő hirdetések hangoznak el. Mindez támogatja annak megélését, hogy nem csak a saját világunkra szűkül be a létünk, de részesei vagyunk egy közösség, egy város, egy kultúra, egy társadalmi környezet életének is.
+                            Heti 2 alkalommal csoportos kéz- ill. válltorna van a klubban gyógytornász vezetésével, emellett személyre szabott egyéni gyógytorna a jó felszereltségű tornateremben.
+                            Házi bajnokság keretében heti 2 délelőttön lehetőség van bekapcsolódni a mozgáskorlátozottak speciális sportágának, a bocciának a versenyeibe.
+                            Megfelelő terem és kivetítő áll a filmklub rendelkezésére. A kiválasztott filmek gondolatokat, beszélgetéseket indítanak el.
+                            Hetente irodalmi teaházat tartunk, ahol a közös érdeklődés tartja össze a csoportot és számos tapasztalattal, ismerettel gazdagodhatnak.
+                            Zeneterápia zeneterapeuta értő vezetésével. A zenehallgatáshoz rajzolás, festés, hangszerek spontán megszólaltatása kapcsolódik, és mindez segíti a szavakba még nem vagy már nem megfogalmazható gondolatok, érzések kifejezését. A művészet módszereivel a tradicionális értékek felfedezését, életbe, életmódba történő beépítését segíti ez a foglalkozás.
+                            Intézményünkben kiskórus szerveződött, aminek bárki tagja lehet zenei előképzettségtől és iskolázott énekhang meglététől függetlenül. A közös éneklés közös örömforrás, segít egymásra figyelni, egymásra hangolódni.
+                            A nemzeti ünnepeinkről, világnapokról, a kultúra ünnepeiről megemlékezünk.
+                            </p>
+                        </p>
+                        </div>
+                        <div id="el">
+                            Elérhetőségünk:
+                            <br><br>
+                            Kovács-Bodor Andrea
+                            <br>
+                            <a href="tel:06-72- 510-817">06-72- 510-817</a>
+                            <br>
+                            <a href="mailto:kerek.vilag.alapitvany@gmail.com"> kerek.vilag.alapitvany@gmail.com</a>
+                            <br>
+                            7632 Pécs, Krisztina tér 9.
+                        </div>       
+                    </div>
+
+        </article>
+
+        <article id="tamopk" class="content">
+            
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                <img src="./media/icons/tam.szolg.svg" alt="">
+                <p>Támogató szolgálat</p>
+                </div>
+            </div>
+
+            <div id="tamopkriszt" class="alcikk">
+                <div>
+                    <p id="cimp">Szolgálatunk létrejötte:</p>
+                    <p id="alp">
+                    A felnőtt fogyatékkal élő emberek számára 1995-ben PHARE támogatással létrehoztuk
+                    Önálló Életvitel Központunkat, ezen belül is elsőnek egy módszertani csoportot, melynek tagjai szakorvosok,
+                    gyógypedagógusok, foglalkoztatási szakemberek voltak. Közreműködésükkel részt vettünk “A fogyatékos 
+                    személyek jogairól és esélyegyenlőségük biztosításáról szóló törvény” előkészítésében, és megvalósításának
+                    helyi koordinálásában. 1996-ban e programon belül létrehoztuk a fogyatékkal élő emberek segítő szolgálatát.
+                    2001-ben Önálló Életvitel Központunk felvállalta a fogyatékos emberek speciális munkaközvetítését és az 
+                    ESZCSM-mel szerződést kötve Támogató Szolgálattá alakult.</p>
+                    
+                    <strong>2002-2003 között menedzserszervezetként részt vettünk az ESZCSM támogatásával megvalósuló modell-kísérleti 
+                    programban, ami a támogató szolgálatok Dél-Magyarországi szervezet -és hálózatfejlesztésére irányult.</strong>
+                    
+                    <p id="alp"><em> A támogató szolgáltatás tevékenysége valamennyi fogyatékossági csoportba tartozó személyre kiterjed. 
+                    A támogató szolgáltatás igénybevétele során szociálisan rászorultnak minősül a súlyosan fogyatékos 
+                    személy. Súlyosan fogyatékosnak minősül a fogyatékossági támogatásban, vagy vakok személyi járadékában, 
+                    illetve magasabb összegű családi pótlékban részesülő személy. </em></p>
+                    
+                    <p id="cimp">Szolgálatunk célja:</p>
+                    A fogyatékos emberek lakókörnyezetben történő ellátása, elsősorban a lakáson kívüli közszolgáltatások 
+                    elérésének segítése, valamint életvitelük önállóságának megőrzése mellett a lakáson belüli speciális 
+                    segítségnyújtás. Közreműködés az önálló, önrendelkezésen alapuló életvitel megvalósításában, az
+                    ellátási szükségletekhez alkalmazkodó módon. Munkánk során fontos szerepet kap a fizikai és mentális
+                    támogatás is, mindezeket a fogyatékos ember tevékeny közreműködésével valósítjuk meg, válaszolva 
+                    ezzel az egyén speciális szükségleteire.
+                        <br><br>
+                    <strong> A támogató szolgáltatásunk feladata:</strong>
+                    <br><br>
+                    <ul>
+                            <li>Személyi segítő szolgálat működtetése </li>
+                            <li>Alapvető szükségletek kielégítésében való személyi segítés</li>
+                            <li>
+                            Higiénés- és testi szükségletek, a közszolgáltatásokhoz, egyéb irányú szolgáltatásokhoz való hozzájutás
+                            </li>
+                            <li>Kíséret</li>
+                            <li>
+                            Személyes vagy közvetett ügyintézés, közreműködés az ellátásban részesülő életterének kialakításában, a
+                            mindennapi életmenet, a komfortérzés biztosításában, stb.
+                            </li>
+                    
+                    <li>
+                    szállító szolgáltatás működtetése (az alapvető szükségletek kielégítését segítő szolgáltatásokhoz, 
+                    egészségügyi szolgáltatásokhoz, oktatáshoz, fejlesztő tevékenységhez, szabadidős 
+                    tevékenységekhez, munkavégzéshez, közszolgáltatásokhoz való hozzájutás biztosítása, stb.)</li>
+                                    
+                <li> tanácsadás (a fogyatékossággal kapcsolatos információadás, 
+                    a kliens megbízása és felhatalmazása alapján érdekképviseletet, 
+                    tájékoztatás a vonatkozó rendeletek jogi hátteréről, ill. 
+                    jogi képviselet megszervezése, felvilágosítás adást az egyes szociális, egészségügyi 
+                    és jóléti ellátások formáiról, intézményrendszeréről, funkcióiról és igénybevételének módjáról, stb.)</li>
+                    
+                    <li>jelnyelvi tolmácsszolgálat elérhetőségének biztosítása   </li>   </ul>               
+                    </p> 
+                </div>
+
+                <div id="el">
+                    <div id="almenukkicsi">
+                        <div id="kephely_3">
+                            <p>Támogató szolgálatunk kertvárosban, a Krisztina téren</p>
+                        </div>
+                    </div>
+                    Elérhetőségünk:
+                    <br><br>
+                    Kovács-Bodor Andrea
+                    <br>
+                    <a href="tel:+3672510817">06-72-510-817</a>
+                    <br>
+                    <a href="mailto:kerek.vilag.alapitvany@gmail.com">kerek.vilag.alapitvany@gmail.com</a>
+                    <br>
+                    
+                       
+                        7632 Pécs, Krisztina tér 9.
+                </div>
+            </div>
+
+        </article>
+        
+        <article id="fejfogk" class="content">
+            
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                <img src="./media/icons/heart.svg" alt="">
+                <p>Fejlesztő foglalkoztatás</p>
+                </div>
+            </div>
+
+            <div id="tamopfejfog" class="alcikk">
+                <div>
+                
+                    <p id="cimp">A fejlesztő foglalkoztatás célja:</p>
+                    
+                    <p id="alp">Az egyén egészségi állapotának, korának, fizikai és mentális állapotának megfelelő fejlesztési és foglalkoztatási
+                    szolgáltatás biztosítása útján, az egyén felkészítése az önálló munkavégzésre vagy a nyílt munkaerőpiacon történő 
+                    elhelyezkedésre.
+                    A fejlesztő foglalkoztatásban résztvevők intézményünkben egészségi állapotuknak, és képességeiknek megfelelő munkát 
+                    végeznek, melynek során mindenki számára egyénre szabott, a személyes szükségletekhez igazodó foglalkoztatást biztosítunk.
+                    A tevékenység és az egyes munkafolyamatok a már meglévő képességek/készségek szinten tartását, fejlesztését, megőrzését,
+                    gyakoroltatását szolgálják.</p>
+
+                    <p id="cimp">A fejlesztő foglalkoztatás keretében jelenleg végzett tevékenységünk:</p>
+                    <p id="alp">
+                        <strong>TEÁOR 3299</strong> Egyéb mns feldolgozóipari tevékenység (varrott ajándéktárgyak, 
+                        egyszerű szövéssel előállított termékek, gyöngyfűzés, nemezelés, dísztárgyak gipszből,
+                        egyszerű hímzett terítők- és képeslapok, csuhétárgyak, stb.) </p>
+
+                        <p id="cimp">Fejlesztő foglalkoztatás keretében 20 fő foglalkoztatását biztosíthatjuk.</p>              
+                    </p> 
+                </div>
+
+                <div id="el">
+                    <div id="almenukkicsi">
+                        <div  id="kephely_1">
+                            <p>Fejlesztő foglalkoztatónk kertvárosban, a Krisztina téren</p>
+                        </div>
+                    </div>
+                    Elérhetőségünk:
+                    <br><br>
+                    Kovács-Bodor Andrea
+                    <br>
+                    <a href="tel:+3672510817">06-72-510-817</a>
+                    <br>
+                    <a href="mailto:kerek.vilag.alapitvany@gmail.com"> kerek.vilag.alapitvany@gmail.com</a>
+                    <br>
+                    7632 Pécs, Krisztina tér 9.
+                </div>
+            </div>
+
+        </article>
+
+        <article id="isknepk" class="content">
+            
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                <img src="./media/icons/nephagyomany.svg" alt="">
+                <p>Néphagyomány örzés</p>
+                </div>
+            </div>
+
+            <div id="isknephagy" class="alcikk">
+                <div>
+                
+                    <p id="cimp">Néphagyomány örzés intézményünkben</p>
+                    
+                    <p id="alp"> <strong>Pedagógiai programunkban meghatározó elem a hagyományőrzés, ezekhez hozzátartoznak:</strong>
+                    <ul>
+                        <li>Néphagyományok</li> 
+                        <li>Jeles napok</li> 
+                        <li>Szokásjátékok</li> 
+                        <li> A természet változásaihoz kapcsolódó ünnepek</li> 
+                        <li> A várakozás időszakának tevékenységei</li> 
+                    </ul>
+                        </p>
+
+                    <p id="cimp">Néphagyomány örzéssel kapcsolatos tevékenységünk célja:</p>
+                    <p id="alp">
+                        Az iskolai tevékenységek kiemelt célja, és néphagyomány örző tematikánk célja, 
+                        hogy támogassák a gyermekek fejlődését különböző területeken.
+                        A közösségi élmények és kapcsolatok fontosságát hangsúlyozva ösztönözzük a gyerekeket az 
+                        együttműködés és játék örömteli tapasztalataira. Emellett az emberi és természeti környezettel 
+                        való kapcsolatokat érzékenyítjük, elősegítve a szociális kapcsolatok pozitív kialakítását
+                        és az empatikus magatartás elsajátítását.</p>
+
+                        <p id="cimp">Fontosabb ünnepeink, melyekbe minden gyermek sérültségtől függetlenül bevonható:</p>     
+                        
+                        <p id="alp">
+                            <ul>
+                                <li><strong>Szeptember:</strong> Kisasszony nap</li>
+                                <li><strong>Szeptember:</strong> Szent Mihály nap</li>
+                                <li><strong>Október:</strong> Szent Ferenc nap</li>
+                                <li><strong>November:</strong> Mindenszentek</li>
+                                <li><strong>November:</strong> Katalin nap</li>
+                                <li><strong>December:</strong> Borbála nap</li>
+                                <li><strong>Január:</strong> Sebestyén nap</li>
+                                <li><strong>Február:</strong> Mátyás nap</li>
+                                <li><strong>Március:</strong> József nap</li>
+                                <li><strong>Március:</strong> Gyümölcsoltó Boldogasszony</li>
+                                <li><strong>Október:</strong> Vendel nap</li>
+                                <li><strong>November:</strong> Márton nap</li>
+                                <li><strong>November:</strong> Erzsébet nap</li>
+                                <li><strong>December:</strong> Szent Miklós</li>
+                                <li><strong>December:</strong> Luca nap</li>
+                                <li><strong>December:</strong> Karácsony</li>
+                                <li><strong>Január:</strong> Háromkirály-járás</li>
+                                <li><strong>Január:</strong> Farsang</li>
+                                <li><strong>Március:</strong> Gergely-járás</li>
+                                <li><strong>Április:</strong> Szent György nap</li>
+                                <li><strong>Május:</strong> Pünkösd</li>
+                            </ul>
+                        </p>
+                        <p id="alp">
+                            Az alkotóképesség és a kifejezőkészség fejlesztése érdekében változatos, 
+                            örömteli alkotó tevékenységeket kínálunk ezen alkalmakkor. A kommunikáció ösztönzése és az 
+                            esztétikai érzék kialakítása, szép tárgyak és környezeti elemek bevonásával.
+                            Mindezt ünnepeink diverzitásának köszönhetően, sok és változatos formában tehetjük meg. 
+                            Az erkölcsi nevelés részeként bemutatjuk népmesék és mondák szereplőinek mintáit. Emellett új 
+                            mozgásformákat is elsajátíthatnak a gyermekek, amelyek hozzájárulnak a testi és szellemi fejlődésükhöz.
+                        </p>
+
+                        <strong>Előzetes eggyeztetés után szívsen látunk 
+                        minden ilyen érdekődőt a nyilvános ünnepeinken melyek jellemzően a kövezkezők:</strong>
+                        <ul>
+                            <li>Vendel napi vásárunk, melyen a gyermekek saját kézműves termékeiket "árulják" jelképes összegért.</li>
+                            <li>Pünkösdi királyválasztás, ahol gyermekek a pünkösdi királyt és királynét megválasztva ünnepelnek és különböző próbatételeken bizonyítják ügyességüket.</li>
+                            <li>Gergely-járás, melyen jellemzően az ovodás korú gyermekeket várjuk akik iskolánkat választják következő intézményüknek.</li>
+                        </ul>    
+
+
+                    </p> 
+                </div>
+
+                <div id="el">
+                    <div id="almenukkicsi">
+                        <div id="kephely_2">
+                            <p>Iskolánk Pécsbányán, a Gesztenyés utcában</p>
+                        </div>
+                    </div>
+                    Elérhetőségünk:
+                    <br><br>
+                    Kovács-Szabó Zsuzsanna
+                    <br>
+                    <a href="tel:+36204006714">06-20-400-6714</a>
+                    <br>
+                    <a href="mailto:kerek.vilag.iskola@gmail.com">kerek.vilag.iskola@gmail.com</a>
+                    <br>
+                    7726 Pécs, Gesztenyés u 2.
+                </div>
+            </div>
+
+        </article>
+
+        <article id="tagozatok" class="content">
+
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                <img src="./media/icons/edit.svg" alt="">
+                <p>Iskolai tagozataink</p>
+                </div>
+            </div>
+                <p id="kozben" > Minden gyermek osztályközösségekben tanul, a helyi tantervekben meghatározott órarend szerint.
+                    Speciális képességeikhez igazodó oktatásban, fejlesztésben, nevelésben részesülnek, a lentebb látható tagozatainknak megfelelően.
+                Kattintson egy adott tagozatra a bővebb információért.</p>
+            <div id="almenuk">
+            
+                <div>
+                    <img id="pszi"  src="./media/pszi.svg" alt="">
+                    <p>Pszichés fejlődés súlyos zavarával küzdő tagozatok</p>
+                </div><div>
+                    <img id="tanak" src="./media/tanak.svg" alt="">
+                    <p>Tanulásban akadályozott tagozatok</p>
+                </div><div>
+                    <img id="ertak"  src="./media/halm.svg" alt="">
+                    <p>Értelmileg akadályozott tagozatok</p>
+                </div><div>
+                    <img id="fejnev" src="./media/fej.svg" alt="">
+                    <p>Fejlesztő nevelő-oktatás részvevő halmozottan sérült tagozatok</p>
+                </div>
+            </div>
+        
+            <div id="alcikktart2"></div>
+            
+                    <!-- Pszihés fejlődési zavar -->
+                <div id="pszitart" class="alcikk">
+
+                    <div> 
+                        <p>
+                            <h2>Pszichés fejlődési zavarral küzdő tanulói tagozatok</h2>
+                        <br>
+                            <p style="text-align: center; color: #5400ff">
+                        Iskolánkban 2014 szeptemberétől a jogszabályi háttér és a Pedagógiai Programunk
+                        alapján súlyos pszichés fejlődési zavarral küzdő tanulók nevelése- oktatása is elindult
+                        az általános iskola nyolc évfolyamán.
+                        A súlyos tanulási, figyelem – vagy magatartásszabályozási zavarral küzdő gyermekek, 
+                        tanulók esetében a különleges bánásmódnak megfelelő ellátást a Szakértői Bizottság 
+                        szakértői véleményében foglaltak szerint biztosítjuk.</p>
+                        <p><br><br>
+                            <div style="text-align: center;">
+                            <strong> Iskolai kereteken belül a következő (ingyenes) terápiákat nyújtjuk : </strong>                    
+                            <em> <p style="font-size: small;"> Ha valamelyik terápiáról többet szeretne tudni, kattintson a nevére.</p></em>
+                                <br></div>
+                            <ul class="listakurzor">
+                                <li id="egy_belso">Egyéni kognitív fejlesztés (figyelem, koncentráció, anyanyelvi képességek, számolási képességek fejlesztése)</li>
+                                <li id="dis_belso">Diszlexia reedukáció</li>
+                                <li id="bes_belso">Beszédfejlesztés</li>
+                                <li id="log_belso">Logopédiai ellátás</li>
+                                <li id="moz_belso">Mozgásfejlesztés (finommozgás, nagymozgás, mozgáskoordináció, TSMT)</li>
+                                <li id="kon_belso">Konduktív terápia</li>
+                                <li id="gyo_belso">Gyógytorna</li>
+                                <li id="lat_belso">Látásfejlesztés</li>
+                                <li id="zen_belso">Zeneterápia, művészetterápia</li>
+                            </ul>
+                            <br><br>
+                        A neveléshez és oktatáshoz szükséges speciális tantervek, tankönyvek és egyéb segédletek, 
+                        speciális eszközök állnak rendelkezésünkre. A Szakértői Bizottság által meghatározott 
+                        fejlesztési területeken szakképzett pedagógusok, gyógypedagógusok, fejlesztő pedagógusok
+                        és terapeuták segítik az eredményesebb tanulást.
+                        <br><br>
+                        A tanulóknak a meghatározott tanórai foglalkozásokon túl habilitációs, 
+                        rehabilitációs tanórai foglalkozásokat szervezünk, ezeken kívül egyéni és 
+                        kiscsoportos formában is részt vesznek fejlesztő foglalkozásokon.</p>
+                        <br>
+                    <p> Nagy hangsúlyt fektetünk a tanulási problémákból eredő kudarcélmények leépítésére, 
+                        az önértékelés kompenzálására. Az interperszonális kapcsolatok zavaraiban gyökerező 
+                        nehézségek leküzdésében is segítjük tanulóinkat. Az egyéni sajátosságokat a számonkérésnél, 
+                        értékelésnél is figyelembe vesszük.</p>
+                        <br>
+                    <p> Munkatársaink a szakvélemények és egyéni felméréseik alapján fejlesztési 
+                        terveket készítenek, differenciált képességfejlesztéseket végeznek, felzárkóztató 
+                        foglalkozásokat biztosítanak. A tanulókat képességeiknek megfelelő differenciáló módszerek
+                        segítségével, kizárólag kis létszámú osztályokban oktatjuk. Fontosnak tartjuk a
+                        különböző szakemberekkel való együttműködést és a szülők számára is folyamatos konzultációs
+                        lehetőséget biztosítunk.</p>
+                        <br>
+                        <em><p style="text-align: center; color: #5400ff">Az a törekvésünk, hogy ezen tanulók ittlétére mindaddig sor kerüljön, 
+                        amíg integrációjuk reális feltételei ki nem bontakoznak. </p></em>
+                        </p> 
+                        <p>
+                            <br>
+                            <div style="text-align: center;"> 
+                            <h4> A PSZICHÉS FEJLŐDÉSI ZAVARRAL KÜZDŐ TANULÓK ISKOLAI TAGOZATA</h4>
+                            <br>
+                            <strong> ALSÓ TAGOZAT</strong>
+                                <ul>
+                                    <li>1. évfolyam<em>(2 tanévre nyújtható)</em> </li>
+                                    <li>2. évfolyam</li>
+                                    <li>3. évfolyam</li>
+                                    <li>4. évfolyam</li>
+                                    <em>(szükség esetén + 1 év: felzárkóztató év)</em>
+                                </ul>
+                                <br><br>
+                                <strong> FELSŐ TAGOZAT</strong> 
+                                <ul>
+                                    <li> 5. évfolyam</li>
+                                    <li>6. évfolyam</li>
+                                    <li>7. évfolyam</li>
+                                    <li>8. évfolyam</li>
+                                    <em>(szükség esetén + 1 év)</em>
+                                </ul></div>
+                </p>                
+                    </div>
+
+                    <div id="el">
+                    Elérhetőségünk:
+                        <br><br>
+                        Koncz-Salamon Szilvia
+                        <br>
+                        <a href="tel:+36204006714">06-20-400-6714</a>
+                        <br>
+                        <a href=""></a>
+                        <a href= "mailto:kerek.vilag.iskola@gmail.com"> kerek.vilag.iskola@gmail.com</a>
+                        <br>
+                        7627 Pécs, Gesztenyés u.2. 
+                        <div id="belsoalcikk">
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+                    <!-- Tanulásban akadályozott -->
+                <div id="tanaktart" class="alcikk">
+                    <div>
+                    <p>
+                        <h2>Tanulásban akadályozott tanulói tagozatok</h2>
+                        <br>
+                        <p style="text-align: center; color: #5400ff">
+                            Iskolánkban a tanulásban akadályozott gyermekek tanulócsoportjaiban olyan 
+                            tanulási feltételeket biztosítunk, melyek alkalmazkodnak speciális oktatási-nevelési 
+                            szükségleteikhez. Feladatunk a tanulásban akadályozott és mozgáskorlátozott gyermekek 
+                            oktatása, nevelése, mozgásfejlesztése, egyénre szabott sérülésspecifikus eljárások, 
+                            módszerek és terápiák útján.</p>
+                        <br>
+                        <p><strong>Fontos Célok:</strong></p>
+                        <ul>
+                            <li>Speciális nevelési szükségleteiknek megfelelő oktatás biztosítása.</li>
+                            <li>Egészséges énkép és önbizalom kialakítása.</li>
+                            <li>Kudarctűrő képesség növelése.</li>
+                            <li>Számukra szükséges sikerélmény biztosítása.</li>
+                            <li>Önállóságra nevelés.</li>
+                        </ul>
+                    <br>
+                        <p><strong>Alapelvünk:</strong></p>
+                        <p>A gyermekközpontú szemlélettel és egyéb alapelveinkkel olyan
+                             környezetet teremtünk, ahol a tanulásban akadályozott tanulók személyisége
+                              fejlődhet, és felkészülhetnek a speciális szakképzésre és a mindennapi életre.</p>
+                    <br>
+                        <p><strong>Elsődleges Eszközeink:</strong></p>
+                        <ul>
+                            <li>Pedagógiai szemlélet és követelményrendszer.</li>
+                            <li>Nyugodt, nyitott légkör.</li>
+                            <li>Egyénre szabott fejlesztési eljárások.</li>
+                            <li>Jól felkészült, emberséges, de követelő pedagógusok.</li>
+                        </ul>
+                    <br>
+                        <p>Az oktatás-nevelés tartalmát a köznevelési tv., a NAT (Nemzeti Alaptanterv), 
+                            és a Sajátos nevelési igényű tanulók iskolai fejlesztésének irányelvei alapján készült helyi 
+                            tantervünk rögzíti. A NAT közös követelményei áthatják az iskolai nevelés, oktatás valamennyi területét, 
+                            megszabják a tanulók ismereteit, attitűdjét önmagához, szűkebb és tágabb környezetéhez.Az általános követelmények 
+                            teljesítését a tanulók sajátosságai és a mozgáskorlátozásból adódó egyéni eltérések egymással kölcsönhatásban befolyásolják. 
+                            Az iskolaszerkezetünk sajátosságait mozgáskorlátozott és/vagy tanulásban a
+                            kadályozott tanulók esetében az alábbi ábra szemlélteti:</p>
+                            <br>
+                            <strong> ALSÓ TAGOZAT</strong>
+                            <ul>
+                                <li>1. évfolyame <em>(2 tanévre nyújtható)</em> </li>
+                                <li>2. évfolyam</li>
+                                <li>3. évfolyam</li>
+                                <li>4. évfolyam</li>
+                                <em>(szükség esetén + 1 év: felzárkóztató év)</em>
+                            </ul>
+                            <br><br>
+                            <strong> FELSŐ TAGOZAT</strong> 
+                            <ul>
+                                <li> 5. évfolyam</li>
+                                <li>6. évfolyam</li>
+                                <li>7. évfolyam</li>
+                                <li>8. évfolyam</li>
+                                <em>(szükség esetén + 1 év)</em>
+                            </ul>
+
+                    </p>
+                    </div>
+                    
+                    <div id="el">
+                        <div id="almenukkicsi">
+                            <div id="kephely_4">
+                                <p>Iskolánk Pécsbányán, a Gesztenyés utcában</p>
+                           </div>
+                        </div>
+                        Elérhetőségünk:
+                        <br><br>
+                        Halek-Horváth Katalin
+                        <br>
+                        <a href="tel:+36204006714">06-20-400-6714</a>
+                        <br>
+                        <a href="mailto:kerek.vilag.iskola@gmail.com"> kerek.vilag.iskola@gmail.com</a>
+                        <br>
+                        7627 Pécs, Gesztenyés utca 2.
+                    </div>       
+                </div>
+                    <!-- Értélmiegl akadályozott -->
+                <div id="ertaktart" class="alcikk">
+                    <div> 
+                        <p>
+                            <h2>Értelmileg akadályoztatott tanulói tagozatok</h2>
+                        <br>
+                            <p style="text-align: center; color: #5400ff">
+                                Iskolánkban az értelmileg akadályozott gyermekek külön tanulócsoportokban tanulnak, ahol olyan feltételeket (oktatási tartalmakat, eljárásokat, eszközöket) biztosítunk, melyek alkalmazkodnak e tanulók speciális oktatási- nevelési szükségleteikhez. Tanulóink egy részénél az értelmi akadályozottsághoz különböző mértékű mozgáskorlátozottság, ill. egyéb képességhiány is társul.</p>
+                        <p><br><br>
+                            <div style="text-align: center;">
+                            <strong> Fejlesztési területeink : </strong>                    
+                            <em> <p style="font-size: small;"> Ha valamelyik fejlesztési területről többet szeretne tudni, kattintson a nevére.</p></em>
+                                <br></div>
+                            <ul class="listakurzor">
+                            <strong> MOZGÁSFEJLESZTÉS, MOZGÁSREHABILITÁCIÓ</strong>
+                                <li id="moz_belso2">Mozgásfejlesztés (finommozgás, nagymozgás, mozgáskoordináció, TSMT)</li>
+                                <li id="gyo_belso2">Gyógytorna</li>
+                                <li id="nep_belso">Néptánc és mozgáskultúra</li>
+                                <li id="ayr_belso">Ayres terápia</li>
+                                <li id="lov_belso">Gyógypedagógia lovaglás</li>
+                                <li id="sub_belso">Subquális torna</li>
+                            </ul><br>
+                            <ul class="listakurzor">
+                                <strong> FINOMMOTORIKA FEJLESZTÉS</strong>
+                                    <li id="kez_belso">Kézműves tevékenységek</li>
+                            </ul><br>
+                            <ul class="listakurzor">
+                                <strong>KOMMUNIKÁCIÓ FEJLESZTÉS</strong>
+                                    <li id="bes_belso2">Beszédfejlesztés</li>
+                                    <li id="log_belso2">Logopédiai ellátás</li>
+                                    <li id="alt_belso">Alternatív és augmentatív kommunikációs terápia</li>
+                            </ul><br>
+                            <ul class="listakurzor">
+                                <strong> ZENETERÁPIA</strong>
+                                    <li id="zen_belso2">Zeneterápia, művészetterápia</li>
+                            </ul><br>
+                            <ul class="listakurzor">
+                                <strong> MINDENNAPOS TEVÉKENYSÉGRE, ÖNELLÁTÁSRA NEVELÉS</strong>
+                                    <li id="on_belso">Önellátásra nevelés tanórai kereteken belül</li>
+                            </ul><br>
+
+                            <br><br>
+                  
+                        <br><br>
+                        A tanköteles korú középsúlyos értelmi fogyatékos gyermekeinknél – az általános műveltséget megalapozó pedagógiai szakaszban a módosult fejlődésmenetet, a sajátos tanulási képességet, valamint a behatárolt felnőttkori életlehetőségeket figyilembe véve – a speciális nevelési szükségletre, és a különleges gondozási igényre építve, az egyéni bánásmód elvét alkalmazzuk. Nagy hangsúlyt helyezünk a kommunikációs és szocializációs képességeik fejlesztésére, a praktikus ismeretek közvetítésére -, hogy tanulóink a képzési idő végére egyszerű társas kapcsolatokat képesek legyenek fenntartani, képességükhöz igazodó munkafolyamatokat eredményesen végre tudjanak hajtani, vagyis hogy minél teljesebben bontakoztathassák ki személyiségüket. A törekvésünk az, hogy felkészítsük őket arra, hogy az alapképzés befejezése utáni életközegükben (készségfejlesztő speciális szakiskola szakképzési évfolyama, szociális foglalkoztató, gondozóház, védőmunkahely, család,) a szociális integrálódásuk eredményes legyen, elemi szintű munkavégzésre önállóan vagy segítséggel képesek legyenek.</p>
+                        <br>
+                    <p> Az oktatás-nevelés folyamata jelentősen eltér az értelmileg akadályozottaknál, a hasonló életkorú nem akadályozott gyermekekhez képest tartalmában, és szervezésében egyaránt. Mindezt a köznevelési tv., a NAT, és a Sajátos nevelési igényű tanulók iskolai fejlesztésének irányelvei alapján készült helyi tantervünk rögzíti. Ebben a leghangsúlyosabb elemek:
+                    <em><p style="text-align: center; color: #5400ff">
+                        a közvetlen környezetben való tájékozódás képességének,
+                    </p></em>
+                    <em><p style="text-align: center; color: #5400ff">
+                        a kommunikációs készségeknek,
+                    </p></em>
+                    <em><p style="text-align: center; color: #5400ff">
+                        önmaga ellátására való készségek elemeinek fejlesztése..</p>
+                    </p></em>
+                        <br>
+                    <p>A tanítás elsősorban szemléltető-cselekedtető módszerekkel történik, ami a tapasztalatszerzést, a tanulást a mindennapi élet szempontjából jelentőséggel bíró helyzetekbe ágyazottan biztosítja. Az un. iskolai készségek (olvasás, számolás) tanítása az értelmileg akadályozott tanulóknál elhúzódó folyamat, de nem is minden gyermek képes eljutni a teljesítményképes tudás szintjére e területeken. A tantárgyaknál nem a műveltségátadáson van a fő hangsúly, hanem azoknak a képességeknek a kialakításán, amelyek közvetlen segítséget adnak az élet feladataihoz, és egyben felkészítik őket arra, hogy képességeikhez, feladataikhoz mérten minél eredményesebb legyen a szociális beilleszkedésük. Ezeknél a gyermekeknél a legalapvetőbb célunk, hogy differenciált nevelőmunkával azt biztosítsuk, hogy minden gyermek önmaga adottságaihoz, lehetőségeihez képest a legoptimálisabban fejlődjék.</p>
+                        <br>
+                        
+                        <p>
+                            <br>
+                            <div style="text-align: center;"> 
+                            <h4> AZ ÉRTELMILEG AKADÁLYOZOTT TANULÓK ISKOLAI TAGOZATA</h4>
+                            <br>
+                            <strong> ALSÓ TAGOZAT</strong>
+                                <ul>
+                                    <li>1. évfolyam <em>(2 tanévre nyújtható)</em> </li>
+                                    <li>2. évfolyam</li>
+                                    <li>3. évfolyam</li>
+                                    <li>4. évfolyam</li>
+                                    <em>(szükség esetén + 1 év: felzárkóztató év)</em>
+                                </ul>
+                                <br><br>
+                                <strong> FELSŐ TAGOZAT</strong> 
+                                <ul>
+                                    <li> 5. évfolyam</li>
+                                    <li>6. évfolyam</li>
+                                    <li>7. évfolyam</li>
+                                    <li>8. évfolyam</li>
+                                    <em>(szükség esetén + 1 év)</em>
+                                </ul>
+                                <br>
+
+                                <strong>
+                                    Pedagógiai célú habilitációs és rehabilitációs foglalkozások,
+                                     értelmileg középsúlyosan akadályozott tanulók számára:
+                                </strong>
+                                <br>
+                                <p>
+                                    Az oktatási törvény alapján, az irányelvekben leírtakat figyelembe véve a középsúlyos értelmi fogyatékos tanulók számára a kötelező tanórai foglalkozásokon túl egészségügyi és pedagógiai célú rehabilitációs foglalkozásokat szervezünk.
+                                    A foglalkozások célja a károsodásból eredő nagyfokú lemaradások csökkentése és a meglévő képességelőnyökre építve az eredményes személyiségfejlesztés megvalósítása tanórai keretek között egyéni illetve kiscsoportos formában.
+                                </p>
+                                <p>
+                                    <ul>
+                                        <li>
+                                            Egyéni korrekció (pl. mely irányulhat az érzékelés, észlelelés, a figyelem, az emlékezet, a grafomotoros koordináció, az időbeli-térbeli tájékozódás fejlesztésére)
+                                        </li>
+                                        <li>
+                                            Személyiségfejlesztő és terápiás foglalkozások (pl. bazális fejlesztés, logopédia, szociális és kommunikációs tevékenység segítése, művészet, zene)
+                                        </li>
+                                        <li>
+                                            Mozgásállapot javítása (pl. gyógytorna, gyógyúszás, gyógypedagógiai lovaglás, konduktív ped., mozgásnevelés, speciális sportok stb.)
+                                        </li>
+                                    </ul>
+                                </p>
+
+                                <p>A rehabilitációs célú foglalkozások közül az egyéni szükségleteknek megfelelően határozzuk meg a gyerekek számára fontosnak ítélt fejlesztési területeket, terápiákat. Például: a mozgásfejlesztési formák közül a neki legmegfelelőbbet választjuk ki (pl. gyógytorna + gyógyúszás+ gyógypedagógiai lovaglás). Ezt team-megbeszélések alkalmával egyeztetjük.</p>
+
+                                <p>
+                                    Ezek a rehabilitációs célú foglalkozások szükség szerint egyéni vagy kiscsoportos formában zajlanak, attól függően, hogy a gyermek aktuális állapota melyik formát igényli. (Az egyéni foglalkozás során a fejlesztés célzottabb és körültekintőbb lehet, de a kiscsoportos fejlesztésnek a közösségi hatás a jelentős.)
+                                </p>
+                            </div>
+                       
+                </p>                
+            </div>
+            <div id="el">
+                Elérhetőségünk:
+                <br><br>
+                Kerényiné Kovács-Szabó Zsuzsanna
+                <br>
+                <a href="tel:+36204006714">06-20-400-6714</a>
+                <br>
+                <a href="mailto:kerek.vilag.iskola@gmail.com"> kerek.vilag.iskola@gmail.com</a>
+                <br>
+                7627 Pécs, Gesztenyés utca 2.
+                <div id="belsoalcikk_ert">
+                </div>
+
+            </div>       
+
+                </div>
+                    <!-- Fejlesztő nevelés -->
+                <div id="fejnevtart" class="alcikk">
+                    <div> 
+                                <p>
+                                    <h2>Fejlesztő-nevelő oktatási tagozatok</h2>
+                                <br>
+                                    <p>
+                                        <strong>Célcsoport: 6-23 éves korú,
+                                            súlyosan és halmozottan sérült gyermekek,
+                                            fiatalok, akik csoportos keretek között,
+                                            egyénre szabott terápiás fejlesztő eljárások segítségével 
+                                            fejleszthetők eredményesen.</strong>
+                                            <br><br>
+                                            
+                                        <br>
+                                        A rehabilitációs pedagógiai program 
+                                        iskolai körülmények között olyan fejlesztési lehetőséget
+                                        biztosít a súlyosan és halmozottan sérült gyermekeknek, fiataloknak, 
+                                        amely hozzásegíti őket                            <p><br><br>
+                                        </strong>
+                                
+                                        </p>
+                                        <ul>
+                                            <li>szűkebb és tágabb környezetük egyre bővülő megismeréséhez,
+                                            </li>
+                                            <li>saját életük mindennapi élményeinek megéléséhez, és az ezekben való egyre tevékenyebb részvételhez, továbbá
+                                            </li>
+                                            <li>egyszerű társas kapcsolatok kialakításához és fenntartásához, aminek eredményeképpen jobb minőségű életet élhetnek.
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <br>
+
+                                    <div style="text-align: center;">
+                                    <strong> A Rehabilitációs pedagógiai programunk meghatározza a fejlesztő nevelés-oktatás fő területeit. Melyek: : </strong>                    
+                                    <em> <p style="font-size: small;"> Ha valamelyik fejlesztési területről többet szeretne tudni, kattintson a nevére.</p></em>
+                                        <br></div>
+                                    <ul class="listakurzor">
+                                        <li id="egy_belso2">Kognitív funkciók fejlesztése( figyelem-megfigyelőkészség, érzékelés-észlelés, emlékezet, gondolkodási funkciók)</li>
+                                        <li id="bes_belso3">Beszédfejlesztés</li>
+                                        <li id="komm_belso">Kommunikációs fejlesztés</li>
+                                        <li id="eszt_belso">Esztétikai nevelés</li>
+                                        <li id="erz_belso">Érzelmi és szociális nevelés</li>
+                                        <li id="moz_belso3">Mozgásfejlesztés-mozgásnevelés (finommozgás, nagymozgás, mozgáskoordináció, TSMT)</li>
+                                        <li id="fej_belso">Fejlesztő gondozás és önkiszolgálásra nevelés</li>
+                                        <strong>Ezek a területek nem választhatók szét és természetes módon a mindennapos tevékenységekben és az egyes fejlesztő foglalkozásokon is megjelennek.
+                                            Foglakozások ( „tantárgyak”) a fejlesztő iskolában:
+                                            <em>(A heti foglakozás időkerete: 20 óra) </em>
+                                        </strong>
+                                            <ul>
+                                                <li id="szuk_belso">Szűkebb - tágabb környezet</li>
+                                                <li id="reg_belso">Reggeli és búcsúkör</li>
+                                                <li id="jat_belso">Játék és szórakozás</li>
+                                                <li id="hig_belso">Testi higiénés nevelés</li>
+                                                <ul>
+                                                </ul>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <br>
+                                            <br>
+                                    <em><strong> Feladataink közé tartozik: </strong></em>   
+                                    <ul>
+                                    <li>A családban már kialakított szokások, jelzések, megszerzett 
+                                        képességek, készségek, elsajátított 
+                                    tudásanyag feltérképezése és az iskolai életbe
+                                    való lehetőség szerinti beépítése és fejlesztése.</li>
+                                    <li>A súlyosan-halmozottan fogyatékos mozgáskorlátozott tanulók épen maradt funkcióira 
+                                    alapozva a sérült funkciók fejlesztése egyéni lehetőségeik szerint a kidolgozott fejlesztési
+                                    program, egyéni fejlesztési tervek alapján.</li>
+                                    <li> Elemi szintű, a képességekhez igazodó differenciált ismeretek 
+                                elsajátíttatása szűkebb és tágabb környezetük jelenségeiről.</li>
+                                
+                                <li> A kommunikáció egyénenként változó lehetőségeinek feltérképezése, 
+                                a tanulók állandó ösztönzése a számukra lehetséges önkifejezési módok tudatos 
+                                alkalmazására, gyakorlására.</li>
+                                <li> A tanulók mozgásállapotának lehetőség szerinti javítása, 
+                                a meglevő funkciók állandó fejlesztése, az önállóan kivitelezhető
+                                    mozgások adta lehetőségek folyamatos kihasználása.</li>
+                                    <li>A szociális készségek, társas kapcsolatok, elemi magatartási formák megismertetése.
+                                    A szabadidős és játéktevékenységben való aktív részvétel elősegítése.</li>
+                                    <li>Szoros kapcsolattartás a szülőkkel a tanulók eredményes fejlesztése, 
+                                    a szülő-gyerek kapcsolat segítése érdekében.</li>
+                                    </ul>
+                            
+                                    <br>
+                                
+                                    
+                    </div>
+                    <div id="el">
+                        Elérhetőségünk:
+                        <br><br>
+                        Koncz-Salamon Szilvia
+                        <br>
+                        <a href="tel:+36204006714">06-20-400-6714</a>
+                        <br>
+                        <a href="mailto:kerek.vilag.iskola@gmail.com"> kerek.vilag.iskola@gmail.com</a>
+                        <br>
+                        7627 Pécs, Gesztenyés utca 2.
+
+                        <div id="belsoalcikk_fej">
+                        </div>
+    
+                    </div>       
+                </div>
+
+        </article>
+
+        <article id="terapiak" class="content">
+            <div id="valaszto">
+                <div class="kisikon" id="menuikon">
+                    <img src="./media/icons/terapiak.svg" alt="">
+                <p>Terápiáink</p>
+                </div>
+            </div>
+            <p id="kozben">Intézményeinkben különféle fejlesztő terápiákat alkalmazunk, sérültségi szinttől függően. <br>
+                Magasan képzett szakembereink, pedagógusaink és terapeutáink önállóan, vagy segítő kollgákkal együtt dolgoznak ellátottaint 
+                fejlődésének érdekében <br>
+                 <em>Kattintson az általunk kínált terápiák valamelyikére és tudjon meg róla többet. </em></p>
+            <div id="almenuk">
+                <div class="ter_kep">
+                    <span id="egy_ter" >
+                        <img src="./media/terap/egyeni.svg" alt="">
+                    </span>
+                    <p>Egyéni fejlesztés</p>
+                </div><div class="ter_kep">
+                    <span id="alt_ter" >
+                        <img src="./media/terap/komm.svg" alt="">
+                    </span>
+                    <p>Kommunikációs terápia</p>
+                </div>
+                <div class="ter_kep">
+                    <span id="besz_ter">
+                        <img src="./media/terap/beszed.svg" alt="">
+                    </span>
+                    <p>Beszédfejlesztés</p>
+                </div>
+                <div class="ter_kep">
+                    <span id="kon_ter" >
+                        <img src="./media/terap/kond.svg" alt="">
+                         </span>
+                    <p>Konduktív fejlesztés</p>
+                </div><div class="ter_kep">
+                    <span id="moz_ter">
+                        <img src="./media/terap/mozg.svg" alt="">
+                    </span>
+                    <p>Mozgásterápia</p>
+                </div>
+                <div class="ter_kep">
+                    <span id="lat_ter">
+                        <img src="./media/terap/latas.svg" alt="">
+                    </span>
+                    <p>Látásfejlesztés</p>
+                </div><div class="ter_kep">
+                    <span id="zen_ter">
+                        <img src="./media/terap/zene.svg" alt="">
+                    </span>
+                    <p>Művészet és zeneterápia</p>
+                </div>
+            </div>
+
+            <div id="alcikktart3"></div>
+
+        </article>
+
+
+
+        
+    <!-- Fejlesztések és terápiák rejtett divjei -->
+    <div>   
+        <!-- Egyéni terápiák -->
+        <div id="egy_tart" class="belso_tart">
+                    
+            <h3>Egyéni kognitív fejlesztés</h3>
+                    <br>
+            <p>
+                A kognitív <em>(megismerő)</em> funkciók gyűjtőfogalom,
+                melyhez a következő területek tartoznak:</p>
+            <ul>
+                <li> figyelem, megfigyelőképesség</li>
+                <li>érzékelés-észlelés</li>
+                <li>emlékezet</li>
+                <li>gondolkodási funkciók.</li>
+            </ul>
+        
+            <br>
+        
+            <h4>1. A figyelem, megfigyelőképesség fejlesztése:</h4> 
+        
+            <br>
+        <p> A központi idegrendszer sérülése mind a spontán, mind az akaratlagos figyelem működésére 
+            kihat. A környezet ingereire történő spontán odafigyelés csak nag
+            intenzitású, hosszantartó és a gyermekek számára kifejezetten felszólító 
+            jellegű ingerek esetén megfigyelhető. Ugyanakkor az akaratlagos figyelem még
+            egyéni foglalkozásokon is hamar elterelődik. Az aktivációs szint ingadozása 
+            és a motiváció gyengesége nem teszik lehetővé a koncentrált, pontos, alapos
+            megfigyelést. A fejkontroll, a fixáció, a célirányos nyúlás és a manipuláció 
+            gyengesége vagy hiánya és a társuló érzékelési és észlelési zavarok jelentősen 
+            leszűkítik a megfigyelhető tárgyak és jelenségek körét.
+            </p>
+
+            <p id="cimp">Célok:</p> 
+            <ul>
+                <li>A tanulók környezet iránti érdeklődésének kialakulása.</li>
+                <li>Új és régi, megszokott ingerek közötti különbségtétel képességének kialakulása.</li>
+                <li> Új inger jelentkezésekor spontán odafordulás kialakulása.</li>
+                <li>Egy-egy tevékenységnél való elidőzés.</li>
+                <li>Lehetőség szerint az összes érzékszerv használata egy-egy dolog alapos megfigyelésekor.</li>
+                <li>Az adott helyzet, tevékenység szempontjából fontos és jelentéktelen ingerek elkülönítése.</li>
+            </ul>
+            <br>
+
+            <p id="cimp"> Feladatok</p> 
+
+            <ul>
+                <li> A megismerési kedv felkeltése.</li>
+                <li> A figyelem tartósságának, elmélyültségének, terjedelmének fejlesztése.</li>
+                <li>Az akaratlagos, szelektív figyelmi funkciók fejlesztése.</li>
+                <li>A megosztott figyelem kialakítása (távlati cél).</li>
+            </ul>
+                <br>
+            <h4>2. Az érzékelés, észlelés fejlesztése</h4>
+            <br>
+            <p>A súlyosan-halmozottan fogyatékos gyerekeknél a 
+                súlyos agykárosodás miatt az érzékelés, észlelés is nehezített. 
+                A biológiai károsodás történhetett az érzékszervben, az érzőideg mentén
+                 és az ingereket feldolgozó agyi központokban. A szintén az agykárosodás 
+                 következtében kialakuló mozgáskorlátozottság tovább nehezíti az érzékelést, 
+                 a mozgásos tapasztalatszerzést. Gyakran rontja a teljesítményt a meglassúbbodott 
+                 pszichés tempó és az aktivációs szint ingadozása. Gyakori a figyelem és a
+                  motiváció gyengesége.
+            A  legsúlyosabban  sérült  tanulók  önállóan  végzett  tevékenységre csak 
+             nagyon  korlátozott  mértékben  képesek, s ezen tevékenységek száma is nagyon 
+             kevés. Beszédképtelenségük miatt a beszéd kapcsolatteremtő, információkérő,
+              aktivitást adó lehetőségeivel sem rendelkeznek. Ezért ahhoz, hogy ők is minél 
+              gazdagabb életet élhessenek, nagyon nagy szükségük van az őket körülvevő világ 
+              érzékszerveken keresztül megragadható tartalmaira.
+            </p>
+            <p id="cimp">Célok:</p>                     <br>
+
+            <ul>
+                <li> <strong> Érzékleti </strong>
+                    észleleti tapasztalatok szerzésével az önmagukról és a szűkebb 
+                    környezetükről való ismereteik bővülése.
+                </li>
+                <li>
+                    A világ érzékszerveken keresztül megragadható tartalmainak segítségével
+                    a tanulók gazdagabb, intenzívebb, a környezettel interaktívabb, 
+                    ahhoz jobban alkalmazkodó, jobb minőségű életet élhessenek.
+                </li>
+            </ul>
+            <br>
+            <p id="cimp"> Feladatok</p> 
+            <br>
+            <ul>
+            <li>A tanulók hozzásegítése ahhoz, hogy önmagukról és a szűkebb értelemben vett 
+            személyi, tárgyi és természeti környezetükből érzékelési – észlelési
+             tapasztalatokat szerezzenek.</li>
+           <li> Ezek segítségével az önmagukról és a környezetükről való ismereteik bővítése.</li>
+          <br> <strong><em>Részfeladatok:</em></strong> <br>
+            A tapasztalt érzékelési – észlelési zavarok mögött rejlő okok (lásd: előzmények) társszakemberekkel (pl.: szemész, audiológus, neurológus) együtt történő feltérképezése és a velük közösen történő kezelése.
+            Az aktiváció, a motiváció erősítése.
+            A mozgásfejlesztés feladataihoz tartozóan az érzékelés, észlelés mozgásos feltételeinek javítása (a fejkontroll javítása a fixálás elősegítésére, kóros reflexek gátlása, leépítése; a manipuláció mozgásos feltételeinek javítása.), megfelelő testhelyzet biztosítása.
+                
+                    <strong><ul>Az egyes érzékelési – észlelési területek fejlesztése:</strong>
+                        <li>látás</li> 
+                        <li>hallás</li> 
+                        <li>bőrérzékelés (tapintás, hő- és fájdalomérzékelés)</li> 
+                        <li>szaglás</li> 
+                        <li>ízlelés</li> 
+                        <li>egyensúlyérzékelés</li> 
+                        <li>kinesztetikus érzékelés</li> 
+                        <li> testérzékelés</li> 
+                        <li> térérzékelés</li>
+                        <li> az idő érzékelése</li>
+                    </ul>                        
+            </ul>
+
+             Továbbá ezek részeként az észlelési figyelem fejlesztése.
+            <p>
+            A fejlettségi szintet figyelembe vevő mennyiségű és minőségű inger biztosítása.
+            A tanulóknak a saját testükből és a külvilágból érkező ingerek iránti érzékenységének felkeltése, kialakítása.
+            Az ingerek felé való odafordulás, az azok megragadására irányuló képesség fejlesztése.
+            A lényeges ingereknek a lényegtelenektől való elkülönítése képességének kialakítása.
+            Az érzékletek, észleletek értelmezésének elősegítése az aktuális fejlettségi szintnek megfelelően.
+            A különböző érzékelési területek összekapcsolódásának, együttműködésének elősegítése, fejlesztése.
+            Az érzékletek, észleletek integrálódásának elősegítése.
+            Az érzékelési és mozgási folyamatok összerendeződésének elősegítése.</p>
+            
+            <h4> 3. Az emlékezet fejlesztése</h4>
+            
+            <p>Az emlékezet sérülése a gyengébb, halványabb, hiányos
+            , nehezen felidézhető és hamar elhalványodó emlékképekben
+            nyilvánul meg. Mivel a beszéd hiánya és a manipuláció, 
+            valamint a fixálás gyengesége miatt a kommunikáció jelentősen 
+            akadályozottá válik, az emlékezet működésének objektív megítélése nehéz.</p>
+
+            <p id="cimp">Célok:</p> 
+            <ul>
+                <li>Önmaguk megismerése, azonosságtudatok és én identitásuk kialakulása.</li>
+                <li>Szűkebb és egyre bővülő környezetükben való eligazodás.</li>
+                <li>Tárgyi környezetük birtokba vétele.</li>
+                <li>Személyi és tárgyi környezetükre való hatás gyakorlása.</li>
+                <li>A környezet változásaihoz való alkalmazkodás.</li>
+                <li>Egyszerű probléma-megoldási módozatok megismerése és alkalmazása  <br>
+                    (kommunikációs problémáikra, céljaik elérésére, akaratuk keresztülvitelére,
+                    stb.).</li>
+            </ul>
+        <p id="cimp"> Feladatok</p> 
+            
+            <ul>
+                <li>A környezet megismertetése, felfedeztetése.</li>
+                <li>Elemi fogalomrendszer kialakítása, ismereteik rendszerezése, <br>
+                    új ismeretek elhelyezése, színek, formák megismertetése.</li>
+                <li>Főfogalom alá rendelés.</li>
+                <li>Különbségek megfigyeltetése.</li>
+                <li>Változás megfigyeltetése.</li>
+                <li>(Logikai)- funkcionális összefüggések megfigyeltetése.</li>
+                <li>Analizáló – szintetizáló képesség fejlesztése.</li>
+                <li>Hiányok pótlása
+                <ul>
+                <li>szimmetria</li>
+                <li>rész-egész viszony.</li>
+                </ul>
+                </li>
+                <li>Általánosítás, konkretizálás.</li>
+                <li>Analógiás gondolkodás fejlesztése.</li>
+                <li>Téri, idői tájékozódás fejlesztése.</li>
+                <li>Testfogalom fejlesztése.</li>
+                <li>Szám- és mennyiségfogalom fejlesztése.</li>
+                <li>Társadalmi szokások, elemi szabályok megismertetése, elsajátíttatása.</li>
+                <li>Hangulatok, érzelmek felismertetése.</li>
+                <li>Kreatív gondolkodás, képzelet fejlesztése</li>
+                </ul>
+
+            Egyszerű összefüggések felismertetése, megtanítása a felidézés elősegítése céljából.
+            A kommunikáció fejlesztése, amely lehetővé teszi az emlékképek kifejezését.
+            A cselekvések mozgásos feltételeinek javítása, amelyek szintén az emlékképek kifejezését szolgálják.
+            Jelek, szimbólumok kialakítása, melyekkel bonyolultabb eseményeket, történéseket idézhetünk fel egyszerűbben.
+            Szoros kapcsolattartás a szülőkkel az üzenő füzeten keresztül az iskolai és a hétvégi eseményekről, hogy ezek később is felidézhetők legyenek.
+            <p>
+            <h4>4.A gondolkodás fejlesztése</h4></p>
+            A halmozottan fogyatékos gyermekek esetében a gondolkodás kialakulásának elengedhetetlen feltétele a mozgás, mivel a gondolati síkon való műveletvégzés csak a konkrét tárgyakkal történő cselekvés és sok-sok gyakorlás talaján alakulhat ki. A tárgyi tevékenykedések közben jelentkező porblémák megoldása csak fokozatosan függetlenedik a cselekvéstől, és a szavakban történő kifejeződésen keresztül vezet a képzeletben történő megoldások kereséséhez, a gondolkodáshoz. A beszéd, a mozgás és az értelmi képességek sérülésének következtében a gondolkodási műveletek kialakítására és gyakoroltatására még a cselekvés szintjén van szükség.
+
+            <p id="cimp">Célok:</p> 
+            <ul>
+                <li>Önmaguk megismerése, azonosságtudatok és én identitásuk kialakulása.</li>
+                <li>Szűkebb és egyre bővülő környezetükben való eligazodás.</li>
+                <li>Tárgyi környezetük birtokba vétele.</li>
+                <li>Személyi és tárgyi környezetükre való hatás gyakorlása.</li>
+                <li>A környezet változásaihoz való alkalmazkodás.</li>
+                <li>Egyszerű probléma-megoldási módozatok megismerése és alkalmazása (kommunikációs problémáikra, céljaik elérésére, akaratuk keresztülvitelére, stb.).</li>
+            </ul>
+            <p id="cimp"> Feladatok</p> 
+            <ul>
+                <li>A környezet megismertetése, felfedeztetése.</li>
+                <li>Elemi fogalomrendszer kialakítása, ismereteik rendszerezése, új ismeretek elhelyezése, színek, formák megismertetése.</li>
+                <li>Főfogalom alá rendelés.</li>
+                <li>Különbségek megfigyeltetése.</li>
+                <li>Változás megfigyeltetése.</li>
+                <li>(Logikai)- funkcionális összefüggések megfigyeltetése.</li>
+                <li>Analizáló – szintetizáló képesség fejlesztése.</li>
+                <li>Hiányok pótlása.</li>
+                <li>Szimmetria.</li>
+                <li>Rész-egész viszony.</li>
+                <li>Általánosítás, konkretizálás.</li>
+                <li>Analógiás gondolkodás fejlesztése.</li>
+                <li>Téri, idői tájékozódás fejlesztése.</li>
+                <li>Testfogalom fejlesztése.</li>
+                <li>Szám- és mennyiségfogalom fejlesztése.</li>
+                <li>Társadalmi szokások, elemi szabályok megismertetése, elsajátíttatása.</li>
+                <li>Hangulatok, érzelmek felismertetése.</li>
+                <li>Kreatív gondolkodás, képzelet fejlesztése.</li>
+            </ul>
+        </div>     
+            <!-- Diszleskszia -->
+        <div id="dis_tart" class="belso_tart">
+
+        <h2>A veszélyeztetett csoport tagjai:</h2>
+        <br>
+        <ul>
+            <li>Akiknél a beszédfejlődés súlyosan megkésett, vagy súlyos pöszeségüket nehezen lehetett javítani, s már a kialakult hangokat rendkívül lassan automatizálják.</li>
+            <li>Akiknél sokáig hiányzott, vagy nehezen volt kialakítható a mássalhangzók zöngéje.</li>
+            <li>Átállított balkezesek, vagy akiknek laterális dominanciájuk még kialakulatlan.</li>
+            <li>Cerebrálparetikus tanulók.</li>
+        </ul>
+        <br>
+        <h3>A dyslexia, dyscalculia okai lehetnek:</h3><br>
+        <ul>
+            <li>Térbeli tájékozódás zavara.</li>
+            <li>Ritmusérzék fejletlensége.</li>
+            <li>Beszédkészség fejletlenség.</li>
+            <li>Vizuális, fonetikus, és verbális emlékezet gyengesége.</li>
+            <li>Tartós figyelem zavara.</li>
+            <li>Auditív figyelemzavar.</li>
+        </ul>
+
+        <p>Beépül a tanítási folyamatba, de szükség esetén külön fejlesztő óraként alkalmazzuk. Gyakran Ayres-terápiával, gyógypedagógiai lovaglással kötjük össze.</p>
+
+        </div>
+            <!-- Beszédfejlesztés -->
+        <div id="bes_tart" class="belso_tart">
+            <p>
+        <h2>A veszélyeztetett csoport tagjai:</h2>
+    <ul>
+        <li>akiknél a beszédfejlődés súlyosan megkésett, vagy súlyos pöszeségüket nehezen lehetett javítani, s már a kialakult hangokat rendkívül lassan automatizálják</li>
+        <li>akiknél sokáig hiányzott, vagy nehezen volt kialakítható a mássalhangzók zöngéje</li>
+        <li>átállított balkezesek, vagy akiknek laterális dominanciájuk még kialakulatlan</li>
+        <li>cerebrálparetikus tanulók</li>
+    </ul>
+
+    <p><strong>A dyslexia, dyscalculia okai lehetnek:</strong></p>
+    <ul>
+        <li>térbeli tájékozódás zavara</li>
+        <li>ritmusérzék fejletlensége</li>
+        <li>beszédkészség fejletlenség</li>
+        <li>vizuális, fonetikus, és verbális emlékezet gyengesége</li>
+        <li>tartós figyelem zavara</li>
+        <li>auditív figyelemzavar</li>
+    </ul>
+
+    <p>Beépül a tanítási folyamatba, de szükség esetén külön fejlesztő óraként alkalmazzuk, gyakran Ayres-terápiával, gyógypedagógiai lovaglással kötjük össze.</p>
+
+    <hr>
+
+    <h2>A súlyosan halmozottan fogyatékos tanulóknál:</h2>
+    <p>A központi idegrendszer sérülése következtében a mozgás, az érzékelés-észlelés, és a kognitív funkciók mellett legtöbbször a beszéd is károsodik.</p>
+    <p>Ez a károsodás egyénenként különböző mértékű lehet, melytől függően részesülnek beszéd- és/vagy augmentatív kommunikációfejlesztésben.</p>
+    <p>Utóbbit a következő fejezetben tárgyaljuk.</p>
+
+    <p><em>„Súlyosan-halmozottan fogyatékos személyekkel való foglalkozás során a kommunikáció nem elsősorban cél, hanem az egyénnel közösen végzett valamennyi tevékenység során eszközként használt interakciós folyamat.</em></p>
+    <p><em>Cél lehet azonban a súlyosan-halmozottan fogyatékos emberrel közösen kialakítani a kommunikációnak azt a hatékony módját, mellyel az együttműködés megalapozható” (Farkas 2003, Márkus, 2005).</em></p>
+
+    <p>Az érintett csoportok tagjainak – kommunikációs akadályozottságuk miatt – számtalan helytelen feltételezéssel és félreértéssel kell szembesülniük mindennapjaik során, akár a legegyszerűbb élethelyzetekben is, amikor nem tudják mások számára érthetővé tenni gondolataikat, érzéseiket, kívánságaikat; amikor nem tudják hatékonyan befolyásolni az őket körülvevő világ eseményeit és történéseit.</p>
+
+    <h3>Célok:</h3>
+    <ul>
+        <li>A beszédfejlesztés célja, hogy a gyermekeket eljuttassa az általuk elérhető legmagasabb szintre a beszédmegértés és a beszéd területén, és ezzel elősegítse az őket körülvevő szűkebb és tágabb környezetbe való beilleszkedést.</li>
+    </ul>
+
+    <h3>Feladatok:</h3>
+    <ul>
+        <li>Akustikus észlelés fejlesztése:</li>
+        <ul>
+            <li>Tanulók érdeklődésének felkeltése környezetük hangjai és hangforrásai iránt</li>
+            <li>Hallási figyelem fejlesztése</li>
+            <li>Akusztikus differenciálási képesség fejlesztése</li>
+            <li>Hangok irányába való odafordulás kialakítása</li>
+            <li>Hangforrás, hangok azonosításának kialakítása</li>
+            <li>Sorrend, ritmus, hangsúly, hanglejtés megfigyeltetése</li>
+            <li>Zenehallgatás, a zene és a mozgás összekapcsolása</li>
+        </ul>
+        <li>Reflexgátló testhelyzet biztosításával az izomtónus normalizálása a foglalkozások megkezdésekor.</li>
+        <li>Mellkas, vállöv és a szájkörüli izmok lazítása a foglalkozások megkezdésekor.</li>
+        <li>Gyermekek közlési, önkifejezési vágyának felkeltése és folyamatos ébren-tartása.</li>
+        <li>Beszédhez szükséges motoros képességek tréningje és a nyálzás befolyásolása</li>
+        <ul>
+            <li>Száj akaratlagos nyitásának és zárásának kialakítása</li>
+            <li>Szopó, harapó reflexek kialakítása, majd gátlása</li>
+            <li>Rágás facilitálása</li>
+            <li>Szívás, fújás, köpés kialakítása és gyakoroltatása</li>
+        </ul>
+        <li>Hangképzés fejlesztése:</li>
+        <ul>
+            <li>Légzés és a hangadás egyidejű fejlesztése</li>
+            <li>Hangadás és a mozgás összekapcsolása</li>
+            <li>Egyes hangok, ill. szótagok kialakítása az egészséges fejlődés sorrendjének megfelelően</li>
+            <li>Hangok megtartásának kialakítása</li>
+            <li>Egyszeri kilégzés során egyik magánhangzóról a másikra való áttérés kialakítása</li>
+            <li>Hangadás megszakításának kialakítása</li>
+        </ul>
+        <li>Artikulációs mozgásügyesítés, az ajkak és a nyelv differenciált mozgásának kialakítása és gyakoroltatása.</li>
+        <li>Beszédmegértés és szókincs fejlesztése a fogalmak körének fokozatos kialakításával és bővítésével az ismerttől kevésbé ismert felé, a közvetlen környezettől a tágabb környezet felé haladva.</li>
+        <li>Folyamatos lehetőség biztosítása az önálló megnyilatkozásokra a legkülönbözőbb helyzetekben.</li>
+        <li>Beszédképtelen gyermekek megnyilvánulásainak értelmezésével a jobb megértés, az egymásra való odafigyelés elősegítése.</li>
+        <li>Minden lehetséges helyzetben és módon a gyermekek késztetése az egymással és a felnőttekkel való (kölcsönös) kommunikációra.</li>
+        <li>Kifejezőkészség fejlesztése:</li>
+        <ul>
+            <li>Meglévő szókincs aktivizálása, a szókészlet bővítése</li>
+            <li>Nyelvhelyesség fejlesztése</li>
+            <li>Összefüggő beszéd kialakítása</li>
+            <li>Mondókák, versek memorizálása</li>
+        </ul>
+    </ul>
+</p>
+
+
+        </div>  
+            <!-- Logopédia -->
+        <div id="log_tart" class="belso_tart">
+            <p>
+            <h2>Logopédia</h2>
+            <p>A logopédiai tevékenység a mozgáskorlátozottak oktatásának – nevelésének folyamatában (a motoros funkciók sérülése gyakran érinti a beszédmozgást is), annak szerves részeként készít fel a tudatos és célszerű verbális önkifejezésre. Célunk nem csupán a beszédhibák javítása, hanem olyan átfogó, a teljes beszédfolyamatot érintő fejlesztő program megvalósítása, amely előkészíti illetve kiegészíti a tanulókra szabott sérülésspecifikus eljárásokat.</p>
+
+            <p><strong>Feladata:</strong> A tanulók beszédállapotának felmérése, képességeik vizsgálata, a beszédhibák javítása, képességek fejlesztése.</p>
+
+            <ul>
+                <li>Beszédtechnika fejlesztése</li>
+                <ul>
+                    <li>Egyéni kommunikációt segítő testhelyzetek megtanítása, melyek lehetővé teszik a mély belélegzést és a szabad kilégzést.</li>
+                    <li>Beszédszervek izomcsoportjainak fejlesztése.</li>
+                </ul>
+                <li>Szókincs és kifejezőkészség fejlesztése</li>
+                <li>Arcmimika szabályozása</li>
+            </ul>
+            <br>
+            <h2>Beszédterápia</h2>
+            <p>Beszédterápia központi idegrendszer sérüléséhez társuló beszédzavarok korrekciójára irányul. A beszédterápia a mozgásterápia eredményeit felhasználva, arra épülve korrigálja a sérült beszédet, ezzel elősegíti a gyermek beilleszkedését szűkebb és tágabb környezetébe. A mozgásterápiából átvett elemek: kóros reflexek gátlása, megfelelő testhelyzet megtalálása, helyes mozgások facilitálása, lazítás (spasztikus gyermekeknél), egyensúlyfejlesztés (athetotikus és ataxiás gyermekeknél), vállöv ellazítása, fejkontroll kialakítása. A terápia során felhasználjuk az evés- és ivásterápiában elért eredményeket.</p>
+
+            <p>A beszédterápia további lépései többnyire megegyeznek a hagyományos logopédiában alkalmazottakkal: légzés, hangképzés, ajak- és nyelvgyakorlatok, beszédritmus, kiejtés, stb. A beszédfejlesztés során arra törekszünk, hogy a gyermekek az egyéni adottságokhoz igazodva, alakilag megközelítően tiszta beszédet tudjanak produkálni, aktívan vegyenek részt a foglalkozásokban, mutassanak kezdeményező beszédmagatartást.</p>
+        </p>
+
+        </div>
+            <!-- Gyógytorna, mozgásnevelés -->
+        <div id="moz_tart" class="belso_tart">
+            <p>
+                <h2>Mozgásfejlesztés</h2>
+                    <p>A központi idegrendszer sérülése okozhat különböző fokú mozgáskorlátozottságot, melyet nemcsak az ép mozgásformák részleges vagy teljes hiánya jellemez, hanem a mozgásállapotot jelentősen befolyásolják a különböző kóros tartási- és mozgásminták, valamint az idő folyamán kialakult deformitások, kontraktúrák is. Általában a nagymozgások mellett a kézfunkciók, a finommotoros tevékenységek is – különböző mértékben – sérülnek.</p>
+
+                    <p>A mozgásnak kiemelt jelentősége van a gyermekek fejlődésében, képességeik kibontakozásában. A mozgás nagymértékben segíti az észlelést, a tapasztalatszerzést, alapját képezi a magasabb gondolkodási funkcióknak, a beszéd egyik feltétele, a beszédképtelen gyermekek esetében az alternatív kommunikációhoz is szükség van a mozgás valamilyen formájára.</p>
+
+                    <p>Aktivitás, tevékenykedés, önállóság összefüggésben vannak a mozgásos képességekkel.</p>
+
+                    <p>„Az élet első éveiben a fejlődés egész folyamatát jelentősen meghatározza a mozgás ép, vagy megváltozott fejlődés, a mozgásos akadályozottság okozta átrányok következtében az ép fejlődéstől való egyre nagyobb elmaradás tapasztalható, különösen akkor, ha nem avatkozunk be kellő időben.</p>
+
+                    <p>A súlyosan-halmozottan fogyatékos emberek többsége súlyos mozgászavarral is küzd, és gyakran az életkortól függetlenül a fejlődés kezdeti (elemi) szintjét mutatják. Ha a fejlődés elemi szintet mutat, figyelembe kell venni a fejlődés korai szakaszának – pszichomotoros vagy szenzomotoros szakasz – legfontosabb jellegzetességét, a mozgásba ágyazottságot (Csiky In Várkonyi 1997). A fogyatékos személy funkcióinak és képességeinek harmonikus alakulásához elengedhetetlen a mozgás, hiszen ellenkező esetben a többi funkció sem tud optimálisan fejlődni, s ezzel további nehézségek várnak a mozgásfejlődésre is. A funkciók egymástól való kölcsönös függőségi viszonyaként kell tehát ezt a folyamatot elképzelni, melynek alappontjában a mozgás áll.</p>
+
+                    <p>A súlyosan-halmozottan fogyatékos személyek mozgásnevelésének előfeltétele a megfelelő szenzoros ingerek felvétele, feldolgozása és integrálása (ld. érzékelés-észlelés fejlesztése), folyamata passzív, vezetett aktív illetve facilitált mozdulatok, mozgások formájában megvalósuló közös tevékenység.” (Márkus 2005, 150.)</p>
+
+                    <h3>Célok:</h3>
+                    <p>A gyermekek adottságainak függvényében a lehető legmagasabb szintű mozgásos önállóság elérése.</p>
+
+                    <h3>Feladatok:</h3>
+                    <p>A mozgásnevelés elsődleges feladata: a motoros aktivitás csökkenése miatt kialakult szenzomotoros depriváció
+                        csökkentése, a szenzomotoros területen kialakult fejlődési elmaradások pótlása célzott ingerléssel, passzív mozgatással 
+                        (mozgásérzékelés) és facilitált mozgások kiváltásával. Optimális feltételek megteremtése a saját test megéléséhez (testkép, 
+                        testséma, mozgáskoordináció). A spontán fejlődés feltételeinek megteremtése a fiziológiás mozgássornak megfelelően (kóros 
+                        mozgásmintákat gátló kiinduló helyzetek megtalálása, megfelelő tér és idő biztosítása az aktív mozgások gyakorlásához a 
+                        fejkontrolltól a felállásig). A mozgásnevelés összekapcsolása az érzékelés-észleléssel, a mindennapos tevékenységekhez 
+                        szükséges mozgásokkal, a fejlesztő gondozással. (Márkus 2005, 151.)</p>
+                        <ul>
+                            <li>A gyermekek pozitív mozgásélményhez juttatása sok játékkal, motiválással.</li>
+                            <li>A mozgásra való képesség felismertetése, tudatosítása, a mozgás iránti igény felkeltése, erősítése.</li>
+                            <li>A elmaradt vagy károsodott tartási és mozgási funkciók fejlesztése, javítása.</li>
+                            <li>A idegrendszer sérülése nyomán kialakuló kóros mozgások, elváltozások megelőzése, korrekciója és kompenzálása.</li>
+                            <li>A lehető legnagyobb önállóság eléréséhez szükséges mozgásos és önellátási ismeretek megtanítása.</li>
+                            <li>Gyógyászati és rehabilitációs segédeszközök viselésének, használatának szoktatása, tanítása.</li>
+                            <li>Az ép fejlődéshez – a lehetőségekhez képest – leginkább közelítő testi fejlődés elősegítése.</li>
+                            <li>Mozgásos tapasztalatokon keresztül a pszichomotoros és szenzomotoros képességek fejlesztése.</li>
+                        </ul>
+
+                    <h3>Speciális feladatok:</h3>
+                        <ul>
+                            <li>A mozgásnevelő feladata a rehabilitációs és foglalkoztatási terapeutával közösen a gyermekek ültetésének, 
+                                tanórán és egyéb foglalkozásokon történő pozicionálásának kialakítása. Annak meghatározása, hogy mennyi időt 
+                                tölthetnek egy bizonyos helyzetben, segédeszközben.</li>
+                            <li>Ha a gyermekek egyik végtagja sem alkalmas célirányos mutatásra, ceruzafogásra, akkor meg kell találni számukra a
+                                megfelelő segítő eszközt.</li>
+                            <li>A mozgásnevelő feladata az ültetés folyamatos felülbírálása, illetve szükség szerinti változtatása.</li>
+                            <li>A mozgásnevelés megvalósításához feltétlenül szükséges a terapeuta (konduktor, gyógytornász, szomatopedagógus) 
+                                kreativitása és spontaneitása a mozgásnevelés optimális kínálatának megválasztásában, a fejlesztő tevékenység 
+                                folyamatos értékelésében és korrekciójában.</li>
+                        </ul>
+            </p>
+        </div>
+            <!-- Kondokuktív fejleszés -->
+        <div id="kon_tart" class="belso_tart">
+            <h2>Pető András és a Konduktív Nevelés</h2>
+            
+            <p><em>Pető András</em> orvos-pedagógus 1945-ben fejlesztette ki konduktív nevelési rendszerét. Módszere új utat nyitott a központi idegrendszeri mozgássérültek rehabilitációjában. Ezt a módszert a világon először a róla elnevezett intézet elődjében oktatták és alkalmazták.</p>
+
+            <p>A konduktív nevelés egy speciálisan integrált nevelési rendszer, melynek lényege a tanuláson alapuló sokoldalú személyiségfejlesztés. A koordinált működést kívánja megtanítani az egyén számára, hogy az alkalmazkodni tudjon környezetéhez. Ez a program a testi, szellemi és szociális szükségletekre építve egységesen irányított tanulásvezérlés. Ezért nevezte el Pető a módszerét “konduktívnak”, amely latin eredetű kifejezés, jelentése: rávezetés.</p>
+
+            <p>Az Alapítványnál egyéni, illetve csoportos keretek között folyik a konduktív nevelés. A fekvő, ülő, álló helyzetben végzett állandó feladatokból álló feladatsorokat énekkel, mondókával kísérve a gyerekek megtanulják a gyakorlatok sorrendjét, illetve azok minél kevesebb segítséggel történő kivitelezését. Az énekek, mondókák a feladatoknak ritmust adnak, ugyanakkor segítik a beszéd kialakítását is. A komplex feladatok lehetővé teszik a gyerekek minél sokoldalúbb fejlesztését. A foglalkozások során lényeges, hogy a gyermek motivált legyen a feladat végrehajtására, ezért a legfontosabb módszer a játék. Cél a minél aktívabb feladatvégzés, ezáltal a lehetőség szerinti legnagyobb önállóság elérése.</p>
+        </div>
+            <!-- Gyógytorna -->
+        <div id="gyo_tart" class="belso_tart">
+            <h2>Gyógytorna és Mozgásfejlesztés</h2>
+            <br>
+<p>A gyógytorna során egyéni foglalkozások keretében igyekszünk az adott sérüléshez képest lehető legteljesebb mértékben helyreállítani a károsodott csont- és izomrendszert, s ezáltal lehetővé tenni az egészségeshez közelítő mozgást. Célunk a gyermekek minél teljesebb önellátásra tanítása, a mozgásigény és mozgásszeretet kialakítása.</p>
+
+<p>Ennek során próbáljuk korrigálni a helytelen testtartást, leépíteni a kóros reflexeket, megelőzni a másodlagos deformitásokat, tanítani a korrektív testhelyzeteket. Nyújtjuk az izomzsugorodásokat, lazítjuk a feszes és tonizáljuk a renyhe izmokat, valamint egész testre kiterjedő izomerősítést végzünk. Az emberi mozgásfejlődést követve tanítjuk a helyzet- és helyváltoztató mozgásokat: gurulást, kúszást, mászást, helyes ülést, állást, járást. Végzünk légző-, egyensúlyérzék– és koordinációfejlesztő gyakorlatsorokat. Speciális eszközökkel fejlesztjük a kézügyességet. Szükség esetén tanítjuk a különböző segédeszközök (a hüvelyktávolító síntől a kerekes székig) használatát.</p>
+
+<p>Miközben a legmodernebb technikákat és eszközöket alkalmazzuk, nem feledkezünk meg arról, hogy gyerekekkel dolgozunk, így a foglalkozások mindig játékos, éneklős–mondókás keretben történnek, a mozgásra motiválva, de sosem okozva fájdalmat.</p>
+
+<p>A csoportos mozgásnevelés órákon az osztályokban gyógytornász vagy konduktor vezetésével végzünk széleskörű fejlesztést, kihasználva a nagyobb létszám adta lehetőségeket. Ünnepekre, bemutatókra kisebb táncokat, jeleneteket tanulunk, amiben minden gyermek – még a súlyos állapotú kerekes székes is – részt tud venni. A mozgássérültségek ellenére vidám, jó hangulatú foglalkozások zajlanak naphosszat, ahol a legkisebb haladásnak is együtt örül gyermek, szülő, gyógytornász egyaránt!</p>
+
+        </div>
+            <!-- Zeneterápia -->
+        <div id="zen_tart" class="belso_tart">
+            <h2>Zeneterápia és Művészetterápia</h2>
+                <p>A zeneterápia során mind a receptív (zenehallgatás által előhívott érzelmek megjelenítése), mind az aktív (hangszer – elsősorban különböző ütősök – használata) formát használjuk. Gyakran lépünk tovább a komplex művészetterápia felé, melynek során a zenére festéstől az ujjak táncáig sokféle kombinációt alkalmazunk.</p>
+
+                <p>Egyéni zeneterápiás foglalkozásokon az autizmussal élő, valamint a súlyosan – halmozottan sérült gyermekek fejlesztése zajlik. Elsődleges célja, hogy lehetőséget adjon arra, hogy a gyerekek megtanulják nonverbális úton is kifejezni magukat. Ez különösen nagy jelentőséggel bír a beszélni nem tudóknál. Biztonságos, meleg légkörben próbáljuk elérni az érzelmek felszabadítását, testi és lelki feszültségek oldódását. Igyekszünk a kommunikációt több síkon is kialakítani: érintések, együttes mozdulatok, közös hangszer – és játékhasználat stb. Bátorítjuk a hangadás mindenféle formáját, segítjük a beszéd kialakulását.</p>
+
+                <p>A csoportos zeneterápiás foglalkozások során fejlesztjük a gyerekek önismeretét, kortárs csoportba való beilleszkedését, együttműködési készségét, koncentrációját, feladattudatát, szem – kéz koordinációját, helyes testtartását, légzésfunkcióját, probléma megoldó és improvizáló képességét, fantáziáját, kézügyességét stb. A közös zenélés alkalmat ad az örömteli, önbizalomnövelő együttes tevékenységre.</p>
+
+                <p>Természetesen a terápiás foglalkozások során pozitív irányba változik a gyerekek zenei hallása, ritmusérzéke és zenei ízlésvilága is. A zeneterápiás foglalkozásokat szakirányú képzettséggel rendelkező terapeuták végzik. Alapítványunk hangszerparkja – a pályázatokon elnyert támogatásoknak köszönhetően – igen változatos.</p>
+
+
+        </div>
+            <!-- Látásfejlesztés -->
+        <div id="lat_tart" class="belso_tart">
+            <h2>Látásfejlesztés</h2>
+            <p>Célunk, hogy támogassuk és segítsük a látássérült vagy látássérüléssel élő személyeket a látásuk optimalizálásában.</p>
+
+            <p><strong>Intézményi Szolgáltatások:</strong></p>
+            <ul>
+                <li>Szemtréning és szemgyakorlatok egyéni foglalkozások keretében.</li>
+                <li>Vizuális élmények integrálása tanulási folyamatokba.</li>
+                <li>Tárgyak kontrasztjának kiemelése speciális eszközökkel.</li>
+                <li>Technológiai eszközök használata, mint például szövegfelolvasók és nagyítók.</li>
+                <li>Környezet optimalizálása a megfelelő megvilágítással és ergonómiailag kialakított tárgyakkal.</li>
+            </ul>
+
+            <em><p> A személyre szabott megközelítése révén minden tanulónak egyedi látásfejlesztési terv készül.
+                Alapelvünk, hogy minden tanulónak joga van a sikeres fejlődéshez és részvételhez.</p></em>
+        </div>
+        <!-- Néptánc -->
+        <div id="nep_tart" class="belso_tart">
+            <br>
+            <h2>Néptánc</h2>
+            <br>
+            
+            <h3>Tánc és mozgásfejlesztés gyógytornásszal és zeneterapeutával</h3>
+
+            <p>A jól kiválasztott zene és a hozzá alkalmazott mozgás fejleszti ritmusukat, fantáziájukat, mozgáskészségüket, gondolkodásukat, figyelmüket, testérzékelésüket, önbizalmukat és nem utolsó sorban örömöt okoz a gyermekeknek.
+            Az egyes mozgásformákban elsősorban a test, a testrészek lendületét használjuk fel. A tánc pszichomotoros fejlesztés: olyan fejlesztési eljárás, amely mozgásakciókon és mozgásos cselevéseken keresztül, valamint azok által előkészített és azokkal összefüggésben álló más gyakorlási módokon keresztül fejleszti a személyiség egészét.
+            A fejlesztést gyógytornász – zeneterapeuta végzi.</p>
+
+
+        </div>
+        <!-- Ayres terápia -->
+        <div id="ayr_tart" class="belso_tart">
+            <br>
+            <h2>Ayres-terapia</h2>
+            <br>
+            <h3>A vesztibuláris terápia szerepe az érzékszervi és szenzomotoros integrációban</h3>
+
+            <p>Az érzékszervi és szenzomotoros integrációban kulcsszerepe van a vesztibuláris ingerlésnek. A terápiás módszer lényege az egyensúlyi helyzetek folyamatos változtatása, amely szinte „kikényszeríti” az idegrendszer érését, elősegíti a két agyfélteke harmonikus működését. Az aktív – passzív mozgások együttes átélése (hinták, rugós deszkák, kerekes eszközök stb.) örömteli élményt jelent, s egyben fejleszti a téri orientációt, tónusszabályozást, tartáskontrollt, koordinációt, egyensúly érzéket, ügyességet, bátorságot, helyes testséma kialakulását stb. Úgy tapasztaljuk, hogy az Ayres terápián résztvevő gyerekekkel kevesebb a tanulási és magatartási probléma. A foglalkozásokat terápiás végzettségű gyógytornász vezeti.</p>
+                        
+        </div>
+        <!-- Lovaglás -->
+        <div id="lov_tart" class="belso_tart">
+            <br>
+            <h2>Gyógypedagógiai Lovaglás</h2>
+            <br>
+            <h3>Intézményünkben évek óta biztosítjuk kiegészítő terápiaként
+                 a gyógylovaglást a leginkább rászoruló gyermekek számára.
+                  A gyógylovaglás irányzatai közül, a gyógypedagógiai lovaglás által közvetített pszichológiai, pedagógiai, fiziológiás és szociális értékek segítségével habilitáljuk és rehabilitáljuk az egyént. Célunk az általános illetve egy-egy szakterületre összpontosító fejlesztés, nevelés, szocializáció, amelynek során speciális gyakorlatokkal és módszerekkel, komplex módon érünk el eredményeket.</h3>
+            
+            <p><strong>Ebben a terápiában különböző diagnózisú gyermekek vesznek részt:</strong></p>
+            <ul>
+                <li>tanulásban és értelmileg akadályozott, mozgáskorlátozott</li>
+                <li>autista</li>
+                <li>súlyosan és halmozottan sérült</li>
+                <li>magatartási és viselkedészavarokkal küzdő</li>
+                <li>súlyos kommunikációs zavarral küzdő gyermekek</li>
+            </ul>
+            
+            <p>A ló, mint terápiás társ, feltétel nélkül mindenkit egyformán elfogad, amely rendkívül kedvező a gyerekek pszichés állapotára, feloldja szorongásukat, befelé fordulásukat, kisebbrendűségi érzéseiket. Erősíti önbizalmukat, jó lehetősége kínál a kommunikáció fejlesztésre, segít a bátrabb kapcsolatteremtésre tágabb környezetükkel. A mozgáskorlátozott gyermekek egy új perspektívából ismerhetik meg a világot, megtapasztalhatják a lovon ülve a harmonikus mozgás, gyakran az „önálló járás” élményét. A ló hátának íve és testének melege ellazítja a spasztikus izmokat, elősegíti a megrövidült izmok nyújtását és az ízületi mobilizációt. A ló háromdimenziós mozgásimpulzusai által javul a testtartás, az egyensúlyi reakció, izomtónus, a mozgáskoordináció, a légzésfunkció és az egész mozgáskép összerendezettebbé válik.</p>
+            
+            <p>Összefoglalva a gyógypedagógiai lovaglás komplex, sokoldalú hatásmechanizmusa által a terápiában részt vevő gyermekek egész személyisége fejlődik, általa közelebb kerülnek a társadalmi elfogadás és az integráció lehetőségéhez.</p>
+            
+        </div>
+        <!-- Vizi torna -->
+        <div id="sub_tart" class="belso_tart">
+            <br>
+            <h2>Vizi gyógytorna</h2>
+            <br>
+            <h3>A foglalkozások célja a víz jótékony hatásának felhasználása a halmozottan sérült gyermekek komplex fejlesztésében.</h3>
+
+            <p>Alapítványunknál lévő, közgyógy igazolvánnyal rendelkező gyerekeinknek lehetőségük van hetente egyszer a Bánki Donát utcai iskola uszodájában ingyenes subaqualis tornán, gyógyúszáson részt venni. Mikrobuszainkkal szállítjuk oda a gyerekeket, ott pedig átveszik őket a szülők, s a nem teljesen biztosan mozgókkal be is jönnek a vízbe. Gyógytornászunk vezeti a foglalkozásokat.</p>
+
+            <p>A víz gyógyító ereje minden fajta sérültségre pozitívan hat: lazítja a feszes izmokat, könnyebben nyúlnak az izomzsugorodások, a nehezen mozgó gyerekeknek is mozgásélményük van, fejleszti az egyensúlyérzéket, izomerőt, harmonizálja a légzést stb. Azt is megfigyeltük, hogy a szorongó, nehezen oldódó pl. autizmussal élő tanulóink, a vízben sokkal hamarabb felszabadulnak, s vidáman játszanak. A vízhez szoktatás ideje után tanulgatjuk az úszás elemeit, s az ügyesebbek már önállóan úsznak. A gyógyúszás idejébe mindig iktatunk csoportos játékokat is, melynek során tanuljuk a szabályok betartását, az egymásra figyelést, a koncentrációt, a kommunikációt, s egyben felszabadultan örülünk a közös tevékenységnek.</p>
+        </div>
+        <!-- Kézműveskedés -->
+        <div id="kez_tart" class="belso_tart">
+            <br>
+            <h2>Finommotorika fejlesztés és kézműves terápia</h2>
+            <br>
+            <h3>A habilitációs órakeretbe épülő, a manipulációs technikák javítására irányuló
+                 fejlesztőmunkánkat úgy alakítottuk ki az elmúlt évek alatt, hogy az beépül a 
+                 néphagyományok, a népi kultúra megismertetésének körébe. Ezzel kettős hatást 
+                 szeretnénk elérni.</h3>
+                <br>
+            <p>Fontos az is, hogy egy-egy jeles nap megünneplésére készülve a gyermekek ismereteket szereznek a népszokásokról, amellyel tudásuk, érzelemviláguk gazdagodik. Azzal pedig, hogy megelőző időszakban termések, természetben fellelhető anyagok felhasználásával dekorációkat, jelmezeket, ajándékokat, „vásárfiákat stb. készítenek, szinte észrevétlen marad a rejtett cél, törekvésünk a finommotorika ügyesítésére.</p>
+
+            <p>Ily módon változatos anyagokkal és technikákkal ismerkedhetnek meg tanulóink, és a tevékenységek végzése során mindvégig megmarad motivációjuk. A közös alkalmakra való készülés személyiségfejlődésükre is pozitívan hat (pl. segítőkészség, türelem egymás iránt, a közösen átélt események gazdagítják élményvilágukat, az ünnepi alkalmakon való szereplések erősítik önbizalmukat stb.)</p>
+
+            <p>Mozgásfejlesztő szakemberek, pedagógusok, asszisztensek részvételével történő team megbeszélés alapján kialakított szempontok figyelembevételével, pedagógus végzi asszisztens segítségével.</p>
+
+        </div>
+        <!--Altetnarív  -->
+        <div id="alt_tart" class="belso_tart">
+            <br>
+            <h2>Alternatív és Augmentatív Kommunikáció </h2>
+            <br>
+            <h3>Blis-nyelv</h3>
+            <br>
+            <p>„Az alternatív és augmentatív kommunikáció a modern gyógypedagógia és 
+                rehabilitáció elengedhetetlen részeként, a sérült emberi kommunikáció okozta 
+                súlyos érzelmi, intellektuális és szociális hátrányok kiküszöbölését, de legalább 
+                csökkentését szolgálja.” (Kálmán Zs.: AAK füzetek).</p>
+
+            <p>Az intézményünkbe járó gyerekek egy részénél a kommunikációs képesség – különböző okok miatt és különböző mértékben – károsodott. Az a legfontosabb feladatunk, hogy kommunikációs gátoltságukat feloldjuk és megszüntessük oly módon, hogy megtaláljuk számukra azt az utat, amellyel érzéseiket, gondolataikat közvetíthetik környezetük felé. A gyermekek a mindennapi kommunikációjukhoz úgynevezett kommunikációs táblákat, vagy kommunikátorokat használnak. Ezekeken az üzenethordozókon lehetnek képek, grafikus ábrák, Bliss-jelképek, betűk, stb.</p>
+
+        </div>
+        <!-- Önellátás -->
+        <div id="on_tart" class="belso_tart">
+            <br>
+            <h2>Önellátásra nevelés</h2>
+            <br>
+            <h3>A gyermekek mindennapjai:</h3>
+            <br>
+            <p>A gyermekek mindennapjait úgy szervezzük, hogy a tanítási órákat megelőzően és azokat követően, elegendő időt biztosítsunk az önellátási tevékenységek gyakorlására. A tanórák a más iskolákban megszokotthoz képest később kezdődnek (lépcsőzetes órakezdéssel 8.30 ill. 9.00 órakor), így elegendő idő áll a gyermekek rendelkezésére azoknak a technikáknak az alkalmazására, melyek fontosak önállóságuk alakulásában (reggeli tisztálkodási- , terítési-, rendrakási teendők).</p>
+            
+            <p>Ekkor kerül sor egyénenként (sérülésspecifikusan) a segédeszközök felvételére, valamint a tanulást segítő eszközök megfelelő beállítására. Az ebédhez kapcsolódó teendők szintén módot kínálnak az önkiszolgálási feladatok ellátására.</p>
+            
+            <p>A délutáni időszakban asszisztensek felügyeletével, segítségével lehetőség van a fiziológiás mozgások gyakorlására (pl.: járás különböző segédeszközökkel, kézfunkció javítása irányított játéktevékenységgel, hely- és helyzetváltoztatást célzó mozgásos játékok), amelyek szintén az ADL funkciók készségszintű elsajátítását szolgálják.</p>
+            
+            <p>Mozgásfejlesztő szakemberek irányításával, az egyéni fejlesztési tervek figyelembevételével történik individuálisan, asszisztensek és napközis nevelők közreműködésével.</p>
+            
+        </div>
+             <!-- Kommunikációs fejlesztés -->
+        <div id="komm_tart" class="belso_tart">
+                <br>
+                <h2>Kommunikációs és Augmentatív Alternatív Kommunikációs fejlesztés</h2>
+                <br>
+<p>A beszédképtelen gyerekek az iskolás kort elérve még alig rendelkeznek valamilyen kommunikációs eszközzel, és kommunikációs lehetőségük – jó esetben is – a passzív igen-nem feleletig terjed. Kiszolgáltatottságuk miatt alig vagy egyáltalán nem kerülnek döntéshelyzetbe, és ezáltal akaratuk, gondolatuk véghezviteléhez sincs lehetőségük.</p>
+
+<p>Súlyos mozgáskorlátozottságuk és értelmi problémáik miatt sokszor az adekvát igen-nem jelzés sem alakult ki. Az információszerzés, a tanulás alapvető feltétele az oda-vissza működő kommunikációs kapcsolat. A személyiség egészséges fejlődéséhez, gondolkodáshoz, a passzív befogadó szereptől az aktív részvételig való eljutáshoz az augmentatív és alternatív kommunikáció adja meg számukra a lehetőséget.</p>
+
+<p>Az augmentatív és alternatív kommunikáció magába foglalja mindazokat az eszközöket, módszereket, technikákat, amelyek kiegészítik vagy helyettesítik a beszédet. Ebből kifolyólag egyénre szabottak a módszerek és eszközök.</p>
+
+<h2>Kommunikációs Célok:</h2>
+<ol>
+    <li>A beszédképtelen gyermekek kívánságainak, gondolatainak mások számára is érthető közlése.</li>
+    <li>Saját életük cselekvőbb részesévé válás.</li>
+    <li>Augmentatív kommunikációs eszköz segítségével egyenlő esély elérése a többi gyerek között, a szűkebb és tágabb környezetükben egyaránt.</li>
+    <li>Beilleszkedés az őket körülvevő emberek közösségébe.</li>
+    <li>Személyiségük minél teljesebb kibontakozása.</li>
+    <li>A lehető legteljesebb beilleszkedés a társadalomba.</li>
+</ol>
+
+<h2>Kommunikációs Feladatok:</h2>
+<ol>
+    <li>A kommunikáció iránti igény felkeltése.</li>
+    <li>Kommunikációs csatornák és módok megismertetése, erősítése, bővítése (eszköz nélkül vagy eszközigényes augmentatív kommunikáció segítségével).</li>
+    <li>Alapkommunikáció kialakítása:
+        <ul>
+            <li>Kapcsolatfelvétel, szemkontaktus kialakítása.</li>
+            <li>Ránézéssel való kiválasztás, döntés.</li>
+            <li>Adekvát igen-nem válaszadás.</li>
+            <li>Köszönés.</li>
+        </ul>
+    </li>
+    <li>Önálló akaratközlés, vélemény, szükséglet, döntés kifejezésének megtanítása.</li>
+    <li>Az önkifejezéshez személyes kapcsolat és megfelelő mennyiségű idő biztosítása.</li>
+    <li>A szülőkkel való szoros együttműködés feladataként üzenő füzet vezetése az iskolában, illetve a hétvégén, otthon a gyerekekkel történtekről, melyek többek között a kommunikáció tartalmát képezik.</li>
+    <li>Az augmentatív és alternatív kommunikációs rendszer, illetve eszköz kiválasztását körültekintő megfigyelésnek kell megelőznie.</li>
+</ol>
+
+        </div>
+            <!-- Esztétikai fejlesztés -->
+        <div id="eszt_tart" class="belso_tart">
+                <br>
+                <h2>Esztétikai Nevelés</h2>
+                <br>
+                <p>Az ember életének, személyiségének egyik talán legnehezebben megfogható területe fejlesztését esztétikai nevelésnek neveztük el. A mozgást, az érzékelés-észlelést, a figyelmet, emlékezetet és gondolkodást, valamint a kommunikációt magába foglalva az átélt élményekkel és érzelmekkel a léleken keresztül táplálja a személyiséget. Fő eszköze a művészet – vagyis a zene, a képzőművészet és az irodalom – szavakkal szintén nehezen körülírható, világot összesűrítő ereje.</p>
+                
+                <h2>Esztétikai Nevelés Alapelvei:</h2>
+                <ol>
+                    <li>Alkotó és befogadó tevékenységek összefonódása.</li>
+                    <li>Önkifejezésre lehetőséget adó technikákkal, mint újabb kommunikációs eszközökkel való megismerkedés.</li>
+                    <li>Passzív befogadóból aktív résztvevővé válás.</li>
+                    <li>Alapérzelmek megélése, felismerése, kifejezése (öröm, szomorúság, félelem).</li>
+                    <li>A környezet jelenségeiről szerzett tapasztalatok művészi eszközökkel történő összekapcsolódása, integrálódása.</li>
+                </ol>
+                
+                <h2>Esztétikai Nevelés Feladatok:</h2>
+                <ol>
+                    <li>Nyugodt, biztonságos légkör teremtése.</li>
+                    <li>Alkotáshoz, önkifejezéshez szükséges helyzetek, alapanyagok, eszközök biztosítása.</li>
+                    <li>Festészeti, grafikai, vegyes technikák és a mintázás megismertetése, gyakoroltatása.</li>
+                    <li>Közös alkotó folyamatba való bekapcsolódás lehetőségének biztosítása.</li>
+                    <li>Színek szerepének megfigyeltetése, az alapformák megismertetése, különféle eszközökkel történő megjelenítés.</li>
+                    <li>Vizuális kifejezési formák és az irodalom, zene, egyéb művészeti ágak kapcsolatának megismertetése.</li>
+                    <li>Dramatikus technikákban való minél aktívabb részvétel lehetőségének megteremtése (bábjáték, jelmezes megjelenítés, zenei megjelenítések).</li>
+                    <li>Fényképek, műalkotások, a természet hangjai, zenei darabok megfigyeltetése.</li>
+                    <li>Hangulati, érzelmi megjelenítés elősegítése.</li>
+                </ol>
+                 
+        </div>
+            <!-- Érzelmi fejlesztés -->
+        <div id="erz_tart" class="belso_tart">
+                <br>
+                            <h2>Érzelmi fejlesztés</h2>
+<br>
+<p>A súlyosan halmozottan sérült gyermekek állapota számos probléma- és konfliktushelyzet forrása. Ezeknek egy részét tanulóink felismerik, megélik, de mivel e válságok kifejezése, megosztása és kezelése akadályokba ütközik, súlyos lelki terheket jelentenek számukra. Ilyen például a beszédképtelenség okozta meg nem értettség, a mozgássérülés következtében a mindennapokban való aktív részvétel hiánya, az ép testvérek közötti háttérbe szorulás, a természeti és tárgyi világgal való kapcsolattartás kudarca. Továbbá a fogyatékosságnak lehetnek olyan nem törvényszerű következményei, melyek bár a gyermekek megítélése szerint nem feltétlenül kellemetlenek, mégis káros hatással vannak a személyiség fejlődésére. Pl.: túlzott féltés, óvás, kiszolgálás, babázás.</p>
+
+<h2>Célok:</h2>
+<ol>
+    <li>Pozitív és reális énkép kialakulása a tanulók értelmi szintjének megfelelően.</li>
+    <li>Érzelmek felismerése, tudatos megélése.</li>
+    <li>A tanulók nyitottá válása a környezetükben élők felé.</li>
+    <li>Akarják és tanulják meg érzelmeiket, akaratukat a legdifferenciáltabban, legérthetőbben kifejezni.</li>
+    <li>Mások megnyilvánulásainak értelmezése és tolerálása.</li>
+    <li>Vágyaik késleltetése, a várakozás képességének kialakulása, türelmessé válás.</li>
+    <li>Ugyanakkor legyenek képesek küzdeni egy-egy cél eléréséért. Ne adják fel hamar, legyenek kitartóak.</li>
+</ol>
+
+<h2>Feladatok:</h2>
+<ol>
+    <li>Az önkifejezés lehetőségeinek megismertetése.</li>
+    <li>Az én-tudat fejlődésének segítése (énkép kialakítása).</li>
+    <li>Lehetőség biztosítása a különféle élmények és érzelmek megélésére, kifejezésére.</li>
+    <li>Az élmények és a velük kapcsolatos érzelmek értelmezésében, kezelésében való segítségnyújtás.</li>
+    <li>A gyerekek képessé tétele más emberek hangulatának, érzelmeinek felismerésére, és az arra való reagálásra (pl. együtt örülés, vigasztalás).</li>
+    <li>A motiváció erősítése.</li>
+    <li>Az együttműködési készség fejlesztése.</li>
+    <li>A közösségi magatartás kialakítása (felnőtt-gyermek, gyermek-gyermek viszonylatban).</li>
+    <li>A helyes viselkedési formák megismertetése, elsajátíttatása.</li>
+    <li>Dramatikus technikák és a bábjáték alapjainak megtanítása.</li>
+    <li>A csoportos és az egyéni tevékenykedések arányának helyes megválasztása az életkor, a szociális érettség, a fogyatékosságok és a pillanatnyi szükségletek szempontjainak figyelembevételével és mérlegelésével.</li>
+    <li>A közösséghez való tartozás élményeinek közvetítése a csoportos foglalkozásokon keresztül.</li>
+    <li>Kétszemélyes helyzetekben a „most egyedül én vagyok a fontos” élménye.</li>
+    <li>A teljes elfogadottság és az osztatlan figyelem élményének közvetítése.</li>
+    <li>Pozitív, reális énkép kialakítása a tanulók értelmi szintjének megfelelően.</li>
+    <li>Döntési helyzetek teremtése, melyekben a tanulók szabadon választhatnak tevékenységek, játékok, ételek, stb. közül, valamint ezek biztosítása.</li>
+    <li>Reális és egységes, a tanulók állapotához, ugyanakkor életkorához is a lehető legjobban igazodó elvárások kialakítása, megismertetése.</li>
+    <li>Kommunikációs eszközök és technikák biztosítása és alkalmazása.</li>
+</ol>
+                 
+        </div>
+            <!-- Fejlesztő foglalkozás -->
+        <div id="fej_tart" class="belso_tart">
+                <br>
+                <h2>Fejlesztő gondozás és önkiszolgálásra nevelés</h2>
+                <br>
+                
+                <p>„A súlyosan-halmozottan fogyatékos személyek akadályozottsága miatt az önálló életvitel korlátozott, egész életükön át külső személyek segítségét igénylik. A gyógypedagógiai megsegítésnek ki kell terjednie az alapvető biológiai, létfenntartó szükségletek kielégítésére, a nevelés, oktatás fejlesztés céljai, feladatai és tartalmai közé fel kell venni a mindennapos tevékenységek részterületeit.</p>
+
+<p>A megfelelően és személyre szabottan szervezett mindennapos tevékenységek mindamellett, hogy biztonságérzetet adnak, sok tanulási lehetőséget biztosítanak a súlyosan-halmozottan fogyatékos emberek számára. Az ápolás-gondozás tevékenységeit naponta többször el kell végezni, és sok időt vesznek igénybe. Ilyenkor közvetlen testi kontaktusba kerülünk a súlyosan-halmozottan fogyatékos személlyel, kommunikálunk egymással, szenzoros ingereket közvetítünk számukra.</p>
+
+<p>A mindennapos tevékenységekben az önellátás szintjének emelése a cél, ennek megvalósításában a fejlesztő gondozás hatásai játszanak jelentős szerepet. Ilyenkor ugyanis a fogyatékos személy élményhorizontját fokozatosan tágítjuk, stabilizáljuk szociális kapcsolatait, a mindennapos események megfelelő kis lépésekre bontásával és strukturálásával lehetővé tesszük számára a szituációhoz kapcsolt tevékenységtanulást és gyakorlást.</p>
+
+<p>A fejlesztő gondozás megvalósítása során érdemes szem előtt tartani a strukturált foglalkoztató terápia elméleti és gyakorlati ismereteit.” (Márkus 2005, 147.)</p>
+
+<h2>Ide Tartozó Tevékenységek:</h2>
+
+<p>Az ide tartozó tevékenységek túlnyomórészt a napközis foglalkozáson valósulnak meg, elsősorban a „Testi higiénia”, „Ebéd” és „Uzsonna” foglalkozások részei de valójában átszövik a teljes iskolai tevékenységet.</p>
+
+<p>A mozgásukban súlyosan akadályozott emberek testi szükségleteinek kielégítése és jó közérzetük biztosítása sok időt vesz igénybe. Ezeket a szituációkat tovább nehezíti az értelmi funkciók és a beszéd sérülése. A súlyosan és halmozottan sérült emberek is átélik kiszolgáltatottságukat létük legalapvetőbb történéseivel és a mások által végzett gondozással szemben. Programunkban ezért a gondozási feladatok nem csupán mellékesen elvégzendő tevékenységek, hanem külön foglalkozásként is megjelennek, még akkor is, ha a mozgás olyan súlyosan sérült, hogy az önkiszolgálás még távoli célként sem tűzhető ki.</p>
+
+<h2>Cél:</h2>
+<p>A tanulók lehessenek aktív részesei saját életük legalapvetőbb történéseinek, testi szükségleteik kielégítésében is.</p>
+
+<h2>Feladatok:</h2>
+<ol>
+    <li>Az érzékelés-észlelés fejlesztése: a saját testtel kapcsolatos ingerek felismerésének és értelmezésének elősegítése (pl.: éhség, szomjúság, jóllakottság, széklet-, vizeletürítés, hőmérséklet).</li>
+    <li>A kommunikáció fejlesztése: a tanulók képessé tétele arra, hogy ha felismerik testi szükségleteiket, azokat a környezetük számára a legérthetőbben és a legdifferenciáltabban tudják kifejezni.</li>
+    <li>A mozgás fejlesztése: a lehető legnagyobb mértékű mozgási képesség kialakításával a lehető legnagyobb önállóság, illetve részvétel biztosítása.</li>
+    <li>Kognitív funkciók fejlesztése:</li>
+        <ul>
+            <li>A figyelem fejlesztésével a gondozási feladatok figyelemmel kisérésének, az aktív részvétel alapjának megteremtése.</li>
+            <li>Az emlékezet fejlesztésével a gondozási feladatok mozzanatai sorrendjének, az azokhoz kapcsolódó eszközöknek, a napirendhez való kapcsolódásuknak rögzítése; mindezeken keresztül az aktív részvétel elősegítése.</li>
+            <li>Az ok-okozati összefüggések megismertetésével a testi szükségletek és az azokat kielégítő tevékenységek, illetve ezek összetevői jobb megértésének segítése.</li>
+        </ul>
+    <li>A tanulók és a személyzet mindennapjait egyaránt megkönnyítő eszközök biztosítása.</li>
+</ol>
+
+<h2>Speciális Feladatok:</h2>
+<p>A mozgásnevelő és az osztályban dolgozó pedagógus feladata, a rehabilitációs és foglakoztatási terapeutával közösen, a gyermekek étkezéshez való pozicionálásának kialakítása. Továbbá a lehetséges önkiszolgálási tevékenységekhez kapcsolódó eszközigény felmérése.</p>
+
+<p>A kommunikációs szakember az osztályban dolgozó pedagógussal közösen méri fel és fejleszti azt a kifejezés-repertoárt, amellyel a gyermekek – adottságaik függvényében – képesek jelezni igényeiket, szükségleteiket.</p>
+
+        </div>
+            <!-- Szűkebb-tágabb fejlesztés -->
+        <div id="szuk_tart" class="belso_tart">
+            <br>
+            <h2>Szűkebb és tágabb környezet</h2>
+            <br>
+            <h3>Célok:</h3>
+<ol>
+    <li>A tanulók érdeklődésének kialakulása szűkebb és tágabb környezetük szereplői, tárgyai, jelenségei iránt.</li>
+    <li>Egyénileg eltérő képességeik függvényében a természeti, tárgyi és személyi környezetükről szerzett élményeik megélése, értelmezése, elraktározása.</li>
+    <li>A tanulók saját életükben történő minél aktívabb részvételének kialakulása.</li>
+    <li>Az egymással és a nevelőkkel való állandó kommunikáció kialakulása.</li>
+    <li>A természeti környezet szépségeinek felismerése.</li>
+</ol>
+
+<h3>Feladatok:</h3>
+<p>A szűkebb és tágabb környezet személyeinek, tárgyainak, jelenségeinek megismertetése a tanulókkal, a mindennapi életük apró tapasztalatszerzéseinek irányítása és folyamatos tudatosítása által.</p>
+
+<h3>Témakörei:</h3>
+<p>a család, az intézmény, az évszakok, a közlekedési eszközök, testünk, az állatok, a színek, napirend-napszakok, ünnepek</p>
+
+     
+                 
+        </div>
+             <!-- Reggeli és búcsú fejlesztés -->
+        <div id="reg_tart" class="belso_tart">
+                <br>
+                <h2>Reggeli-, és Búcsú kör</h2>
+                <br>
+                <p>Az elnevezést és az alapötletet Franziska Schäffer koncepciójából merítettük és alakítottuk tovább.</p>
+
+<h2>Célok:</h2>
+<ol>
+    <li>Az iskolában töltött idő keretbe foglalása.</li>
+    <li>A közösen eltöltendő idő jó hangulatban való elkezdése, majd lezárása, illetve jó hangulatban való hazatérés.</li>
+    <li>Figyelemösszpontosítás egymásra, a tanulási tartalomra, önmaguktól a környezetük felé fordulás.</li>
+    <li>Az önkifejezés a különféle kommunikációs csatornák, eszközök, módszerek kipróbálásával.</li>
+    <li>Közösségi társadalmi szokások, szabályok megismerése és gyakorlása.</li>
+    <li>Zenei élményszerzés.</li>
+    <li>A közösség élménye, közösséggé válás.</li>
+    <li>Hangulatok, érzelmek megismerése.</li>
+    <li>Személyes kapcsolatok kialakulása, elmélyülése. Önálló vélemény kialakulása.</li>
+</ol>
+
+<h2>Feladatok:</h2>
+<p>
+    - Nyugodt, kellemes légkör teremtése.<br>
+    - Megfelelő testhelyzet biztosítása, mely lehetővé teszi a figyelmet és a különféle kommunikációs fogások alkalmazását, beleértve a hangadást, a manipulációt és a nagymozgást is.<br>
+    - A beszédértés fejlesztése.<br>
+    - Kommunikációs eszközök, módszerek megismertetése.<br>
+    - Igen-nem válaszadás kialakítása.<br>
+    - Manipulációfejlesztés.<br>
+    - Hangadásra való bátorítás.<br>
+</p>
+
+     
+                 
+        </div>
+            <!-- Játék és szórakozás fejlesztés -->
+        <div id="jat_tart" class="belso_tart">
+     
+     <br>
+     <h2>Játék és szórakozás</h2>
+     <br>
+     <p>
+        Súlyosan halmozott fogyatékosság esetén a gyermekek játéktevékenységének – és ezáltal az összes területnek – fejlődése is nagy mértékben nehezített.
+        Ebben szerepe van a kézfunkciók, a nagymozgások különböző fokú, esetenként nagy mértékű korlátozottságának, az értelmi képességek akadályozottságának, egyes gyermekeknél a társuló érzékelési, észlelési zavaroknak, az indíték-szegénységnek.
+    </p>
+    
+    <p>
+        Mivel az egészséges gyermek legfőbb tevékenységformájaként és fejlődésének egyik alappillére a játék,
+        nagy részben ezen keresztül ismeri meg környezetét, gyűjt részletes tapasztalatokat az őt körülvevő világról, alakítja ki társas kapcsolatait,
+        sajátítja el a közösségi viselkedés alapjait, fejlődik figyelme, gondolkodása, képzelete, gazdagodik érzelmi élete –
+        ezért a fent leírt nehézségek miatt a terápiás csoportban indokoltnak látjuk (legalább az első iskolai években) a játéktevékenység külön óratervi órában is megjelenő fejlesztését.
+    </p>
+    
+    <h2>Célok:</h2>
+    <ol>
+        <li>A játék örömének megismerése, a játéktevékenység iránti igény kialakulása.</li>
+        <li>Egyéni és közösségi játékok, szórakozási lehetőségek megismerése.</li>
+        <li>Ezekben a gyermekek egyéni lehetőségeihez mérten minél aktívabb részvétele.</li>
+        <li>Képessé válás önállóan végzett játéktevékenységre is.</li>
+        <li>A gyermekek szocializációs képességének fejlődése.</li>
+        <li>A játék során, által a gyerekek sokféle képességének és készségének fejlődése.</li>
+    </ol>
+    
+    <h2>Feladatok:</h2>
+    <p>
+        - Gyerekek megismertetése különböző játékeszközökkel és azok használatával, egyéni és csoportos játéktevékenységek és szórakozási lehetőségek megismertetése és megszerettetése.<br>
+        - Aktív részvétel elősegítése, kialakítása.<br>
+        - Az egyéni adottságokhoz igazodóan, a szükséges feltételeket megteremtve a játszás és szórakozás képességének kialakítása.<br>
+        - Gyerekek játékszintjének megfigyelése, megismerése.<br>
+        - Érdeklődési körnek, nemnek, életkornak, értelmi, mozgásos, érzékelési-észlelési, kommunikációs képességeknek megfelelő játékeszközök és –tevékenységek, idő, hely biztosítása.<br>
+        - Gyerekek játéktevékenységének, játékszintjének továbbfejlődéséhez szükséges segítség megadása (pl.: a tevékenységhez megfelelő testhelyzetek megtalálása, biztosítása, mozdulatok vezetése, segítése, együttjátszás, – cselekvés, a figyelem irányítása, minta, játékötlet adása, élmények nyújtása, melyekből játéktevékenység fakadhat).<br>
+        - Azokat a játékeszközöket megtalálni, amelyeket a gyerekek önállóan tudnak használni, azokat a játéktevékenységeket is, amelyeket önállóan tudnak végezni.<br>
+        - Segítéssel történő és az önállóan végzett tevékenykedés közötti helyes arány megtalálása (A segítéssel, irányítással soha ne vegyük el a játék örömét, lényegét).<br>
+        - Lehetőségek szerinti legnagyobb szabadság és önállóság biztosítása.<br>
+        - Tervezett, szervezett, irányított mellett a spontán, szabadon választott játéktevékenységek lehetőségének biztosítása.<br>
+        - Játékban való szabad kommunikáció (pl.: a játék iránti igény kifejezése, játéktárgy, -tevékenység, játszótárs választása) elősegítése, ehhez szükség esetén augmentatív kommunikációs eljárásokat, módszereket, eszközöket alkalmazva.<br>
+        - Társas, közösségi kapcsolatok, a közösségi érzés kialakulásának, erősödésének elősegítése.<br>
+        - Iskola más csoportjaival való közös foglalkozások szervezése, ezáltal a nagyobb közösségbe való beilleszkedés elősegítése, a játéktevékenységek bővebb körének biztosítása.<br>
+        - Délelőtti témákhoz való kapcsolódás és az azoktól való eltérés közötti helyes arány megtalálása.<br>
+        - Játék során élményeik, tapasztalataik feldolgozása, ismereteik mélyítése, gyarapítása, rendszerezése; képességeik, készségeik fejlesztése.<br>
+        - Játéktevékenység tudatos fejlesztésével az egész személyiség fejlődésének, életük tevékenyebb részesévé válásának elősegítése.<br>
+    </p>
+                 
+        </div>
+             <!-- Testi fejlesztés -->
+        <div id="hig_tart" class="belso_tart">
+            <br>
+            <h2>Testi Higiéniai Fejlesztés</h2>
+            <br>
+
+            <p>A halmozottan fogyatékos gyermekek nevelése és gondozása számos területen speciális figyelmet és megközelítést igényel. Az egyik fontos szempont a testi higiéniai fejlesztés, ami kulcsfontosságú a gyermekek egészségének és jóllétének szempontjából. Az ilyen gyermekek esetében számos kihívás merül fel, amelyekre a gondozóknak és oktatóknak egyaránt figyelemmel kell lenniük.</p>
+
+    <p>Az elsődleges kihívások között szerepelnek a mozgás korlátozottságai, amelyek megnehezítik az önálló testápolást. A testi higiéniai rutinok beillesztése a mindennapi életbe, így például a fürdés, öltözködés és fogmosás, a halmozottan fogyatékos gyermekeknél személyre szabott módon történik. Fontos, hogy ezek a tevékenységek ne csak kötelező feladatok legyenek, hanem olyan lehetőségek, amelyek segítik a gyermekek fejlődését és önállóságát.</p>
+
+    <p>A testi higiéniai fejlesztés során a gondozóknak kiemelt figyelmet kell fordítaniuk az érzékszervekkel való kommunikációra. A sérülések vagy érzékszervi zavarok miatt a gyermekek gyakran más módon tapasztalják meg a testi élményeket. Ebben az esetben az érzékszervi terápia és a személyre szabott megközelítések kiemelkedő fontossággal bírnak.</p>
+
+    <p>Az adaptív eszközök és segédeszközök használata is előtérbe kerülhet a testi higiéniai gyakorlatok során. Ez lehetővé teszi a gyermekek számára, hogy minél önállóbban vegyenek részt a mindennapi tevékenységekben. Az olyan eszközök, mint például a mozgássegítő berendezések vagy speciális fogkefék, hozzájárulhatnak a gyermekek komfortjához és az önálló cselekvés lehetőségéhez.</p>
+
+    <p>A testi higiéniai fejlesztés nem csupán fizikai szempontból fontos, hanem érzelmi és szociális szempontból is. A gondozóknak és oktatóknak lehetőséget kell teremteniük a gyermekek számára, hogy a lehető legtöbb önállóságot érjék el ezekben a tevékenységekben. Ezáltal nemcsak a testi higiéniai készségeik fejlődnek, hanem növekszik az önbecsülésük és a társas kapcsolataik is.</p>
+
+    <p>Végül, a testi higiéniai fejlesztés folyamatos együttműködést igényel a gondozók, szakemberek és a családok részéről. A közös erőfeszítések révén a halmozottan fogyatékos gyermekeknek is lehetőségük van arra, hogy a testi higiéniai rutinokat önállóan és pozitív élményekkel teljesítve sajátítsák el, elősegítve ezzel egészséges fejlődésüket és mindennapi életük részeseivé válásukat.</p>
+            <br>
+     
+                 
+        </div>
+
+    </div>
+    <!-- Intézmény képek -->
+    <div>
+        <img id="kep"  src="./media/9.webp" alt="">
+        <img id="kep2" src="./media/kriszt.webp" alt="">
+    </div>
+   
+
+    <footer class="footer-distributed">
+
+        <div id="kotelezo_lent"> <button onclick="kikapcs()" >X</button>
+            <img id="kotelezo_lentimg"  src="./media/lenti.png" id="kotelezo2" alt="" width="280" height="180">
+        </div>
+            <div class="footer-left">
+                <h3>Kerek <span>a világ</span></h3>
+                <p class="footer-links">
+                    <a href="#" class="link-1">Főoldal</a>
+                    <a href="#">Intézményeink</a>
+                    <a href="#">Tevékenységeink</a>
+                    <a href="#">Hírek</a>
+                    <a href="#">Dokumentumtár</a>
+                    <a href="#">Adatkezelés</a>
+                </p>
+                <p class="footer-company-name">Kerek VIlág Alapítvány © 2023</p>
+            </div>
+        
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>7627</span> Pécs, Gesztenyés u. 2
+                    </p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"><a href="tel:+36204006714"></a></i>
+                    <a href="tel:+36204006714">+36 20 4006714</a>
+                </div>
+                    <i href="mailto:kerek.vilag.alapitvany@gmail.com" class="fa fa-envelope"></i>
+                    <a href="mailto:kerek.vilag.alapitvany@gmail.com">kerek.vilag.alapitvany@gmail.com</a>
+                </div>
+           
+        
+            <div class="footer-right">
+                <p class="footer-company-about">
+                Minden támogatással kerekebb a világunk!
+                    <br> <br>Adószámunk:<br>19031628-1-02 <br><br>
+                    Bankszámlaszámunk: <br>Takarékbank Zrt. 71800264-16026209
+                </p>
+            </div>
+        
+    </footer>
+    <script src="./kerek2.js"></script>
+    <script src="./kerek.js"></script>
+</body>
+</html>
