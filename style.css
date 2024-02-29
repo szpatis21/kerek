@@ -211,8 +211,15 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
           margin: 15px auto;
           font-weight: normal;
           font-size: 12px;
-        width: 100%;}
-          
+        width: 100%;
+      margin: 30px 0px 45px 0px;}
+          .nagyikon{    position: absolute;
+            left: 5%;
+            margin-top: -15px;
+            display: flex;
+            padding:5px;
+          }
+          .nagyikon p {color: skyblue;;}
   #instrukcio {margin: 15px;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
     color: whitesmoke;
@@ -941,7 +948,9 @@ body {font-family: 'Times New Roman', Times, serif;
       padding-top: 15px;
       padding-bottom: 0px;
       border: whitesmoke solid 2px;
-      box-shadow: wheat 0px 0px 10px 1px;}
+      box-shadow: wheat 0px 0px 10px 1px;
+      padding-top: 45px;
+      margin-top: 15px;}
 
   }
           

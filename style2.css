@@ -116,35 +116,32 @@
 
         .nagyikon p{text-align: center;}
         
-
         @media screen and (min-width:201px) and (max-width:1037px){
 
-            #alcikk {grid-template-columns: 100%}
-            #tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
+            #alcikk, .alcikk {grid-template-columns: 100%}
+            .alcikk, #alcikktart3{margin: 5px;}
+
+            #almenuk p {font-size: small;}
+            #almenuk div { text-decoration: none;}
+            #almenuk img {width: 90%; margin-bottom: 10%;}
+            #almenukkicsi #kep, #almenukkicsi #kep2 {width: 0%; margin: 0; border: none;}
+            #almenukkicsi img, #almenuk img { width: 70%;}
+
+            #tamopkriszt, #tamopfejfog, #isknephagy{
+                display: grid;
                 margin: 50px;
                 grid-template-columns: repeat(1,100%);}
-                .alcikk, #alcikktart3{margin: 5px;}
 
-               #kozben{ margin: auto 15px; font-size: small; }
-                #terapiak #almenuk{     display: grid;
-                    grid-template-columns: repeat(4,25%);}
-                #terapiak #almenuk img{width: 80%;}
-            #almenukkicsi img, #almenuk img { width: 70%;}
+            #kozben{ margin: auto 15px; font-size: small;}
+            #terapiak #almenuk{ display: grid; grid-template-columns: repeat(4,25%);}
+            #terapiak #almenuk img{width: 80%;}
             #el{ display: grid; grid-template-columns: repeat(2,50%); margin: 10% auto;}
             
-        .alcikk {grid-template-columns: 100%; }
-            #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt{
-               grid-template-columns: 100%; }
-               #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
-               #el {    margin: auto 0px;grid-template-columns: 100%}
-               #tagozatok #almenuk{display: grid;}
-                #almenukkicsi #kep, #almenukkicsi #kep2 {width: 0%; margin: 0; border: none;}
-                #almenuk p {font-size: small;}
-                #almenuk div {    text-decoration: none;
-            }
-                #almenuk img {width: 90%; margin-bottom: 10%;}
-                #map{width: 50%; height: 50%;}         
-                .kephely_5 img,.kephely_6 img{width: 100%;}
+            #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt{grid-template-columns: 100%; }
+            #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
+            #el { margin: auto 0px;grid-template-columns: 100%}
+            #tagozatok #almenuk{display: grid;}       
+            .kephely_5 img,.kephely_6 img{width: 100%;}
         }
 
        
