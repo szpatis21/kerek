@@ -213,12 +213,7 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
           font-size: 12px;
         width: 100%;
       margin: 30px 0px 45px 0px;}
-          .nagyikon{    position: absolute;
-            left: 5%;
-            margin-top: -15px;
-            display: flex;
-            padding:5px;
-          }
+   
           .nagyikon p {color: skyblue;;}
   #instrukcio {margin: 15px;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
@@ -723,6 +718,7 @@ footer {grid-area: footer;}
   .container{
     display: none;
    }
+   .footer a {display: none;}
   .footer-distributed {padding: 5px; display: grid; grid-template-rows: repeat(2, 50%); margin: 0; }
   .footer-distributed .footer-center p{
     display: none}
@@ -734,6 +730,7 @@ footer {grid-area: footer;}
 footer h3{text-align: center; width: 300px;
   position: absolute; right: 0;
 }
+.footer-center a {display: none;}
   /* HEADER */
 
  header{display:none;}
@@ -935,7 +932,12 @@ body {font-family: 'Times New Roman', Times, serif;
     justify-content: center;
     top: 70%; 
     left: 84%;}
-
+    .nagyikon{    position: absolute;
+      left: 5%;
+      margin-top: -15px;
+      display: flex;
+      padding:5px;
+    }
   
 
     .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);

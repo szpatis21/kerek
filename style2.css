@@ -117,7 +117,7 @@
         .nagyikon p{text-align: center;}
         
         @media screen and (min-width:201px) and (max-width:1037px){
-
+/* Media */
             #alcikk, .alcikk {grid-template-columns: 100%}
             .alcikk, #alcikktart3{margin: 5px;}
 
@@ -129,7 +129,7 @@
 
             #tamopkriszt, #tamopfejfog, #isknephagy{
                 display: grid;
-                margin: 50px;
+                margin: 5px;
                 grid-template-columns: repeat(1,100%);}
 
             #kozben{ margin: auto 15px; font-size: small;}
@@ -142,6 +142,7 @@
             #el { margin: auto 0px;grid-template-columns: 100%}
             #tagozatok #almenuk{display: grid;}       
             .kephely_5 img,.kephely_6 img{width: 100%;}
+            #alp{margin: 5px;}
         }
 
        
