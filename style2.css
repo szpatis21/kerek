@@ -127,7 +127,7 @@
                 grid-template-columns: repeat(1,100%);}
                 .alcikk, #alcikktart3{margin: 5px;}
 
-                #terapiak #kozben{ margin: auto 15px; font-size: small; }
+               #kozben{ margin: auto 15px; font-size: small; }
                 #terapiak #almenuk{     display: grid;
                     grid-template-columns: repeat(4,25%);}
                 #terapiak #almenuk img{width: 80%;}
