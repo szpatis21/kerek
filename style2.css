@@ -115,7 +115,16 @@
         justify-content: center;}
 
         .nagyikon p{text-align: center;}
-        
+        #eler{width: fit-content;
+            padding: 2%;
+            color: rgb(0, 0, 0);
+            display: grid; margin: 15px 0px 15px auto;
+        border-right: rgb(246, 255, 0) 2px solid;
+        border-top: rgb(4, 0, 255) 2px solid;
+    border-radius: 25px;}
+    #eler a:link {color: black;}
+
+
         @media screen and (min-width:201px) and (max-width:1037px){
 /* Media */
             #alcikk, .alcikk {grid-template-columns: 100%}
