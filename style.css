@@ -190,8 +190,8 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
         .nagyikon img{transition: transform 1s, box-shadow 1s; width: 60px; height: 60px; display: flex; margin: auto;}
           .nagyikon img:hover{transform: scale(1.1); box-shadow: rgb(0, 0, 0) 0px 0px 10px 6px;}
   .tevekenysegvalaszto {display: grid;
-    margin-top: -50px;
-    grid-template-columns: repeat(3, 34%);
+    margin: -50px auto auto auto;
+    grid-template-columns: repeat(3, 33%);
  }
         .tevval1,.tevval2,.tevval3,.tevval4 {
           display: grid;

@@ -1,11 +1,6 @@
 
 /* TEVÉKENYSÉGEK */
 
-// Térkép
-const map = document.querySelector("#map");
-const maphely = document.querySelector("#maphely")
-
-
 //Kisképek
 
 const keps = document.querySelector('#kep');
@@ -22,7 +17,12 @@ const keps2 = document.querySelector('#kep2');
 
  // Fő területek   
 const isk2 = document.querySelector('#isk2');
-const isk = document.querySelector('#isk');
+const csop = document.querySelector("#csop");
+    const csoportok = document.querySelector("#csoportok");
+const isk = document.querySelector('#iskerzk');
+    const iskolak = document.querySelector('#iskolak');
+const kony = document.querySelector("#kony");
+    const konyvtar = document.querySelector("#konyvtar");    
     const isknep = document.querySelector('#isknep');
         const isknepk = document.querySelector("#isknepk");
     const tag = document.querySelector("#tag");
@@ -71,344 +71,141 @@ function changeContent(newContent, placeholder) {
 };
 
 const placeholder = document.querySelector("#placeholder");
-// Főkatergóriák
-    taszo.addEventListener('click', function() {
-        changeContent(tamopk, placeholder);
-        changeContent(keps2, kephely_3);
-    });
-    ellint.addEventListener('click', function() {
-        changeContent(szocik, placeholder);
-        changeContent(keps, kephely_5);
-        changeContent(keps2, kephely_6);
-    });
-    
-    fejfog.addEventListener('click', function() {
-        changeContent(fejfogk, placeholder);
-        changeContent(keps2, kephely_1);
-    });
-
-    isknep.addEventListener('click',function() {
-        changeContent(isknepk, placeholder);
-        changeContent(keps, kephely_2);
-    });
-    tag.addEventListener('click',function() {
-        changeContent(tagozatok, placeholder);});
-     ter.addEventListener('click',function() {
-        changeContent(terapiak, placeholder);});
-
-
-const alcikktart3 = document.querySelector("#alcikktart3")    
-const alcikktart2 = document.querySelector("#alcikktart2");
-const alcikktart = document.querySelector("#alcikktart");
-// Alkategóriák
-    pszi.addEventListener('click',function() {
-        changeContent(pszitart, alcikktart2);
-    });
-    tanak.addEventListener('click',function() {
-        changeContent(tanaktart, alcikktart2);
-        changeContent(keps, kephely_4);
-    });
-    ertak.addEventListener('click',function() {
-        changeContent(ertaktart, alcikktart2);
-    });
-    
-    fejnev.addEventListener('click',function() {changeContent(fejnevtart, alcikktart2);});
-    gesztint.addEventListener('click',function() {changeContent(geszttart, alcikktart);});
-    krisztint.addEventListener('click',function() {changeContent(kriszttart, alcikktart);});
-
-//Al-al kategóriák
-    // Pszihés
+    const alcikktart3 = document.querySelector("#alcikktart3")    
+    const alcikktart2 = document.querySelector("#alcikktart2");
+    const alcikktart = document.querySelector("#alcikktart");
+    //Al-al kategóriák
 const belso_al = document.querySelector("#belsoalcikk");
-    const egy = document.querySelector("#egy_belso");
+        // Pszihés
         const egy_tart= document.querySelector("#egy_tart");
-    const dis = document.querySelector("#dis_belso");
         const dis_tart=document.querySelector("#dis_tart");
-    const bes = document.querySelector("#bes_belso");
         const bes_tart = document.querySelector("#bes_tart");
-    const log = document.querySelector("#log_belso");
         const log_tart = document.querySelector("#log_tart");
-    const moz = document.querySelector("#moz_belso");
         const moz_tart = document.querySelector("#moz_tart");
-    const kon = document.querySelector("#kon_belso");
-        const kon_tart = document.querySelector("#kon_tart");
-    const gyo = document.querySelector("#gyo_belso");
+        const kon_tart = document.querySelector("#kon_tart"); 
         const gyo_tart = document.querySelector("#gyo_tart");
-    const zen = document.querySelector("#zen_belso");
         const zen_tart = document.querySelector("#zen_tart"); 
-    const lat = document.querySelector("#lat_belso");
-        const lat_tart = document.querySelector("#lat_tart");       
-
-egy.addEventListener('click', function() {
-    changeContent(egy_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }
-});
-dis.addEventListener('click', function() {
-    changeContent(dis_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-bes.addEventListener('click', function() {
-    changeContent(bes_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-log.addEventListener('click', function() {
-    changeContent(log_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-moz.addEventListener('click', function() {
-    changeContent(moz_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-kon.addEventListener('click', function() {
-    changeContent(kon_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-gyo.addEventListener('click', function() {
-    changeContent(gyo_tart,belso_al)
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-zen.addEventListener('click', function() {
-    changeContent(zen_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-lat.addEventListener('click', function() {
-    changeContent(lat_tart,belso_al);
-    if (window.innerWidth < 1000) {
-        pszitart.style.gridTemplateColumns = '100%';
-    } else {
-        pszitart.style.gridTemplateColumns = '35% 65%';
-    }});
-    //Értelmikleg akadályoztatott
+        const lat_tart = document.querySelector("#lat_tart");  
 const belso_al_ert = document.querySelector("#belsoalcikk_ert")
-    const nep = document.querySelector("#nep_belso");
-        const nep_tart= document.querySelector("#nep_tart");    
-    const ayr = document.querySelector("#ayr_belso");
-        const ayr_tart= document.querySelector("#ayr_tart");
-    const lov = document.querySelector("#lov_belso");
-        const lov_tart= document.querySelector("#lov_tart");
-    const sub = document.querySelector("#sub_belso");
+        //Ért Ak
         const sub_tart= document.querySelector("#sub_tart");
-    const kez = document.querySelector("#kez_belso");
-        const kez_tart= document.querySelector("#kez_tart");         
-    const alt = document.querySelector("#alt_belso");
+        const nep_tart= document.querySelector("#nep_tart");    
+        const ayr_tart= document.querySelector("#ayr_tart");
+        const lov_tart= document.querySelector("#lov_tart");
+        const kez_tart= document.querySelector("#kez_tart"); 
         const alt_tart= document.querySelector("#alt_tart");
-    const on = document.querySelector("#on_belso");
-        const on_tart= document.querySelector("#on_tart");  
-    const moz2 = document.querySelector("#moz_belso2");
-    const gyo2 = document.querySelector("#gyo_belso2");    
-    const zen2 = document.querySelector("#zen_belso2");
-    const bes2 = document.querySelector("#bes_belso2");
-    const log2 = document.querySelector("#log_belso2");
-    
-
-sub.addEventListener('click', function() {
-    changeContent(sub_tart,belso_al_ert);
-     if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } 
-});
-nep.addEventListener('click', function() {
-    changeContent(nep_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-ayr.addEventListener('click', function() {
-    changeContent(ayr_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-lov.addEventListener('click', function() {
-    changeContent(lov_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-kez.addEventListener('click', function() {
-    changeContent(kez_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-alt.addEventListener('click', function() {
-    changeContent(alt_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-on.addEventListener('click', function() {
-    changeContent(on_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-moz2.addEventListener('click', function() {
-    changeContent(moz_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-gyo2.addEventListener('click', function() {
-    changeContent(gyo_tart,belso_al_ert)
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-zen2.addEventListener('click', function() {
-    changeContent(zen_tart,belso_al_ert)
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-bes2.addEventListener('click', function() {
-    changeContent(bes_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-log2.addEventListener('click', function() {
-    changeContent(log_tart,belso_al_ert);
-    if (window.innerWidth < 1000) {
-        ertaktart.style.gridTemplateColumns = '100%';
-    } else {
-        ertaktart.style.gridTemplateColumns = '35% 65%';
-    } });
-
-//Fejlesztő fogalkoztatás
+        const on_tart= document.querySelector("#on_tart"); 
 const belso_al_fej = document.querySelector("#belsoalcikk_fej")
-    const komm = document.querySelector("#komm_belso");
+        //Fejlesztő fogalkoztatás
         const komm_tart= document.querySelector("#komm_tart");    
-    const eszt = document.querySelector("#eszt_belso");
         const eszt_tart= document.querySelector("#eszt_tart");
-    const erzi = document.querySelector("#erz_belso");
         const erzi_tart= document.querySelector("#erz_tart");
-    const fej = document.querySelector("#fej_belso");
         const fej_tart= document.querySelector("#fej_tart");
-    const szuk = document.querySelector("#szuk_belso");
         const szuk_tart= document.querySelector("#szuk_tart");         
-    const reg = document.querySelector("#reg_belso");
         const reg_tart= document.querySelector("#reg_tart");
-    const jat = document.querySelector("#jat_belso");
         const jat_tart= document.querySelector("#jat_tart");
-    const hig = document.querySelector("#hig_belso");
-        const hig_tart= document.querySelector("#hig_tart");      
-    const moz3 = document.querySelector("#moz_belso3");
-    const egy2 = document.querySelector("#egy_belso2");    
-    const bes3 = document.querySelector("#bes_belso3");
+        const hig_tart= document.querySelector("#hig_tart");  
 
-komm.addEventListener('click', function() {
-    changeContent(komm_tart,belso_al_fej);
-    fejnevtart.style.gridTemplateColumns = '35% 65%'; 
-});
-reg.addEventListener('click', function() {
-    changeContent(reg_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-eszt.addEventListener('click', function() {
-    changeContent(eszt_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-erzi.addEventListener('click', function() {
-    changeContent(erzi_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
+const buttonContentPairs = {
+    taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
+    ellint: { gomb: ellint, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
+    fejfog: { gomb: fejfog, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
+    isknep: { gomb: isknep, content1: isknepk, placeholder1: placeholder, content2: keps, placeholder2: kephely_2 },
+    tag: { gomb: tag, content1: tagozatok, placeholder1: placeholder },
+    ter: { gomb: ter, content1: terapiak, placeholder1: placeholder },
+    csop: { gomb: csop, content1: csoportok, placeholder1: placeholder },
+    isk: { gomb: isk, content1: iskolak, placeholder1: placeholder },
+    kony: { gomb: kony, content1: konyvtar, placeholder1: placeholder },
+    pszi: {gomb: pszi, content1:pszitart, placeholder1: alcikktart2},
+    tanak: {gomb:tanak, content1:tanaktart, placeholder1: alcikktart2, content2: keps2,placeholder2: kephely_4},
+    ertak: {gomb:ertak, content1:ertaktart, placeholder1: alcikktart2},
+    fejnev: {gomb:fejnev, content1:fejnevtart, placeholder1: alcikktart2},
+    gesztint: {gomb:gesztint, content1:geszttart, placeholder1: alcikktart},
+    krisztint: {gomb:krisztint, content1:kriszttart, placeholder1: alcikktart},
+};
+
+for (const key in buttonContentPairs) {
+    if (buttonContentPairs.hasOwnProperty(key)) {
+        const pair = buttonContentPairs[key];
+        pair.gomb.addEventListener('click', function() {
+            changeContent(pair.content1, pair.placeholder1);
+            if (pair.content2 && pair.placeholder2) {
+                changeContent(pair.content2, pair.placeholder2);
+            }
+            if (pair.content3 && pair.placeholder3) {
+                changeContent(pair.content3, pair.placeholder3);
+            }
+        });
     }
-});
-fej.addEventListener('click', function() {
-    changeContent(fej_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-szuk.addEventListener('click', function() {
-    changeContent(szuk_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-jat.addEventListener('click', function() {
-    changeContent(jat_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-hig.addEventListener('click', function() {
-    changeContent(hig_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-moz3.addEventListener('click', function() {
-    changeContent(moz_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-egy2.addEventListener('click', function() {
-    changeContent(egy_tart,belso_al_fej)
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
-bes3.addEventListener('click', function() {
-    changeContent(bes_tart,belso_al_fej);
-    if (window.innerWidth < 1000) {
-        fejnevtart.style.gridTemplateColumns = '100%';
-    } else {
-        fejnevtart.style.gridTemplateColumns = '35% 65%';
-    }});
+}
 
+function getGridStyles() { return window.innerWidth < 1037 ? '100%' : '35% 65%';}
+
+const buttonContentPairs2 = {
+//PSZIHÉS    
+    egy_belso: { content: egy_tart, placeholder: belso_al },
+    dis_belso: { content: dis_tart, placeholder: belso_al },
+    bes_belso: { content: bes_tart, placeholder: belso_al },
+    log_belso: { content: log_tart, placeholder: belso_al },
+    moz_belso: { content: moz_tart, placeholder: belso_al },
+    kon_belso: { content: kon_tart, placeholder: belso_al },
+    gyo_belso: { content: gyo_tart, placeholder: belso_al },
+    zen_belso: { content: zen_tart, placeholder: belso_al },
+    lat_belso: { content: lat_tart, placeholder: belso_al },
+//ÉRTAK
+    nep_belso: { content: nep_tart, placeholder: belso_al_ert },
+    ayr_belso: { content: ayr_tart, placeholder: belso_al_ert },
+    lov_belso: { content: lov_tart, placeholder: belso_al_ert },
+    kez_belso: { content: kez_tart, placeholder: belso_al_ert },
+    sub_belso: { content: sub_tart, placeholder: belso_al_ert },
+    on_belso: { content: on_tart, placeholder: belso_al_ert },
+    alt_belso: { content: alt_tart, placeholder: belso_al_ert },
+    on_belso: { content: on_tart, placeholder: belso_al_ert },
+    moz_belso2: { content: moz_tart, placeholder: belso_al_ert},
+    gyo_belso2: { content: gyo_tart, placeholder: belso_al_ert},
+    zen_belso2: { content: zen_tart, placeholder: belso_al_ert},
+    bes_belso2: { content: bes_tart, placeholder: belso_al_ert},
+    log_belso2: { content: log_tart, placeholder: belso_al_ert},
+//FEJLESZTŐ
+    komm_belso: { content: komm_tart, placeholder: belso_al_fej},
+    eszt_belso: { content: eszt_tart, placeholder: belso_al_fej},
+    erz_belso: { content: erzi_tart, placeholder: belso_al_fej},
+    fej_belso: { content: komm_tart, placeholder: belso_al_fej},
+    szuk_belso: { content: szuk_tart, placeholder: belso_al_fej},
+    reg_belso: { content: reg_tart, placeholder: belso_al_fej},
+    jat_belso: { content: jat_tart, placeholder: belso_al_fej},
+    hig_belso: { content: hig_tart, placeholder: belso_al_fej},
+    moz_belso3: { content: moz_tart, placeholder: belso_al_fej},
+    egy_belso2: { content: egy_tart, placeholder: belso_al_fej},
+    bes_belso3: { content: bes_tart, placeholder: belso_al_fej},
+};
+
+function handleButtonClick(pair) {
+    changeContent(pair.content, pair.placeholder);
+    pszitart.style.gridTemplateColumns = getGridStyles();
+    ertaktart.style.gridTemplateColumns = getGridStyles();
+    fejnevtart.style.gridTemplateColumns = getGridStyles();
+}
+        for (const key in buttonContentPairs2) {
+            if (buttonContentPairs2.hasOwnProperty(key)) {
+                const pair = buttonContentPairs2[key];
+                const buttonElement = document.querySelector(`#${key}`);
+                if (buttonElement) {
+                    buttonElement.addEventListener('click', function() {
+                handleButtonClick(pair);
+                });}
+            }
+        }; 
+    // Médiaváltó eseménykezelő
+    window.addEventListener('resize', function() {
+        pszitart.style.gridTemplateColumns = getGridStyles();    
+    });
+    window.addEventListener('resize', function() {
+        ertaktart.style.gridTemplateColumns = getGridStyles();    
+    });
+    window.addEventListener('resize', function() {
+        fejnevtart.style.gridTemplateColumns = getGridStyles();    
+    });
 // TERÁPIÁK
 
 const egy_ter = document.querySelector("#egy_ter");
@@ -418,7 +215,6 @@ const alt_ter = document.querySelector("#alt_ter");
 const moz_ter = document.querySelector("#moz_ter");
 const lat_ter = document.querySelector("#lat_ter");
 const zen_ter = document.querySelector("#zen_ter");
-
 
 egy_ter.addEventListener('click', function(){
     changeContent(egy_tart,alcikktart3);
