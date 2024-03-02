@@ -941,6 +941,7 @@ body {font-family: 'Times New Roman', Times, serif;
     .nagyikon img{      opacity: 70%;
     }
     .kisikon{ z-index: 100;}
+    .kisikon img {width: 50%; height: 100%;}
   
 
     .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);
