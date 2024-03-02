@@ -188,7 +188,6 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
         .kisikon img{transition: transform 1s, box-shadow 1s; width: 40px; height: 40px;}
           .kisikon img:hover{transform: scale(1.1); box-shadow: rgb(0, 0, 0) 0px 0px 10px 6px;}
         .nagyikon img{transition: transform 1s, box-shadow 1s; width: 60px; height: 60px; display: flex; margin: auto;}
-          .nagyikon img:hover{transform: scale(1.1); box-shadow: rgb(0, 0, 0) 0px 0px 10px 6px;}
   .tevekenysegvalaszto {display: grid;
     margin: -50px auto auto auto;
     grid-template-columns: repeat(3, 33%);
@@ -934,10 +933,14 @@ body {font-family: 'Times New Roman', Times, serif;
     left: 84%;}
     .nagyikon{    position: absolute;
       left: 5%;
+      z-index: 10;
       margin-top: -15px;
       display: flex;
-      padding:5px;
+      padding:5px;      
     }
+    .nagyikon img{      opacity: 70%;
+    }
+    .kisikon{ z-index: 100;}
   
 
     .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);

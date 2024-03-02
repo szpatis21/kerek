@@ -1,11 +1,8 @@
-
-/* TEVÉKENYSÉGEK */
-
-//Kisképek
-
+//TEVÉKENYSÉGEK FÜL TARTALOM CSERÉLGETÉSE
+//kisképek
 const keps = document.querySelector('#kep');
 const keps2 = document.querySelector('#kep2');
-
+    //felhasználási helyük
     const kephely_1 = document.querySelector("#kephely_1");
     const kephely_2 = document.querySelector("#kephely_2");
     const kephely_3 = document.querySelector("#kephely_3");
@@ -16,7 +13,6 @@ const keps2 = document.querySelector('#kep2');
     const kephely_8 = document.querySelector("#kephely_7");
 
  // Fő területek   
-const isk2 = document.querySelector('#isk2');
 const csop = document.querySelector("#csop");
     const csoportok = document.querySelector("#csoportok");
 const isk = document.querySelector('#iskerzk');
@@ -48,12 +44,6 @@ const kony = document.querySelector("#kony");
                 const geszttart= document.querySelector("#geszt");       // alkat 1 tart
             const krisztint = document.querySelector("#krisztkep");     // alkat 2 gomb
                 const kriszttart = document.querySelector("#kriszt");
-
-const szoci2 = document.querySelector('#szoci2');
-const erz = document.querySelector('#erz');            
-const erz2 = document.querySelector('#erz2');
-const akr = document.querySelector('#akr');            
-const akr2 = document.querySelector('#akr2');
 
 function changeContent(newContent, placeholder) {
     if (!(placeholder instanceof Element)) {

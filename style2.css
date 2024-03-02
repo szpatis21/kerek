@@ -69,6 +69,7 @@
 
 #tagozatok #almenuk {grid-template-columns: 50% 50%; }
 
+
 #almenuk p {text-align: center; height: 60px;}
 
 .kijelolt{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px;}
@@ -97,8 +98,7 @@
     margin: auto 150px;
 }
 
-.listakurzor{ cursor: pointer; }
-.listakurzor li { padding: 2px; color: #040eff;}
+.listakurzor li { padding: 2px; color: #040eff; cursor: pointer;}
 .belso_tart p { margin: 20px 4px} 
 
     #kep, #kep2 {display: none;     
@@ -124,7 +124,7 @@
             box-shadow: rgb(96, 89, 0) -5px -0px 10px 0px;
             padding: 2%;
             font-style: italic;
-            background-color: rgb(205, 205, 205);            
+            background-color: rgb(255, 255, 255);            
             color: rgb(0, 0, 0);
             display: grid; margin: 15px 0px 15px auto;
         border-right: rgb(0, 0, 0) 2px solid;
@@ -152,10 +152,11 @@
 
             #kozben{ margin: auto 15px; font-size: small;}
             #terapiak #almenuk{ display: grid; grid-template-columns: repeat(4,25%);}
-            #terapiak{width: 80%;}
+            #terapiak #almenuk img { width: 80%; margin-top: -0px;}
+            #terapiak #kozben { font-size: smaller;}
             #el{ display: grid; grid-template-columns: repeat(2,50%); margin: 10% auto;}
             
-            #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt{grid-template-columns: 100%; }
+            #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt,#osztott {grid-template-columns: 100%; }
             #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
             #el { margin: auto 0px;grid-template-columns: 100%}
             #tagozatok #almenuk{display: grid;}       
@@ -164,3 +165,6 @@
         }
 
        
+
+
+        
