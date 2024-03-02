@@ -56,7 +56,7 @@ function changeContent(newContent, placeholder) {
     placeholder.appendChild(newContent);
     newContent.style.display = 'grid';
     setTimeout(function() {
-        placeholder.scrollIntoView({ behavior: "smooth", inline: 'nearest'});
+        placeholder.scrollIntoView({ behavior: "smooth", block:'start', inline: 'start'});
     }, 50);
 };
 
