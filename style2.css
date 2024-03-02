@@ -85,7 +85,7 @@
 }
 #alp{margin: 40px;}
 
-#el{
+#el{width: fit-content;
     margin-right: 35px;
     color: rgb(54, 158, 255);
     text-align: right;
@@ -135,7 +135,7 @@
 
     #eler a:link {color: rgb(39, 86, 255); padding: 2px; }
            
-    #f1, #f2, #f3,#f4,#f5, #f6 {font-size: 0%; transition: 1s;width: 0%; }
+    #f1, #f2, #f3, #f4, #f5, #f6 {font-size: 0%; transition: 1s;width: 0%; }
     #feladatok, #feladatok1, #feladatok2, #feladatok3, #feladatok4, #feladatok5{color:white ; text-align: center; cursor: pointer;}
 
     #osztott #kozben {padding: 0px;}
