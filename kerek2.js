@@ -238,9 +238,18 @@ zen_ter.addEventListener('click', function(){
 
 const feladatok = document.querySelector("#feladatok")
 const f1 = document.querySelector('#f1');
-    
 const feladatok1 = document.querySelector("#feladatok1")
 const f2 = document.querySelector('#f2');
+const feladatok2 = document.querySelector("#feladatok")
+const f3 = document.querySelector('#f3');
+const feladatok3 = document.querySelector("#feladatok1")
+const f4 = document.querySelector('#f4');
+const feladatok4 = document.querySelector("#feladatok4")
+const f5 = document.querySelector('#f5');
+const feladatok5 = document.querySelector("#feladatok5")
+const f6 = document.querySelector('#f6');
+
+
 
 feladatok.addEventListener('click', function(){
   f1.style.fontSize = '100%';
@@ -250,3 +259,19 @@ feladatok1.addEventListener('click', function(){
     f2.style.fontSize = '100%';
     f2.style.width = '100%';
   });
+  feladatok2.addEventListener('click', function(){
+    f3.style.fontSize = '100%';
+    f3.style.width = '100%';
+  });
+  feladatok3.addEventListener('click', function(){
+      f4.style.fontSize = '100%';
+      f4.style.width = '100%';
+    });
+    feladatok4.addEventListener('click', function(){
+        f5.style.fontSize = '100%';
+        f5.style.width = '100%';
+      });
+      feladatok5.addEventListener('click', function(){
+          f6.style.fontSize = '100%';
+          f6.style.width = '100%';
+        });

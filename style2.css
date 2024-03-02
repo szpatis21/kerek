@@ -119,8 +119,9 @@
         justify-content: center;}
 
         .nagyikon p{text-align: center;}
-        #eler p { font-style: normal; color: rgb(0, 58, 204); font-weight: bold;}
+        #eler p { font-style: normal; color: rgb(0, 58, 204); font-weight: bold; }
         #eler{width: fit-content;
+            font-size: smaller;
             box-shadow: rgb(96, 89, 0) -5px -0px 10px 0px;
             padding: 2%;
             font-style: italic;
@@ -134,10 +135,11 @@
 
     #eler a:link {color: rgb(39, 86, 255); padding: 2px; }
            
-    #f1, #f2 {font-size: 0%; transition: 1s;width: 0%; }
-    #feladatok, #feladatok1{color:white ; text-align: center; cursor: pointer;}
+    #f1, #f2, #f3,#f4,#f5, #f6 {font-size: 0%; transition: 1s;width: 0%; }
+    #feladatok, #feladatok1, #feladatok2, #feladatok3, #feladatok4, #feladatok5{color:white ; text-align: center; cursor: pointer;}
 
     #osztott #kozben {padding: 0px;}
+    #konyvtar .kisikon, #csoportok .kisikon, #iskolak .kisikon { margin-top:100px ;}
 
     @media screen and (min-width:201px) and (max-width:1037px){
 /* Media */
