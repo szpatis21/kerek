@@ -163,7 +163,7 @@
             
             #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt,#osztott {grid-template-columns: 100%; }
             #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
-            #el { margin: auto 0px;grid-template-columns: 100%}
+            #el { margin: auto 0px;grid-template-columns: 100%; font-size: smaller;}
             #tagozatok #almenuk{display: grid;}       
             .kephely_5 img,.kephely_6 img{width: 100%;}
             #alp{margin: 5px;}

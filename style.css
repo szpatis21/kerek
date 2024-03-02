@@ -411,29 +411,14 @@ h1{
   transition: flex 0.8s ease; 
   &:hover{flex: 7;}
 }
-    .item-1 { 
-      background-image: url(./media/1.webp);}
-    .item-2 { 
-      background-image: url(./media/2.webp);}
-    .item-3 { 
-    background-image: url(./media/3.webp);}
-    .item-4 { 
-    background-image: url(./media/4.webp);}
-    .item-5 { 
-    background-image: url(./media/5.webp);}
-    .item-6 { 
-    background-image: url(./media/6.webp);}
+    .item-1 { background-image: url(./media/1.webp);}
+    .item-2 { background-image: url(./media/2.webp);}
+    .item-3 { background-image: url(./media/3.webp);}
+    .item-4 { background-image: url(./media/4.webp);}
+    .item-5 { background-image: url(./media/5.webp);}
+    .item-6 { background-image: url(./media/6.webp);}
 
-.social{
-  position: absolute;
-  right: 35px;
-  bottom: 0;
-  
-  img{
-    display: block;
-    width: 32px;
-  }
-}
+
 
 /* TÁMGOATÁS */
 .tamop{
@@ -449,7 +434,7 @@ h1{
   margin-right: auto;}
 
   .tamop img {width:55%;display: flex;}
-  .tamop p{color:rgb(0, 0, 0);
+  .tamop p{color: rgb(0, 0, 125);
     font-style: italic;
     font-weight: 800;
     font-size: larger;
@@ -457,8 +442,7 @@ h1{
 
     .sor1, .sor2, .sor3 {      
       font-size: 15px;
-      background: rgb(255,255,255);
-      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 94%);
+      background-color: aliceblue;transition: all 1s;
       border: #117d92b2 3px solid;
       justify-items: center;
       align-content: center;
@@ -466,7 +450,6 @@ h1{
       transition: width 1s, height 1s, color 1s, background-color 0.3s, transform 1s, visibility 1s;
       grid-template-columns: repeat(2, 50%);
       font-weight: 900;
-      color: black;
       display: grid;
     }
         .sor1{
@@ -663,22 +646,23 @@ footer {grid-area: footer;}
         z-index: 100;
         text-align: center; 
         background-color: transparent;
-        border: 2px solid rgb(253, 253, 253);
+        border: gold 2px solid;
         border-radius: 100px;
         display: flex;
         position: absolute;
         padding: 1.5%;
         align-items: center;
         cursor: pointer;
-        box-shadow: cyan 0px 0px 10px 1px;
+        box-shadow: gold 0px 0px 10px 1px;
         width: 30px;
         height: 30px;
-        color: rgb(255, 255, 255);
+        color: gold;
         font-weight: 900;
         font-style: normal;
         justify-content: center;
       bottom: 50px; 
-        right: 0;}
+        right: 0;
+      margin-top: -5%;}
         #kotelezo_fent img{z-index: 000;}
 
 #kotelezo_lent{
@@ -699,24 +683,10 @@ footer {grid-area: footer;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* TABLET NÉZET */
+/* MOBILE */
 
 @media screen and (min-width:201px) and (max-width:1037px){
 
-  .container{
-    display: none;
-   }
    .footer a {display: none;}
   .footer-distributed {padding: 5px; display: grid; grid-template-rows: repeat(2, 50%); margin: 0; }
   .footer-distributed .footer-center p{
@@ -753,18 +723,7 @@ footer h3{text-align: center; width: 300px;
               color:gold;
               font-style: italic; font-weight: normal;
               text-align: left; font-size: 12px;}
-            
-/* SLIDER */
 
-.cimke, .cimke2{font-size: small; padding: 20px;width: 85%;}
-.cimke2 {margin-top: -1%;}
-
-#c1 , #c3{display: none;}
-#c2 {display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%; height: 70%;
-transform: translateY(40px);}
 
 /* CONTENT - TEVÉKENYSÉGEK */
 
@@ -842,59 +801,22 @@ body {font-family: 'Times New Roman', Times, serif;
       transform: translate(30px,10px);
       width: 150px;
       height: 150px; transition: all 1s;
-      animation-delay: 10.5s;
-      animation-duration: 3s;  
-      animation-fill-mode:none;
-      animation-name: tamop1;}
+    }
     .sor2{transform: translate(0px,30px);  
       width: 170px;
       height: 170px;
-      background-color: aliceblue;transition: all 1s;
-      animation-delay: 13.5s;
-      animation-duration: 3s;  
-      animation-fill-mode:none;
-      animation-name: tamop2;}
+      background-color: aliceblue;transition: all 1s;}
     .sor3{transform: translate(-30px,-1px);
       width: 155px;
       height: 155px;
-      transition: all 1s;
       background-color: aliceblue;transition: all 1s;
-      animation-delay: 16.5s;
-      animation-duration: 3s;  
-      animation-fill-mode:none;
-      animation-name: tamop3;}
+  }
 
-            @keyframes tamop1 {
-                0% {width: 150px;height: 150x;background-color: white;z-index: 1000;}
-                50%{margin-left: 300px;width: 200px;height: 200px; z-index: 1000;transform: scale(1.4)}
-                100% {width: 150px;height: 150px;background-color: white;z-index: 1000;}}
-                .sor1 img{visibility: visible;}
-             @keyframes tamop2 {
-                0% {width: 170px;height: 170x;background-color: white;z-index: 1000;}
-                50%{width: 200px;height: 200px; z-index: 1000;transform: scale(1.4)}
-                100% {width: 170px;height: 170px;background-color: white;z-index: 1000;}}
-                .sor1 img, .sor2 img, .sor3 img{visibility: visible;z-index: 1000;}    
-               @keyframes tamop3 {
-                0% {width: 155px;height: 155x;background-color: white;z-index: 1000;}
-                50%{margin-left: -120px; width: 200px;height: 200px; z-index: 1000;transform: scale(1.2)}
-                100% {width: 155px;height: 155px;background-color: white;z-index: 1000;}}
   .sor1:hover{ margin-left: 300px;
         width: 200px;height: 200px; z-index: 1000;}
     .sor2:hover{width: 200px;height: 200px;z-index: 1000;}
       .sor3:hover{ margin-left: -300px;z-index: 1000;
         width: 200px;height: 200px;}
-   .tamo_mob{display: flex; justify-self: center;}
-   .tamop_mob{display: block;
-      color: azure;
-      margin: 5% 0%;
-      text-align: center;
-      font-style: italic;
-      margin-top: 2%;background: rgba(52, 208, 255, 0.486);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.33);}
-    #tamopcimke { position: relative; margin-top: -5%; display: flex;
-      justify-self: right;  color: #ffffff; margin-left: 15%; }     
-  .tamop{box-shadow: gold 0px 5px 8px 1px;}
   
   /*FOOTER  */
 
@@ -906,30 +828,11 @@ body {font-family: 'Times New Roman', Times, serif;
 /* KÖTELEZŐ */
 #kotelezo_lent img{
   height: 200px;
-  width: 120%;
+  width: 110%;
   position: absolute;
   right: 0;
   bottom: 0;}
-  #kotelezo_lent button{
-    width: 30px;
-    height: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    font-style: normal;
-    justify-content: center;}
-  #kotelezo_fent img{
-    position: absolute;
-    right: 0;}
     
-    #kotelezo_fent button{
-    width: 30px;
-    height: 30px;
-    color: rgb(255, 255, 255);
-    font-weight: 900;
-    font-style: normal;
-    justify-content: center;
-    top: 70%; 
-    left: 84%;}
     .nagyikon{    position: absolute;
       left: 5%;
       z-index: 10;
@@ -937,14 +840,11 @@ body {font-family: 'Times New Roman', Times, serif;
       display: flex;
       padding:5px;      
     }
-    .nagyikon img{      opacity: 70%;
-    }
+    .nagyikon img{ opacity: 70%;}
     .kisikon{ z-index: 100;}
     .kisikon img {width: 50%; height: 100%;}
-  
 
     .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);
-
       margin-left: auto;
       margin-right: auto;
       border-radius:  70px;
@@ -956,7 +856,9 @@ body {font-family: 'Times New Roman', Times, serif;
       box-shadow: wheat 0px 0px 10px 1px;
       padding-top: 45px;
       margin-top: 15px;}
-
+      .item {&:hover{flex: 5;}}
+          .item-1, .item-2  { display: none;}
+      
   }
           
 
