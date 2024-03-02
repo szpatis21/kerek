@@ -891,7 +891,6 @@ body {font-family: 'Times New Roman', Times, serif;
       font-style: italic;
       margin-top: 2%;background: rgba(52, 208, 255, 0.486);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-   
       border: 1px solid rgba(255, 255, 255, 0.33);}
     #tamopcimke { position: relative; margin-top: -5%; display: flex;
       justify-self: right;  color: #ffffff; margin-left: 15%; }     

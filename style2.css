@@ -131,17 +131,22 @@
         border-top: rgb(0, 0, 0) 4px solid;
         text-shadow: rgba(55, 55, 55, 0.782) 2px 2px 3px;
     border-radius: 25px;}
+
     #eler a:link {color: rgb(39, 86, 255); padding: 2px; }
+           
+    #f1, #f2 {font-size: 0%; transition: 1s;width: 0%; }
+    #feladatok, #feladatok1{color:white ; text-align: center; cursor: pointer;}
 
+    #osztott #kozben {padding: 0px;}
 
-        @media screen and (min-width:201px) and (max-width:1037px){
+    @media screen and (min-width:201px) and (max-width:1037px){
 /* Media */
             #alcikk, .alcikk {grid-template-columns: 100%}
             .alcikk, #alcikktart3{margin: 5px;}
-
+            #konyvtar .kisikon { margin-top:74px ;}
             #almenuk p {font-size: small;}
-            #almenuk div { text-decoration: none;}
-            #almenuk img {width: 15%; margin-bottom: 2%;}
+            #almenuk div { text-decoration: none; margin: 0px 2px ;}
+            #almenuk img {width: 85%; margin-bottom: 2%;}
             #almenukkicsi #kep, #almenukkicsi #kep2 {width: 0%; margin: 0; border: none;}
             #almenukkicsi img{ width: 70%;}
 

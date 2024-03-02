@@ -235,3 +235,18 @@ zen_ter.addEventListener('click', function(){
     changeContent(zen_tart,alcikktart3);
     alcikktart3.style.display = "grid";
 });
+
+const feladatok = document.querySelector("#feladatok")
+const f1 = document.querySelector('#f1');
+    
+const feladatok1 = document.querySelector("#feladatok1")
+const f2 = document.querySelector('#f2');
+
+feladatok.addEventListener('click', function(){
+  f1.style.fontSize = '100%';
+  f1.style.width = '100%';
+});
+feladatok1.addEventListener('click', function(){
+    f2.style.fontSize = '100%';
+    f2.style.width = '100%';
+  });
