@@ -185,12 +185,21 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
 
 /* CONTENT - TEVÉKENYSÉGEK */
 .tevekenysegvalaszto p {padding: 4px; font-style: italic; color: whitesmoke; font-weight: bold; text-shadow: black 1px 4px 8px;}
-        .kisikon img{transition: transform 1s, box-shadow 1s; width: 40px; height: 40px;}
+.kisikon{z-index: 50;}       
+.kisikon img{transition: transform 1s, box-shadow 1s; width: 40px; height: 40px;}
           .kisikon img:hover{transform: scale(1.1); box-shadow: rgb(0, 0, 0) 0px 0px 10px 6px;}
+          .nagyikon{z-index: 10;
+            display: flex;
+            margin-right: auto;
+            opacity: 75%;
+            margin-bottom: -14%;}
         .nagyikon img{transition: transform 1s, box-shadow 1s; width: 60px; height: 60px; display: flex; margin: auto;}
   .tevekenysegvalaszto {display: grid;
-    margin:  auto;
+    margin: 3% 5% 0% 5%;
     grid-template-columns: repeat(3, 33%);
+    border: 2px solid white;
+    padding: 4% 0% 0% 0%;
+    justify-content: center;;
  }
         .tevval1,.tevval2,.tevval3,.tevval4 {
           display: grid;
@@ -213,7 +222,7 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
         width: 100%;
       margin: 30px 0px 45px 0px;}
    
-          .nagyikon p {color: skyblue;;}
+          .nagyikon p {color:white;opacity: 100%;}
   #instrukcio {margin: 15px;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
     color: whitesmoke;
