@@ -11,17 +11,16 @@ fetch('tartalom.html')
           console.error("A placeholder nem egy érvényes DOM elem.");
           return;
       }
-  
       while (placeholder.firstChild) {
           placeholder.removeChild(placeholder.firstChild);
       }
-  
+
       placeholder.appendChild(newContent);
   
       newContent.style.display = 'grid';
   
       setTimeout(function () {
-          newContent.scrollIntoView({ behavior: "smooth", inline: 'start' });
+        newContent.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
       }, 50);
   }
   
