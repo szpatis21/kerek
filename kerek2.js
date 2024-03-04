@@ -1,3 +1,28 @@
+fetch('tartalom.html')
+.then(response => response.text())
+.then(htmlContent => {
+    const parsedContent = new DOMParser().parseFromString(htmlContent, 'text/html');
+    const placeholder = document.querySelector('#placeholder');
+    placeholder.appendChild(parsedContent.body);
+
+    function changeContent(newContent, placeholder) {
+      if (!(placeholder instanceof Element)) {
+          console.error("A placeholder nem egy érvényes DOM elem.");
+          return;
+      }
+  
+      while (placeholder.firstChild) {
+          placeholder.removeChild(placeholder.firstChild);
+      }
+  
+      placeholder.appendChild(newContent);
+  
+      newContent.style.display = 'grid';
+  
+      setTimeout(function () {
+          newContent.scrollIntoView({ behavior: "smooth", inline: 'start' });
+      }, 50);
+  }
 //TEVÉKENYSÉGEK FÜL TARTALOM CSERÉLGETÉSE
 //kisképek
 const keps = document.querySelector('#kep');
@@ -45,22 +70,6 @@ const kony = document.querySelector("#kony");
             const krisztint = document.querySelector("#krisztkep");     // alkat 2 gomb
                 const kriszttart = document.querySelector("#kriszt");
 
-function changeContent(newContent, placeholder) {
-    if (!(placeholder instanceof Element)) {
-        console.error("A placeholder nem egy érvényes DOM elem.");
-        return;
-    }
-    while (placeholder.firstChild) {
-        placeholder.removeChild(placeholder.firstChild);
-    }
-    placeholder.appendChild(newContent);
-    newContent.style.display = 'grid';
-    setTimeout(function() {
-        placeholder.scrollIntoView({ behavior: "smooth", block:'start', inline: 'start'});
-    }, 50);
-};
-
-const placeholder = document.querySelector("#placeholder");
     const alcikktart3 = document.querySelector("#alcikktart3")    
     const alcikktart2 = document.querySelector("#alcikktart2");
     const alcikktart = document.querySelector("#alcikktart");
@@ -275,3 +284,38 @@ feladatok1.addEventListener('click', function(){
           f6.style.fontSize = '100%';
           f6.style.width = '100%';
         });
+
+    })
+    .catch(error => console.error('Hiba a tartalom.html betöltése közben:', error));
+  
+
+
+        function kikapcs() {
+            var x = document.getElementById("kotelezo_lent");
+            var y = document.getElementById("kotelezo_fent");
+            
+            if (x.style.transform === "translatex(80%)" || y.style.transform === "translateY(80%)") 
+            {y.style.opacity = "1";
+            y.style.transform = "translatex(0%)";
+            y.style.transition = "all 0.5s"
+              x.style.opacity = "1";
+              x.style.transform = "translatex(0%)";
+              x.style.transition = "all 0.5s"
+           
+            } else {
+              y.style.transform = "translatex(80%)";
+              y.style.transition = "all 0.5s"
+              y.style.opacity = "0";
+              x.style.transform = "translatex(80%)";
+              x.style.transition = "all 0.5s"
+              x.style.opacity = "0";
+            }}
+          
+          /* MOBILMENU */
+          
+          function checkUncheck()
+          {var checkbox = document.getElementById('menu-bar');
+              if(checkbox.checked)
+              {checkbox.checked = false;
+                } else 
+                      {checkbox.checked = true;}}
