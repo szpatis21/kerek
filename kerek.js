@@ -1,3 +1,5 @@
+
+
 fetch('tartalom.html')
   .then(response => response.text())
   .then(htmlContent => {
@@ -7,23 +9,51 @@ fetch('tartalom.html')
     placeholder.appendChild(parsedContent.body);
 
     function changeContent(newContent, placeholder) {
-      if (!(placeholder instanceof Element)) {
-          console.error("A placeholder nem egy érvényes DOM elem.");
-          return;
-      }
-      while (placeholder.firstChild) {
-          placeholder.removeChild(placeholder.firstChild);
-      }
+        if (!(placeholder instanceof Element)) {
+            console.error("A placeholder nem egy érvényes DOM elem.");
+            return;
+        }
+    
+        while (placeholder.firstChild) {
+            placeholder.removeChild(placeholder.firstChild);
+        }
+    
+        placeholder.appendChild(newContent);
+    
+        newContent.style.display = 'grid';
 
-      placeholder.appendChild(newContent);
-  
-      newContent.style.display = 'grid';
-  
-      setTimeout(function () {
-        newContent.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
-      }, 50);
-  }
-  
+        const gyujto = document.createElement('div');
+        newContent.appendChild(gyujto)
+        gyujto.classList.add("gyujto")
+
+        const fel = document.createElement('button');
+        fel.textContent = 'Ugrás a tartalom tetejére';
+        fel.classList.add('fel');
+        gyujto.appendChild(fel);
+    
+        fel.addEventListener('click', function() {
+            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+        });
+
+        const kilep = document.createElement('button');
+        kilep.textContent = " Tartalom összecsukása";
+        kilep.classList.add('kilep');
+        gyujto.appendChild(kilep);
+        const start = document.querySelector(".intezmenyvalaszto")
+
+            kilep.addEventListener('click', function() {
+                placeholder.removeChild(newContent);
+                newContent.removeChild(gyujto);
+                start.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+            });
+    
+    
+        setTimeout(function () {
+            newContent.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+        }, 50);
+    }
+    
+  const ures = document.querySelector("#ures")
 /* PÁLYÁZATOK  */
   const paly = document.querySelector("#paly");
   const paly_tar = document.querySelector("#paly_tar")
@@ -78,6 +108,7 @@ const kony = document.querySelector("#kony");
                 const geszttart= document.querySelector("#geszt");       // alkat 1 tart
             const krisztint = document.querySelector("#krisztkep");     // alkat 2 gomb
                 const kriszttart = document.querySelector("#kriszt");
+                const kilep = document.querySelector("#kilep")
 
     const alcikktart3 = document.querySelector("#alcikktart3")    
     const alcikktart2 = document.querySelector("#alcikktart2");
@@ -114,7 +145,10 @@ const belso_al_fej = document.querySelector("#belsoalcikk_fej")
         const jat_tart= document.querySelector("#jat_tart");
         const hig_tart= document.querySelector("#hig_tart");  
 
+      
+
 const buttonContentPairs = {
+    kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
     ellint: { gomb: ellint, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
     fejfog: { gomb: fejfog, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
@@ -134,6 +168,8 @@ const buttonContentPairs = {
     paly_01: { gomb: paly_01, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
     paly_01_1: { gomb: paly_01_2, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
 };
+
+
 
 for (const key in buttonContentPairs) {
     if (buttonContentPairs.hasOwnProperty(key)) {
@@ -181,7 +217,7 @@ const buttonContentPairs2 = {
     komm_belso: { content: komm_tart, placeholder: belso_al_fej},
     eszt_belso: { content: eszt_tart, placeholder: belso_al_fej},
     erz_belso: { content: erzi_tart, placeholder: belso_al_fej},
-    fej_belso: { content: komm_tart, placeholder: belso_al_fej},
+    fej_belso: { content: fej_tart, placeholder: belso_al_fej},
     szuk_belso: { content: szuk_tart, placeholder: belso_al_fej},
     reg_belso: { content: reg_tart, placeholder: belso_al_fej},
     jat_belso: { content: jat_tart, placeholder: belso_al_fej},

@@ -597,6 +597,31 @@ footer {grid-area: footer;}
             margin-bottom: 5px;}
 
 
+
+            /* Gyűjtő */
+            .gyujto{
+            display: flex;
+            flex-direction: row;
+            justify-content: center}
+
+            .kilep,.fel{
+              width: fit-content;
+              background-color: transparent;
+              border: rgb(255, 255, 255) 2px solid;
+              border-radius: 15px;
+              color: white;
+              font-family: 'Times New Roman', Times, serif;
+              padding: 2px 8px;
+              margin: 10px;
+              height: 30px;
+              box-shadow: white 0px 0px 5px;
+              transition: 0.5s;
+            }
+
+            .kilep:hover,.fel:hover{
+              color: gold;
+              border-color: gold;
+            }
 /* Pályázatok */
 #paly_men{
 display: flex;
@@ -794,7 +819,7 @@ justify-content: center;
 #osztott #kozben {margin: 10px; text-align: justify;}
 
 #almenuk img {cursor: pointer;width: 80%; border: 2px solid white; border-radius: 45px; transition: 0.5s;}
-    #almenuk img:hover{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px; width: 35%; border: gold 2px solid;}
+    #almenuk img:hover{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px; border: gold 2px solid;}
    
 #tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
     margin: 50px;
@@ -864,6 +889,7 @@ justify-content: center;
         display: none;
         border: rgb(252, 227, 3) 5px solid;
     margin-top: 5px;}
+  
     #al-al{
         display: flex;
     }
@@ -878,8 +904,9 @@ justify-content: center;
         .nagyikon p{text-align: center;}
         #eler p { font-style: normal; color: rgb(0, 58, 204); font-weight: bold; }
         #eler{width: fit-content;
+          width: 200px;
             font-size: smaller;
-            box-shadow: rgb(96, 89, 0) -5px -0px 10px 0px;
+            box-shadow: rgb(255, 255, 255) -5px -0px 10px 0px;
             padding: 2%;
             font-style: italic;
             background-color: rgb(255, 255, 255);            
@@ -1089,7 +1116,9 @@ justify-content: center;
     margin: 5%;
     justify-items: center;}
     
-    .palymenu{margin: 0px 5px}
+    .palymenu{margin: 5px}
+    .paly_belso{ font-size: smaller; margin: 1px;}
+
 
      /* TEVÉKENYSÉG VÁLASZTÓ */ 
         .nagyikon{    position: absolute;
@@ -1102,6 +1131,10 @@ justify-content: center;
         .nagyikon img{ opacity: 70%;}
         .kisikon{ z-index: 100;}
         .kisikon img {width: 50%; height: 100%;}
+        #valaszto .kisikon img{ width: 10%;}
+        #galleria{font-size: x-small;
+          width: 100%;
+          padding: 10px;}
     
         .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);
           margin-left: auto;
