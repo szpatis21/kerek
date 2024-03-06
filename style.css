@@ -710,8 +710,8 @@ font-style: italic;
   margin: 5%;
   border: 2px solid white;
   padding: 2%;
-
 }
+#terkepmenu h3 { color: white; text-align: center; margin: 20px auto;}
 
   #int_adatok{
     margin: 10px auto;
@@ -727,9 +727,10 @@ font-style: italic;
     justify-items: center;
     align-items: center;
   }
+  
   #int_adatok img {width: 100%; margin: auto; display: grid; box-shadow: black 0px 0px 5px 1px;}
   #int_adatok p {text-align: bold; color:rgb(2, 40, 83); margin-left: auto;}
-  #int_adatok a { font-style: italic;padding-left: 15px;  }
+  #int_adatok a { font-style: italic;padding-left: 15px;  color: white;}
   #int_adatok ul { margin: 0; padding: 0;}
   #int_adatok li {    grid-template-columns: 40% 60%;
     display: grid;}
