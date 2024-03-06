@@ -14,54 +14,57 @@ fetch('tartalom.html')
             return;
         }
     
+        // Távolítsuk el az összes gyermeket a placeholder-ből
         while (placeholder.firstChild) {
             placeholder.removeChild(placeholder.firstChild);
         }
     
+        // Hozzáadjuk az új tartalmat a placeholder-hez
         placeholder.appendChild(newContent);
     
         newContent.style.display = 'grid';
-
-        const gyujto = document.createElement('div');
-        newContent.appendChild(gyujto)
-        gyujto.classList.add("gyujto")
-
-        const fel = document.createElement('button');
-        fel.textContent = 'Ugrás a tartalom tetejére';
-        fel.classList.add('fel');
-        gyujto.appendChild(fel);
     
-        fel.addEventListener('click', function() {
-            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
-        });
-
-        const kilep = document.createElement('button');
-        kilep.textContent = " Tartalom összecsukása";
-        kilep.classList.add('kilep');
-        gyujto.appendChild(kilep);
-        const start = document.querySelector(".intezmenyvalaszto")
-
+        // Ellenőrizzük, hogy van-e már "gyujto" elem a tartalomhoz rendelve
+        var gyujto = newContent.querySelector('.gyujto');
+    
+        // Ha nincs, akkor létrehozzuk és hozzáadjuk az új tartalomhoz
+        if (!gyujto) {
+            gyujto = document.createElement('div');
+            gyujto.classList.add("gyujto");
+            newContent.appendChild(gyujto);
+    
+            const fel = document.createElement('button');
+            fel.textContent = 'Ugrás a tartalom tetejére';
+            fel.classList.add('fel');
+            gyujto.appendChild(fel);
+    
+            fel.addEventListener('click', function() {
+                placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+            });
+    
+            const kilep = document.createElement('button');
+            kilep.textContent = " Tartalom összecsukása";
+            kilep.classList.add('kilep');
+            gyujto.appendChild(kilep);
+    
+            const start = document.querySelector(".intezmenyvalaszto");
+    
             kilep.addEventListener('click', function() {
                 placeholder.removeChild(newContent);
                 newContent.removeChild(gyujto);
                 start.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
             });
+        }
     
-    
+        // Automatikusan görgetjük az új tartalomhoz
         setTimeout(function () {
-            newContent.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+            newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
         }, 50);
     }
     
-  const ures = document.querySelector("#ures")
-/* PÁLYÁZATOK  */
-  const paly = document.querySelector("#paly");
-  const paly_tar = document.querySelector("#paly_tar")
-      const paly_01 = document.querySelector("#paly_01");
-      const paly_01_2 = document.querySelector("#paly_01_2");
-
-      const paly_01_tar = document.querySelector("#paly_01_tar");
     
+  const ures = document.querySelector("#ures")
+
 //TEVÉKENYSÉGEK FÜL TARTALOM CSERÉLGETÉSE
 //kisképek
 const keps = document.querySelector('#kep');
@@ -145,7 +148,21 @@ const belso_al_fej = document.querySelector("#belsoalcikk_fej")
         const jat_tart= document.querySelector("#jat_tart");
         const hig_tart= document.querySelector("#hig_tart");  
 
-      
+/* PÁLYÁZATOK  */
+const paly = document.querySelector("#paly");
+const paly_tar = document.querySelector("#paly_tar")
+    const paly_01 = document.querySelector("#paly_01");
+    const paly_01_2 = document.querySelector("#paly_01_2");
+    const paly_01_tar = document.querySelector("#paly_01_tar");
+    const paly_02 = document.querySelector("#paly_02");
+    const paly_02_2 = document.querySelector("#paly_02_2");
+    const paly_02_tar = document.querySelector("#paly_02_tar");
+    const paly_03 = document.querySelector("#paly_03");      
+    const paly_03_2 = document.querySelector("#paly_03_2");
+    const paly_03_tar = document.querySelector("#paly_03_tar"); 
+    const paly_04 = document.querySelector("#paly_03");      
+    const paly_04_2 = document.querySelector("#paly_03_2");
+    const paly_04_tar = document.querySelector("#paly_03_tar");      
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -166,7 +183,14 @@ const buttonContentPairs = {
     krisztint: {gomb:krisztint, content1:kriszttart, placeholder1: alcikktart},
     /* PÁLYÁZATOK */
     paly_01: { gomb: paly_01, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
-    paly_01_1: { gomb: paly_01_2, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
+    paly_01_2: { gomb: paly_01_2, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
+    paly_02: { gomb: paly_02, content1: paly, placeholder1: placeholder, content2: paly_02_tar, placeholder2: paly_tar},
+    paly_02_2: { gomb: paly_02_2, content1: paly, placeholder1: placeholder, content2: paly_02_tar, placeholder2: paly_tar},
+    paly_03: { gomb: paly_03, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
+    paly_03_2: { gomb: paly_03_2, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
+    paly_04: { gomb: paly_04, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},
+    paly_04_2: { gomb: paly_04_2, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},
+
 };
 
 
