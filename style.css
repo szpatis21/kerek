@@ -629,8 +629,7 @@ footer {grid-area: footer;}
   color: rgb(255 255 255);
   font-weight: 600;
   text-decoration: overline;
-  text-decoration-color: white;
-  /* text-shadow: gold -3px -2px 13px; */e;}
+  text-decoration-color: white;}
 #paly_men{
 display: flex;
 justify-content: center;
