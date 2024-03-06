@@ -167,6 +167,10 @@ const paly_tar = document.querySelector("#paly_tar")
     const paly_05_2 = document.querySelector("#paly_05_2");
     const paly_05_tar = document.querySelector("#paly_05_tar"); 
 
+    const terkepmenu = document.querySelector("#terkepmenu");
+    const terkepekel = document.querySelector("#terkepekel");
+    const terkepekel2 = document.querySelector("#terkepekel2")
+
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
@@ -195,6 +199,10 @@ const buttonContentPairs = {
     paly_04_2: { gomb: paly_04_2, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},    
     paly_05: { gomb: paly_05, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
     paly_05_2: { gomb: paly_05_2, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
+    /* ELÉRHETŐSÉG */
+    terkepekel: { gomb: terkepekel, content1: terkepmenu, placeholder1: placeholder},
+    terkepekel2: { gomb: terkepekel2, content1: terkepmenu, placeholder1: placeholder},
+    
 
 };
 
