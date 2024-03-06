@@ -160,9 +160,12 @@ const paly_tar = document.querySelector("#paly_tar")
     const paly_03 = document.querySelector("#paly_03");      
     const paly_03_2 = document.querySelector("#paly_03_2");
     const paly_03_tar = document.querySelector("#paly_03_tar"); 
-    const paly_04 = document.querySelector("#paly_03");      
-    const paly_04_2 = document.querySelector("#paly_03_2");
-    const paly_04_tar = document.querySelector("#paly_03_tar");      
+    const paly_04 = document.querySelector("#paly_04");      
+    const paly_04_2 = document.querySelector("#paly_04_2");
+    const paly_04_tar = document.querySelector("#paly_04_tar");      
+    const paly_05 = document.querySelector("#paly_05");      
+    const paly_05_2 = document.querySelector("#paly_05_2");
+    const paly_05_tar = document.querySelector("#paly_05_tar"); 
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -189,7 +192,9 @@ const buttonContentPairs = {
     paly_03: { gomb: paly_03, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
     paly_03_2: { gomb: paly_03_2, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
     paly_04: { gomb: paly_04, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},
-    paly_04_2: { gomb: paly_04_2, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},
+    paly_04_2: { gomb: paly_04_2, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},    
+    paly_05: { gomb: paly_05, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
+    paly_05_2: { gomb: paly_05_2, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
 
 };
 

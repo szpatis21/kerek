@@ -623,9 +623,20 @@ footer {grid-area: footer;}
               border-color: gold;
             }
 /* Pályázatok */
+#paly_menp{    display: flex;
+  margin: 20px auto;
+  font-size: 160%;
+  color: rgb(255 255 255);
+  font-weight: 600;
+  text-decoration: overline;
+  text-decoration-color: white;
+  /* text-shadow: gold -3px -2px 13px; */e;}
 #paly_men{
 display: flex;
 justify-content: center;
+text-align: center;
+font-size: small;
+font-style: italic;
 }
 .palymenu{border: white 2px solid;
   cursor: pointer;
