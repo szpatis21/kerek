@@ -166,10 +166,19 @@ const paly_tar = document.querySelector("#paly_tar")
     const paly_05 = document.querySelector("#paly_05");      
     const paly_05_2 = document.querySelector("#paly_05_2");
     const paly_05_tar = document.querySelector("#paly_05_tar"); 
-
+    /* KAPCSOLAT */
     const terkepmenu = document.querySelector("#terkepmenu");
     const terkepekel = document.querySelector("#terkepekel");
-    const terkepekel2 = document.querySelector("#terkepekel2")
+    const terkepekel2 = document.querySelector("#terkepekel2");
+    /* DOKUMENTTUMOK */
+    const doku = document.querySelector("#doku");
+    const dok = document.querySelector("#dok");
+    const dok2 = document.querySelector("#dok2");
+        const megjelenito = document.querySelector("#megjelenito");
+            const suldok = document.querySelector("#suldok");
+                const suldok_tart = document.querySelector("#suldok_tart");
+                const pdf_tart = document.querySelector("#pdf_tart")
+
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -202,8 +211,10 @@ const buttonContentPairs = {
     /* ELÉRHETŐSÉG */
     terkepekel: { gomb: terkepekel, content1: terkepmenu, placeholder1: placeholder},
     terkepekel2: { gomb: terkepekel2, content1: terkepmenu, placeholder1: placeholder},
-    
-
+    /* DOKUMENTUMOK */
+    dok: { gomb: dok, content1: doku, placeholder1: placeholder},
+    dok2: { gomb: dok2, content1: doku, placeholder1: placeholder},
+    suldok: {gomb: suldok, content1: suldok_tart, placeholder1: megjelenito },
 };
 
 
@@ -262,6 +273,12 @@ const buttonContentPairs2 = {
     moz_belso3: { content: moz_tart, placeholder: belso_al_fej},
     egy_belso2: { content: egy_tart, placeholder: belso_al_fej},
     bes_belso3: { content: bes_tart, placeholder: belso_al_fej},
+//DOKUMENTUMTÁR
+    pdf_1: {content: pdf1, placeholder: pdf_tart},
+    pdf_2: {content: pdf2, placeholder: pdf_tart},
+    pdf_3: {content: pdf3, placeholder: pdf_tart}
+
+
 };
 
 function handleButtonClick(pair) {
@@ -270,16 +287,42 @@ function handleButtonClick(pair) {
     ertaktart.style.gridTemplateColumns = getGridStyles();
     fejnevtart.style.gridTemplateColumns = getGridStyles();
 }
-        for (const key in buttonContentPairs2) {
-            if (buttonContentPairs2.hasOwnProperty(key)) {
-                const pair = buttonContentPairs2[key];
-                const buttonElement = document.querySelector(`#${key}`);
-                if (buttonElement) {
-                    buttonElement.addEventListener('click', function() {
+for (const key in buttonContentPairs2) {
+    if (buttonContentPairs2.hasOwnProperty(key)) {
+        const pair = buttonContentPairs2[key];
+        const buttonElement = document.querySelector(`#${key}`);
+        
+        // Ellenőrizze, hogy a gomb elem megtalálható-e
+        if (buttonElement) {
+            buttonElement.addEventListener('click', function() {
+                // Ebben a függvényben pair.content tartalmát használhatja
                 handleButtonClick(pair);
-                });}
-            }
-        }; 
+                
+                // Ellenőrizzük, hogy a pair.content érvényes id típusú és string-e
+                if (pair.content instanceof HTMLElement && typeof pair.content.id === 'string') {
+                    const contentElement = document.getElementById(pair.content.id);
+                    if (contentElement) {
+                        // Használja a contentElementet a további műveletekre
+                        console.log(contentElement);
+                    } else {
+                        // Hibakezelés: a tartalom elem nem található
+                        console.error(`Hiba: ${pair.content.id} elem nem található.`);
+                    }
+                } else {
+                    // Hibakezelés: a pair.content nem érvényes id típusú
+                    console.error(`Hiba: ${pair.content} nem érvényes id típusú.`);
+                }
+            });
+        } else {
+            // Hibakezelés: a gomb elem nem található
+            console.error(`Hiba: ${key} gomb elem nem található.`);
+        }
+    }
+}
+
+
+; 
+        
     // Médiaváltó eseménykezelő
     window.addEventListener('resize', function() {
         pszitart.style.gridTemplateColumns = getGridStyles();    

@@ -711,12 +711,13 @@ font-style: italic;
       justify-content: space-around;
 }
       
-#terkepmenu, #paly{
+#terkepmenu, #paly,#doku{
   display: none;
   margin: 5%;
   border: 2px solid white;
   padding: 2%;
 }
+
 #terkepmenu h3, h2 { color: white; text-align: center; margin: 20px auto;}
 
   #int_adatok{
@@ -734,7 +735,7 @@ font-style: italic;
     align-items: center;
   }
 
-  #int_adatok img {width: 100%; margin: auto; display: grid; box-shadow: black 0px 0px 5px 1px;}
+  #int_adatok img {width: 100%; margin: auto; display: grid; box-shadow: black 0px 0px 5px 1px; border-radius: 15px;}
   #int_adatok p {text-align: bold; color:rgb(2, 40, 83); margin-left: auto;}
   #int_adatok a { font-style: italic;padding-left: 15px;  color: white;}
   #int_adatok ul { margin: 0; padding: 0;}
@@ -988,9 +989,49 @@ font-style: italic;
     #osztott #kozben {padding: 0px;}
     #konyvtar .kisikon, #csoportok .kisikon, #iskolak .kisikon { margin-top:100px ;}
 
+    /* DOKUMENTOMK */
+          .kisikon2 {width: 30%;
+             border: 2px solid white;
+              box-shadow: 0px 0px 5px 1px white;
+               border-radius: 240px;
+                transition: 0.5s;
+              cursor: pointer;}
+          .kisikon2:hover{ border-color: gold; box-shadow:gold 0px 0px 5px 2px;}
+          .dokkep { text-align: center;
+            display: flex;
+            margin: 15px auto ;
+            flex-direction: column;
+            align-items: center; 
+          color: white;}
+          #doksik{display: flex;}
+          #dokumenu {display: grid;
+            grid-template-columns: 75% 25%;
+          }
+          #doku #eler { margin: 10px;}
+          #tisztv { margin: auto;}
+          .alcikk2{display: none;
+            align-items: start;
+            margin: 30px auto;
+            box-shadow: #000000 0px 0px 5px 1px;
+            justify-items: center;
+           grid-template-columns: 50% 50%;
+           background: white;
+           border-left: gold 5px solid;
+           padding: 10px;}
+            .alcikk2 ul p {text-decoration: underline; font-size: larger; margin: 10px auto; font-weight: bolder; color: #1a73e8;}
+            .alcikk2 li {font-style: italic; margin: 8px auto; cursor: pointer;}
+    
+            .pdf {display: none;}
+    
+@media screen and (min-width:201px) and (max-width:1037px){
+/* DOKUMENTUMOK */
+#dokumenu {display: flex; flex-direction: column;
+  font-size: small;
+}
+#doksik {    display: grid;
+  grid-template-columns: 33% 33% 33%;}
+  .kisikon2{width: 45%;}
 
-       
-    @media screen and (min-width:201px) and (max-width:1037px){
 /* ELÉRHETŐSÉGEK */
 #int_adatok{font-size: small;
   display: block;
@@ -1192,6 +1233,7 @@ font-style: italic;
 
     .paly_belso{ font-size: smaller; margin: 1px;}
 
+    /* DOKUMENTOMK */
 
      /* TEVÉKENYSÉG VÁLASZTÓ */ 
         .nagyikon{    position: absolute;
