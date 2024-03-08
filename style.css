@@ -452,7 +452,6 @@ h1{
   justify-items: center;
   align-items: center;
   height: 300px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;}
 
@@ -652,8 +651,12 @@ font-style: italic;
 }
 .palymenu{border: white 2px solid;
   cursor: pointer;
+  width: 150px;
+  height: 45px;
   margin: auto 5px;
   color: white;
+  display: flex;
+  align-items: center;
   padding: 1px 3px;
   transition: 0.5s;
   box-shadow: white 0px 0px 5px 1px;}
@@ -724,11 +727,12 @@ font-style: italic;
   border: 2px solid white;
   padding: 2%;
 }
-#ta, #hirek{
+#ta, #hirek, .content{
 margin: 5%;
 border: 2px solid white;
 padding: 2%;
 }
+.content {border-top: none;}
 
 #terkepmenu h3, h2 { color: white; text-align: center; margin: 20px auto;}
 
@@ -1012,7 +1016,7 @@ padding: 2%;
            background: white;
            border-left: gold 5px solid;
            padding: 10px;}
-            .alcikk2 ul p {text-decoration: underline; font-size: larger; margin: 10px auto; font-weight: bolder; color: #1a73e8;}
+            .alcikk2 ul p {text-decoration: underline; font-size: larger; margin: 10px auto; font-weight: bolder; color: #1a73e8; text-align: center;}
             .alcikk2 li {font-style: italic; margin: 8px auto; cursor: pointer;}   
             .pdf {display: none;}
     
@@ -1254,7 +1258,6 @@ padding: 2%;
           padding-top: 15px;
           padding-bottom: 0px;
           border: whitesmoke solid 2px;
-          box-shadow: wheat 0px 0px 10px 1px;
           padding-top: 45px;
           margin-top: 15px;}
           .item {&:hover{flex: 5;}}
