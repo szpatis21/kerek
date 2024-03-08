@@ -8,8 +8,6 @@ fetch('tartalom.html')
     const placeholder = document.querySelector('#placeholder');
     placeholder.appendChild(parsedContent.body);
 
- // Külső változó, ami jelzi, hogy már létrejött-e a .gyujto elem
-
 function changeContent(newContent, placeholder) {
     if (!(placeholder instanceof Element)) {
         console.error("A placeholder nem egy érvényes DOM elem.");
@@ -21,7 +19,6 @@ function changeContent(newContent, placeholder) {
     }
 
     let gyujto = document.querySelector(".gyujto")
-    // Csak akkor hozza létre a .gyujto elemet, ha még nem létezik
     if (!gyujto) {
         const gyujto = document.createElement('div');
         gyujto.classList.add("gyujto");
@@ -41,30 +38,23 @@ function changeContent(newContent, placeholder) {
         kilep.classList.add('kilep');
         gyujto.appendChild(kilep);
 
-
         kilep.addEventListener('click', function() {
             while (placeholder.firstChild) {
                 placeholder.removeChild(placeholder.firstChild);
             }
             placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
         });
-
     }
 
-    // Hozzáadjuk az új tartalmat a placeholder-hez
     placeholder.appendChild(newContent);
     newContent.style.display = 'grid';
 
-    // Egyéb műveletek...
     setTimeout(function () {
         newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
     }, 50);
 }
-
     
-    
-  const ures = document.querySelector("#ures")
-
+const ures = document.querySelector("#ures")
 //TEVÉKENYSÉGEK FÜL TARTALOM CSERÉLGETÉSE
 //kisképek
 const keps = document.querySelector('#kep');
@@ -76,7 +66,6 @@ const keps2 = document.querySelector('#kep2');
     const kephely_4 = document.querySelector("#kephely_4");
     const kephely_5 = document.querySelector(".kephely_5");
     const kephely_6 = document.querySelector(".kephely_6");
-
  // Fő területek   
 const csop = document.querySelector("#csop");
     const csoportok = document.querySelector("#csoportok");
@@ -115,8 +104,8 @@ const kony = document.querySelector("#kony");
     const alcikktart2 = document.querySelector("#alcikktart2");
     const alcikktart = document.querySelector("#alcikktart");
     //Al-al kategóriák
-const belso_al = document.querySelector("#belsoalcikk");
-        // Pszihés
+    const belso_al = document.querySelector("#belsoalcikk");
+     // Pszihés
         const egy_tart= document.querySelector("#egy_tart");
         const dis_tart=document.querySelector("#dis_tart");
         const bes_tart = document.querySelector("#bes_tart");
@@ -126,8 +115,8 @@ const belso_al = document.querySelector("#belsoalcikk");
         const gyo_tart = document.querySelector("#gyo_tart");
         const zen_tart = document.querySelector("#zen_tart"); 
         const lat_tart = document.querySelector("#lat_tart");  
-const belso_al_ert = document.querySelector("#belsoalcikk_ert")
-        //Ért Ak
+    const belso_al_ert = document.querySelector("#belsoalcikk_ert")
+    //Ért Ak
         const sub_tart= document.querySelector("#sub_tart");
         const nep_tart= document.querySelector("#nep_tart");    
         const ayr_tart= document.querySelector("#ayr_tart");
@@ -135,8 +124,8 @@ const belso_al_ert = document.querySelector("#belsoalcikk_ert")
         const kez_tart= document.querySelector("#kez_tart"); 
         const alt_tart= document.querySelector("#alt_tart");
         const on_tart= document.querySelector("#on_tart"); 
-const belso_al_fej = document.querySelector("#belsoalcikk_fej")
-        //Fejlesztő fogalkoztatás
+    const belso_al_fej = document.querySelector("#belsoalcikk_fej")
+    //Fejlesztő fogalkoztatás
         const komm_tart= document.querySelector("#komm_tart");    
         const eszt_tart= document.querySelector("#eszt_tart");
         const erzi_tart= document.querySelector("#erz_tart");
@@ -145,30 +134,29 @@ const belso_al_fej = document.querySelector("#belsoalcikk_fej")
         const reg_tart= document.querySelector("#reg_tart");
         const jat_tart= document.querySelector("#jat_tart");
         const hig_tart= document.querySelector("#hig_tart");  
-
-/* PÁLYÁZATOK  */
-const paly = document.querySelector("#paly");
-const paly_tar = document.querySelector("#paly_tar")
-    const paly_01 = document.querySelector("#paly_01");
-    const paly_01_2 = document.querySelector("#paly_01_2");
-    const paly_01_tar = document.querySelector("#paly_01_tar");
-    const paly_02 = document.querySelector("#paly_02");
-    const paly_02_2 = document.querySelector("#paly_02_2");
-    const paly_02_tar = document.querySelector("#paly_02_tar");
-    const paly_03 = document.querySelector("#paly_03");      
-    const paly_03_2 = document.querySelector("#paly_03_2");
-    const paly_03_tar = document.querySelector("#paly_03_tar"); 
-    const paly_04 = document.querySelector("#paly_04");      
-    const paly_04_2 = document.querySelector("#paly_04_2");
-    const paly_04_tar = document.querySelector("#paly_04_tar");      
-    const paly_05 = document.querySelector("#paly_05");      
-    const paly_05_2 = document.querySelector("#paly_05_2");
-    const paly_05_tar = document.querySelector("#paly_05_tar"); 
+    /* PÁLYÁZATOK  */
+    const paly = document.querySelector("#paly");
+    const paly_tar = document.querySelector("#paly_tar")
+        const paly_01 = document.querySelector("#paly_01");
+        const paly_01_2 = document.querySelector("#paly_01_2");
+        const paly_01_tar = document.querySelector("#paly_01_tar");
+        const paly_02 = document.querySelector("#paly_02");
+        const paly_02_2 = document.querySelector("#paly_02_2");
+        const paly_02_tar = document.querySelector("#paly_02_tar");
+        const paly_03 = document.querySelector("#paly_03");      
+        const paly_03_2 = document.querySelector("#paly_03_2");
+        const paly_03_tar = document.querySelector("#paly_03_tar"); 
+        const paly_04 = document.querySelector("#paly_04");      
+        const paly_04_2 = document.querySelector("#paly_04_2");
+        const paly_04_tar = document.querySelector("#paly_04_tar");      
+        const paly_05 = document.querySelector("#paly_05");      
+        const paly_05_2 = document.querySelector("#paly_05_2");
+        const paly_05_tar = document.querySelector("#paly_05_tar"); 
     /* KAPCSOLAT */
     const terkepmenu = document.querySelector("#terkepmenu");
     const terkepekel = document.querySelector("#terkepekel");
     const terkepekel2 = document.querySelector("#terkepekel2");
-    /* DOKUMENTTUMOK */
+    /* DOKUMENTUMOK */
     const doku = document.querySelector("#doku");
     const dok = document.querySelector("#dok");
     const dok2 = document.querySelector("#dok2");
@@ -182,7 +170,9 @@ const paly_tar = document.querySelector("#paly_tar")
                 const besdok_tart = document.querySelector("#besdok_tart");
             const kozdok = document.querySelector("#kozdok");
                 const kozdok_tart = document.querySelector("#kozdok_tart");
-
+            const merdok = document.querySelector("#merdok");
+                const merdok_tart = document.querySelector("#merdok_tart");
+    
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
@@ -221,9 +211,8 @@ const buttonContentPairs = {
     adadok: {gomb: adadok, content1: adadok_tart, placeholder1: megjelenito },
     besdok: {gomb: besdok, content1: besdok_tart, placeholder1: megjelenito },
     kozdok:{gomb: kozdok, content1: kozdok_tart, placeholder1: megjelenito },
+    merdok:{gomb: merdok, content1: merdok_tart, placeholder1: megjelenito },
 };
-
-
 
 for (const key in buttonContentPairs) {
     if (buttonContentPairs.hasOwnProperty(key)) {
@@ -336,6 +325,26 @@ const buttonContentPairs2 = {
     pdf_53: {content: pdf53, placeholder: pdf_tart},
     pdf_54: {content: pdf54, placeholder: pdf_tart},
     pdf_55: {content: pdf55, placeholder: pdf_tart},
+    pdf_56: {content: pdf56, placeholder: pdf_tart},
+    pdf_57: {content: pdf57, placeholder: pdf_tart},
+    pdf_58: {content: pdf58, placeholder: pdf_tart},
+    pdf_59: {content: pdf59, placeholder: pdf_tart},
+    pdf_60: {content: pdf60, placeholder: pdf_tart},
+    pdf_61: {content: pdf61, placeholder: pdf_tart},
+    pdf_62: {content: pdf62, placeholder: pdf_tart},
+    pdf_63: {content: pdf63, placeholder: pdf_tart},
+    pdf_64: {content: pdf64, placeholder: pdf_tart},
+    pdf_65: {content: pdf65, placeholder: pdf_tart},
+    pdf_66: {content: pdf66, placeholder: pdf_tart},
+    pdf_67: {content: pdf67, placeholder: pdf_tart},
+    pdf_68: {content: pdf68, placeholder: pdf_tart},
+    pdf_69: {content: pdf69, placeholder: pdf_tart},
+    pdf_70: {content: pdf70, placeholder: pdf_tart},
+    pdf_71: {content: pdf71, placeholder: pdf_tart},
+    pdf_72: {content: pdf72, placeholder: pdf_tart},
+    pdf_73: {content: pdf73, placeholder: pdf_tart},
+    pdf_74: {content: pdf74, placeholder: pdf_tart},
+    pdf_75: {content: pdf75, placeholder: pdf_tart},
 };
 
 function handleButtonClick(pair) {
@@ -368,11 +377,7 @@ for (const key in buttonContentPairs2) {
             console.error(`Hiba: ${key} gomb elem nem található.`);
         }
     }
-}
-
-
-; 
-        
+}; 
     // Médiaváltó eseménykezelő
     window.addEventListener('resize', function() {
         pszitart.style.gridTemplateColumns = getGridStyles();    
@@ -436,8 +441,6 @@ const f5 = document.querySelector('#f5');
 const feladatok5 = document.querySelector("#feladatok5")
 const f6 = document.querySelector('#f6');
 
-
-
 feladatok.addEventListener('click', function(){
   f1.style.fontSize = '100%';
   f1.style.width = '100%';
@@ -462,15 +465,10 @@ feladatok1.addEventListener('click', function(){
           f6.style.fontSize = '100%';
           f6.style.width = '100%';
         });
-
   })
   .catch(error => console.error('Hiba a tartalom.html betöltése közben:', error));
 
-
-
-
 /* KÖTELEZŐ */
-
 function kikapcs() {
   var x = document.getElementById("kotelezo_lent");
   var y = document.getElementById("kotelezo_fent");
@@ -501,9 +499,7 @@ function checkUncheck()
       } else 
             {checkbox.checked = true;}}
 
-
  /*  INTÉZMÉNYVÁLASZTÓ */
-
 const pp = document.querySelector('.pp');
 const kep = document.querySelector('.kep');
 const info = document.querySelector('.info');
@@ -585,7 +581,6 @@ kep2.addEventListener('mouseout', () => {
   info2.style.color = '';
   info2.style.textShadow = 'black 5px 5px 5px';
   pp2.style.transform = "scale(1)";});
-
 
 const fomenu = document.querySelector("#fomenu");
 const tamogati = document.querySelector("#szoci")
