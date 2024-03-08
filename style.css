@@ -125,7 +125,8 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
           text-decoration: none;
         justify-content: right;
         justify-self: right;
-      justify-items: right;}
+      justify-items: right; 
+    cursor: pointer;}
         .navcont .navbar ul li a:hover{background-color: #26b3ffd0;
           height: 100%; color: gold;}
         .navcont .navbar ul li ul{
@@ -204,8 +205,14 @@ background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101,
     grid-template-columns: repeat(3, 33%);
     border: 2px solid white;
     padding: 4% 0% 0% 0%;
-    justify-content: center;;
+    justify-content: center;
  }
+ 
+ #tevekenysegvalaszto #artcim {
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 2%;
+}
         .tevval1,.tevval2,.tevval3,.tevval4 {
           display: grid;
           grid-template-columns:repeat(1, 100%);
@@ -717,6 +724,11 @@ font-style: italic;
   border: 2px solid white;
   padding: 2%;
 }
+#ta, #hirek{
+margin: 5%;
+border: 2px solid white;
+padding: 2%;
+}
 
 #terkepmenu h3, h2 { color: white; text-align: center; margin: 20px auto;}
 
@@ -824,25 +836,11 @@ font-style: italic;
   position:fixed;  left: auto;
 
 }
-
-
-#hirek{
-  margin: 25px auto;
-  border: whitesmoke 2px solid;
-  width: 90%;
-  height: 500px;
-  padding: 5px;
-  font-style: italic;
-  color: white;
-  box-shadow: wheat 0px 0px 10px 1px;
-
-}
-
           
   #linear{    height: 40px;
     background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
 /* Szociális inézmények */
-#valaszto { margin: 5px;}
+#valaszto { margin: -3% 5% -5% 5%;}
 #valaszto p{ color: gold;
     font-size: x-large;
     margin: 15px;
@@ -862,7 +860,7 @@ font-style: italic;
 #almenuk {display: flex; margin: -3% auto 1% auto;}
 #menuikon {display:flex; align-items: flex-start; width: 100%;}
 #valaszto img {
-     width: 1%;
+     width: 5%;
      height: 100%;
      border-radius: 50px; 
      border: rgb(255, 255, 255) 2px solid; 
@@ -1077,7 +1075,7 @@ font-style: italic;
       /* HEADER */
     
      header{display:none;}
-    
+    .tevval1 {margin-top: 50px}
      /* INTÉZMÉNY VÁLASZTÓ */
     
     .intezmenyvalaszto {margin: 20% auto 0% auto ;}
@@ -1261,7 +1259,7 @@ font-style: italic;
           margin-top: 15px;}
           .item {&:hover{flex: 5;}}
               .item-1, .item-2  { display: none;}
-          
       }
+      
 
         
