@@ -24,37 +24,43 @@ fetch('tartalom.html')
     
         newContent.style.display = 'grid';
     
-        // Ellenőrizzük, hogy van-e már "gyujto" elem a tartalomhoz rendelve
-        var gyujto = newContent.querySelector('.gyujto');
-    
-        // Ha nincs, akkor létrehozzuk és hozzáadjuk az új tartalomhoz
+        let gyujto = newContent.querySelector('.gyujto');
+
         if (!gyujto) {
+           
+
             gyujto = document.createElement('div');
             gyujto.classList.add("gyujto");
-            newContent.appendChild(gyujto);
+            placeholder.appendChild(gyujto);
     
             const fel = document.createElement('button');
             fel.textContent = 'Ugrás a tartalom tetejére';
             fel.classList.add('fel');
             gyujto.appendChild(fel);
-    
+           
             fel.addEventListener('click', function() {
                 placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
             });
-    
+            
+            
             const kilep = document.createElement('button');
             kilep.textContent = " Tartalom összecsukása";
             kilep.classList.add('kilep');
             gyujto.appendChild(kilep);
-    
+            
             const start = document.querySelector(".intezmenyvalaszto");
     
             kilep.addEventListener('click', function() {
                 placeholder.removeChild(newContent);
                 newContent.removeChild(gyujto);
                 start.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+
+                   
             });
+           
         }
+
+      ;
     
         // Automatikusan görgetjük az új tartalomhoz
         setTimeout(function () {
@@ -178,8 +184,10 @@ const paly_tar = document.querySelector("#paly_tar")
                 const suldok_tart = document.querySelector("#suldok_tart");
             const adadok = document.querySelector("#adadok");
                 const adadok_tart = document.querySelector("#adadok_tart");
-                const besdok = document.querySelector("#besdok");
+            const besdok = document.querySelector("#besdok");
                 const besdok_tart = document.querySelector("#besdok_tart");
+            const kozdok = document.querySelector("#kozdok");
+                const kozdok_tart = document.querySelector("#kozdok_tart");
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -218,6 +226,7 @@ const buttonContentPairs = {
     suldok: {gomb: suldok, content1: suldok_tart, placeholder1: megjelenito },
     adadok: {gomb: adadok, content1: adadok_tart, placeholder1: megjelenito },
     besdok: {gomb: besdok, content1: besdok_tart, placeholder1: megjelenito },
+    kozdok:{gomb: kozdok, content1: kozdok_tart, placeholder1: megjelenito },
 };
 
 
@@ -314,6 +323,24 @@ const buttonContentPairs2 = {
     pdf_35: {content: pdf35, placeholder: pdf_tart},
     pdf_36: {content: pdf36, placeholder: pdf_tart},
     pdf_37: {content: pdf37, placeholder: pdf_tart},
+    pdf_38: {content: pdf38, placeholder: pdf_tart},
+    pdf_39: {content: pdf39, placeholder: pdf_tart},
+    pdf_40: {content: pdf40, placeholder: pdf_tart},
+    pdf_41: {content: pdf41, placeholder: pdf_tart},
+    pdf_42: {content: pdf42, placeholder: pdf_tart},
+    pdf_43: {content: pdf43, placeholder: pdf_tart},
+    pdf_44: {content: pdf44, placeholder: pdf_tart},
+    pdf_45: {content: pdf45, placeholder: pdf_tart},
+    pdf_46: {content: pdf46, placeholder: pdf_tart},
+    pdf_47: {content: pdf47, placeholder: pdf_tart},
+    pdf_48: {content: pdf48, placeholder: pdf_tart},
+    pdf_49: {content: pdf49, placeholder: pdf_tart},
+    pdf_50: {content: pdf50, placeholder: pdf_tart},
+    pdf_51: {content: pdf51, placeholder: pdf_tart},
+    pdf_52: {content: pdf52, placeholder: pdf_tart},
+    pdf_53: {content: pdf53, placeholder: pdf_tart},
+    pdf_54: {content: pdf54, placeholder: pdf_tart},
+    pdf_55: {content: pdf55, placeholder: pdf_tart},
 };
 
 function handleButtonClick(pair) {
@@ -327,29 +354,22 @@ for (const key in buttonContentPairs2) {
         const pair = buttonContentPairs2[key];
         const buttonElement = document.querySelector(`#${key}`);
         
-        // Ellenőrizze, hogy a gomb elem megtalálható-e
         if (buttonElement) {
             buttonElement.addEventListener('click', function() {
-                // Ebben a függvényben pair.content tartalmát használhatja
                 handleButtonClick(pair);
                 
-                // Ellenőrizzük, hogy a pair.content érvényes id típusú és string-e
                 if (pair.content instanceof HTMLElement && typeof pair.content.id === 'string') {
                     const contentElement = document.getElementById(pair.content.id);
                     if (contentElement) {
-                        // Használja a contentElementet a további műveletekre
                         console.log(contentElement);
                     } else {
-                        // Hibakezelés: a tartalom elem nem található
                         console.error(`Hiba: ${pair.content.id} elem nem található.`);
                     }
                 } else {
-                    // Hibakezelés: a pair.content nem érvényes id típusú
                     console.error(`Hiba: ${pair.content} nem érvényes id típusú.`);
                 }
             });
         } else {
-            // Hibakezelés: a gomb elem nem található
             console.error(`Hiba: ${key} gomb elem nem található.`);
         }
     }

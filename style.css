@@ -41,8 +41,9 @@ header p {
     text-align: left;
     font-size: x-large;
     text-shadow: rgba(0, 0, 0, 0.226) 1px 3px 5px;}
-#artcim{
+    #kozdok_tart .gyujto {display: none; position: absolute;}
 
+#artcim{
   color: white;
   font-size: x-large;
   font-family: 'Times New Roman', Times, serif;
@@ -72,9 +73,8 @@ header p {
           font-family:'Times New Roman', Times, serif;
           text-transform:uppercase;
           text-decoration: none;
-           height: 50px;
-background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101, 145, 1), rgba(0, 156, 164, 0.9), rgba(132, 208, 173, 0.8), rgba(237, 255, 195, 0.5));
-          
+          height: 50px;
+          background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101, 145, 1), rgba(0, 156, 164, 0.9), rgba(132, 208, 173, 0.8), rgba(237, 255, 195, 0.5));
            border: 1px solid rgba(255, 255, 255, 0.33);
            box-sizing: 0 5px 10px;
            
