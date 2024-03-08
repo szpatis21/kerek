@@ -76,8 +76,6 @@ const keps2 = document.querySelector('#kep2');
     const kephely_4 = document.querySelector("#kephely_4");
     const kephely_5 = document.querySelector(".kephely_5");
     const kephely_6 = document.querySelector(".kephely_6");
-    const kephely_7 = document.querySelector("#kephely_8");
-    const kephely_8 = document.querySelector("#kephely_7");
 
  // Fő területek   
 const csop = document.querySelector("#csop");
@@ -175,10 +173,11 @@ const paly_tar = document.querySelector("#paly_tar")
     const dok = document.querySelector("#dok");
     const dok2 = document.querySelector("#dok2");
         const megjelenito = document.querySelector("#megjelenito");
+        const pdf_tart = document.querySelector("#pdf_tart")
             const suldok = document.querySelector("#suldok");
                 const suldok_tart = document.querySelector("#suldok_tart");
-                const pdf_tart = document.querySelector("#pdf_tart")
-
+            const adadok = document.querySelector("#adadok");
+                const adadok_tart = document.querySelector("#adadok_tart");
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -215,6 +214,8 @@ const buttonContentPairs = {
     dok: { gomb: dok, content1: doku, placeholder1: placeholder},
     dok2: { gomb: dok2, content1: doku, placeholder1: placeholder},
     suldok: {gomb: suldok, content1: suldok_tart, placeholder1: megjelenito },
+    adadok: {gomb: adadok, content1: adadok_tart, placeholder1: megjelenito },
+
 };
 
 
@@ -282,6 +283,9 @@ const buttonContentPairs2 = {
     pdf_6: {content: pdf6, placeholder: pdf_tart},
     pdf_7: {content: pdf7, placeholder: pdf_tart},
     pdf_8: {content: pdf8, placeholder: pdf_tart},
+    pdf_9: {content: pdf9, placeholder: pdf_tart},
+    pdf_10: {content: pdf10, placeholder: pdf_tart},
+    pdf_11: {content: pdf11, placeholder: pdf_tart},
 };
 
 function handleButtonClick(pair) {
