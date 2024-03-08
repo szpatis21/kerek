@@ -838,10 +838,6 @@ font-style: italic;
 
 }
 
-
-/* MOBILE */
-
-
           
   #linear{    height: 40px;
     background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
@@ -1019,8 +1015,7 @@ font-style: italic;
            border-left: gold 5px solid;
            padding: 10px;}
             .alcikk2 ul p {text-decoration: underline; font-size: larger; margin: 10px auto; font-weight: bolder; color: #1a73e8;}
-            .alcikk2 li {font-style: italic; margin: 8px auto; cursor: pointer;}
-    
+            .alcikk2 li {font-style: italic; margin: 8px auto; cursor: pointer;}   
             .pdf {display: none;}
     
 @media screen and (min-width:201px) and (max-width:1037px){
@@ -1031,7 +1026,9 @@ font-style: italic;
 #doksik {    display: grid;
   grid-template-columns: 33% 33% 33%;}
   .kisikon2{width: 45%;}
-
+  .alcikk2 li {font-size: small; margin: 8px; color: blue;}
+  .alcikk2 ul p {font-size:medium; }
+ .pdf object {height: 80px;}
 /* ELÉRHETŐSÉGEK */
 #int_adatok{font-size: small;
   display: block;

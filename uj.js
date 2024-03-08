@@ -328,3 +328,6 @@ zen_ter.addEventListener('click', function(){
     changeContent(zen_tart,alcikktart3);
     alcikktart3.style.display = "grid";
 });
+
+
+
