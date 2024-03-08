@@ -1101,7 +1101,7 @@ padding: 2%;
         .info_mob,.info_mob2{display:grid;grid-template-columns: repeat(2,50%); 
           color: rgb(241, 241, 241);font-style: italic;text-align: center; margin: 5px;
           justify-content: space-around;}
-          .info_mob p, .info_mob2 p{ font-size: small;
+          .info_mob p, .info_mob2 p{ font-size: 70%;
             border: white 2px solid;
             margin: auto 8%;
             transition: 0.5s;
