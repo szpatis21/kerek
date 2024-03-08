@@ -1019,6 +1019,18 @@ padding: 2%;
             .alcikk2 ul p {text-decoration: underline; font-size: larger; margin: 10px auto; font-weight: bolder; color: #1a73e8; text-align: center;}
             .alcikk2 li {font-style: italic; margin: 8px auto; cursor: pointer;}   
             .pdf {display: none;}
+            #szam{
+              color: gold;
+              font-size: large;
+              text-shadow: 0 0 7px black;}
+              #szamkeret {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                border: 2px gold solid;
+                border-radius: 10px;}
     
 @media screen and (min-width:201px) and (max-width:1037px){
 /* DOKUMENTUMOK */
@@ -1035,6 +1047,7 @@ padding: 2%;
 #int_adatok{font-size: small;
   display: block;
 }
+#szamkeret { font-size: small; padding: 20px;}
 
       /* TEVÉKENYSÉG VÁLASZTÓ */
     

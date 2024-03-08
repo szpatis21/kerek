@@ -178,6 +178,8 @@ const paly_tar = document.querySelector("#paly_tar")
                 const suldok_tart = document.querySelector("#suldok_tart");
             const adadok = document.querySelector("#adadok");
                 const adadok_tart = document.querySelector("#adadok_tart");
+                const besdok = document.querySelector("#besdok");
+                const besdok_tart = document.querySelector("#besdok_tart");
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -215,7 +217,7 @@ const buttonContentPairs = {
     dok2: { gomb: dok2, content1: doku, placeholder1: placeholder},
     suldok: {gomb: suldok, content1: suldok_tart, placeholder1: megjelenito },
     adadok: {gomb: adadok, content1: adadok_tart, placeholder1: megjelenito },
-
+    besdok: {gomb: besdok, content1: besdok_tart, placeholder1: megjelenito },
 };
 
 
@@ -286,6 +288,32 @@ const buttonContentPairs2 = {
     pdf_9: {content: pdf9, placeholder: pdf_tart},
     pdf_10: {content: pdf10, placeholder: pdf_tart},
     pdf_11: {content: pdf11, placeholder: pdf_tart},
+    pdf_12: {content: pdf12, placeholder: pdf_tart},
+    pdf_13: {content: pdf13, placeholder: pdf_tart},
+    pdf_14: {content: pdf14, placeholder: pdf_tart},
+    pdf_15: {content: pdf15, placeholder: pdf_tart},
+    pdf_16: {content: pdf16, placeholder: pdf_tart},
+    pdf_17: {content: pdf17, placeholder: pdf_tart},
+    pdf_18: {content: pdf18, placeholder: pdf_tart},
+   /*  pdf_19: {content: pdf19, placeholder: pdf_tart},
+    pdf_20: {content: pdf20, placeholder: pdf_tart}, */
+    pdf_21: {content: pdf21, placeholder: pdf_tart},
+    pdf_22: {content: pdf22, placeholder: pdf_tart},
+    pdf_23: {content: pdf23, placeholder: pdf_tart},
+    pdf_24: {content: pdf24, placeholder: pdf_tart},
+    pdf_25: {content: pdf25, placeholder: pdf_tart},
+    pdf_26: {content: pdf26, placeholder: pdf_tart},
+    pdf_27: {content: pdf27, placeholder: pdf_tart},
+    pdf_28: {content: pdf28, placeholder: pdf_tart},
+    pdf_29: {content: pdf29, placeholder: pdf_tart},
+    pdf_30: {content: pdf30, placeholder: pdf_tart},
+    pdf_31: {content: pdf31, placeholder: pdf_tart},
+    pdf_32: {content: pdf32, placeholder: pdf_tart},
+    pdf_33: {content: pdf33, placeholder: pdf_tart},
+    pdf_34: {content: pdf34, placeholder: pdf_tart},
+    pdf_35: {content: pdf35, placeholder: pdf_tart},
+    pdf_36: {content: pdf36, placeholder: pdf_tart},
+    pdf_37: {content: pdf37, placeholder: pdf_tart},
 };
 
 function handleButtonClick(pair) {
