@@ -13,16 +13,21 @@ fetch('tartalom.html')
             console.error("A placeholder nem egy érvényes DOM elem.");
             return;
         }
-            while (placeholder.firstChild) {
+    
+        // Távolítsuk el az összes gyermeket a placeholder-ből
+        while (placeholder.firstChild) {
             placeholder.removeChild(placeholder.firstChild);
         }
     
+        // Hozzáadjuk az új tartalmat a placeholder-hez
         placeholder.appendChild(newContent);
     
         newContent.style.display = 'grid';
     
-        let gyujto = newContent.querySelector('.gyujto');
+        // Ellenőrizzük, hogy van-e már "gyujto" elem a tartalomhoz rendelve
+        var gyujto = newContent.querySelector('.gyujto');
     
+        // Ha nincs, akkor létrehozzuk és hozzáadjuk az új tartalomhoz
         if (!gyujto) {
             gyujto = document.createElement('div');
             gyujto.classList.add("gyujto");
@@ -50,12 +55,15 @@ fetch('tartalom.html')
                 start.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
             });
         }
-            setTimeout(function () {
+    
+        // Automatikusan görgetjük az új tartalomhoz
+        setTimeout(function () {
             newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
         }, 50);
     }
     
-const ures = document.querySelector("#ures")
+    
+  const ures = document.querySelector("#ures")
 
 //TEVÉKENYSÉGEK FÜL TARTALOM CSERÉLGETÉSE
 //kisképek
@@ -68,6 +76,8 @@ const keps2 = document.querySelector('#kep2');
     const kephely_4 = document.querySelector("#kephely_4");
     const kephely_5 = document.querySelector(".kephely_5");
     const kephely_6 = document.querySelector(".kephely_6");
+    const kephely_7 = document.querySelector("#kephely_8");
+    const kephely_8 = document.querySelector("#kephely_7");
 
  // Fő területek   
 const csop = document.querySelector("#csop");
@@ -108,9 +118,35 @@ const kony = document.querySelector("#kony");
     const alcikktart = document.querySelector("#alcikktart");
     //Al-al kategóriák
 const belso_al = document.querySelector("#belsoalcikk");
+        // Pszihés
+        const egy_tart= document.querySelector("#egy_tart");
+        const dis_tart=document.querySelector("#dis_tart");
+        const bes_tart = document.querySelector("#bes_tart");
+        const log_tart = document.querySelector("#log_tart");
+        const moz_tart = document.querySelector("#moz_tart");
+        const kon_tart = document.querySelector("#kon_tart"); 
+        const gyo_tart = document.querySelector("#gyo_tart");
+        const zen_tart = document.querySelector("#zen_tart"); 
+        const lat_tart = document.querySelector("#lat_tart");  
 const belso_al_ert = document.querySelector("#belsoalcikk_ert")
+        //Ért Ak
+        const sub_tart= document.querySelector("#sub_tart");
+        const nep_tart= document.querySelector("#nep_tart");    
+        const ayr_tart= document.querySelector("#ayr_tart");
+        const lov_tart= document.querySelector("#lov_tart");
+        const kez_tart= document.querySelector("#kez_tart"); 
+        const alt_tart= document.querySelector("#alt_tart");
+        const on_tart= document.querySelector("#on_tart"); 
 const belso_al_fej = document.querySelector("#belsoalcikk_fej")
-const erzi_tart= document.querySelector("#erz_tart");
+        //Fejlesztő fogalkoztatás
+        const komm_tart= document.querySelector("#komm_tart");    
+        const eszt_tart= document.querySelector("#eszt_tart");
+        const erzi_tart= document.querySelector("#erz_tart");
+        const fej_tart= document.querySelector("#fej_tart");
+        const szuk_tart= document.querySelector("#szuk_tart");         
+        const reg_tart= document.querySelector("#reg_tart");
+        const jat_tart= document.querySelector("#jat_tart");
+        const hig_tart= document.querySelector("#hig_tart");  
 
 /* PÁLYÁZATOK  */
 const paly = document.querySelector("#paly");
@@ -142,6 +178,7 @@ const paly_tar = document.querySelector("#paly_tar")
             const suldok = document.querySelector("#suldok");
                 const suldok_tart = document.querySelector("#suldok_tart");
                 const pdf_tart = document.querySelector("#pdf_tart")
+
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
@@ -179,6 +216,8 @@ const buttonContentPairs = {
     dok2: { gomb: dok2, content1: doku, placeholder1: placeholder},
     suldok: {gomb: suldok, content1: suldok_tart, placeholder1: megjelenito },
 };
+
+
 
 for (const key in buttonContentPairs) {
     if (buttonContentPairs.hasOwnProperty(key)) {
@@ -256,26 +295,36 @@ for (const key in buttonContentPairs2) {
         const pair = buttonContentPairs2[key];
         const buttonElement = document.querySelector(`#${key}`);
         
+        // Ellenőrizze, hogy a gomb elem megtalálható-e
         if (buttonElement) {
             buttonElement.addEventListener('click', function() {
+                // Ebben a függvényben pair.content tartalmát használhatja
                 handleButtonClick(pair);
                 
+                // Ellenőrizzük, hogy a pair.content érvényes id típusú és string-e
                 if (pair.content instanceof HTMLElement && typeof pair.content.id === 'string') {
                     const contentElement = document.getElementById(pair.content.id);
                     if (contentElement) {
+                        // Használja a contentElementet a további műveletekre
                         console.log(contentElement);
                     } else {
+                        // Hibakezelés: a tartalom elem nem található
                         console.error(`Hiba: ${pair.content.id} elem nem található.`);
                     }
                 } else {
+                    // Hibakezelés: a pair.content nem érvényes id típusú
                     console.error(`Hiba: ${pair.content} nem érvényes id típusú.`);
                 }
             });
         } else {
+            // Hibakezelés: a gomb elem nem található
             console.error(`Hiba: ${key} gomb elem nem található.`);
         }
     }
-}; 
+}
+
+
+; 
         
     // Médiaváltó eseménykezelő
     window.addEventListener('resize', function() {
