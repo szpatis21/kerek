@@ -1025,8 +1025,8 @@ padding: 2%;
               font-size: large;
               text-shadow: 0 0 7px black;}
               #szamkeret {
+                text-align: center;
                 display: flex;
-                align-items: center;
                 justify-content: center;
                 height: 100%;
                 width: 100%;
@@ -1034,14 +1034,23 @@ padding: 2%;
                 border-radius: 10px;}
                 #kozdok_tart{
                   display: none;
-                  grid-template-columns: 100%;
                   justify-items: center;
-                  align-items: center;
                   text-align: center;
                 }
                 #placeholder{
                 display: flex;
     flex-direction: column-reverse;}
+    #dokucim{    position: absolute;
+      background: white;
+      box-shadow: 0px 4px 5px #3d80;
+      font-size: smaller;
+      color: blue;
+      padding: 5px;
+      font-weight: bold;
+      border: gold 2px solid;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      font-style: italic;}
     
 @media screen and (min-width:201px) and (max-width:1037px){
 /* DOKUMENTUMOK */
@@ -1059,7 +1068,7 @@ padding: 2%;
   display: block;
 }
 #szamkeret { font-size: small; padding: 20px;}
-
+.alcikk2 {grid-template-columns:100%}
       /* TEVÉKENYSÉG VÁLASZTÓ */
     
     #kriszt, #geszt {grid-template-columns: 100%;margin: 1px}
