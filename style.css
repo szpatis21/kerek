@@ -42,9 +42,10 @@ header p {
     font-size: x-large;
     text-shadow: rgba(0, 0, 0, 0.226) 1px 3px 5px;}
 #artcim{
+
   color: white;
   font-size: x-large;
-  font-family: auto;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   margin: 0px;}
 .cim{font-size:xx-large; margin: 1% 0% 0% 1%;font-style:initial;}
@@ -1090,7 +1091,11 @@ padding: 2%;
     }
     .footer-center a {display: none;}
       /* HEADER */
-    
+      #tevekenysegvalaszto #artcim {
+        position: absolute;
+        margin-top: -5%;
+        margin-left: 2%;
+      }
      header{display:none;}
     .tevval1 {margin-top: 50px}
      /* INTÉZMÉNY VÁLASZTÓ */
