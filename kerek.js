@@ -8,65 +8,59 @@ fetch('tartalom.html')
     const placeholder = document.querySelector('#placeholder');
     placeholder.appendChild(parsedContent.body);
 
-    function changeContent(newContent, placeholder) {
-        if (!(placeholder instanceof Element)) {
-            console.error("A placeholder nem egy érvényes DOM elem.");
-            return;
-        }
-    
-        // Távolítsuk el az összes gyermeket a placeholder-ből
-        while (placeholder.firstChild) {
-            placeholder.removeChild(placeholder.firstChild);
-        }
-    
-        // Hozzáadjuk az új tartalmat a placeholder-hez
-        placeholder.appendChild(newContent);
-    
-        newContent.style.display = 'grid';
-    
-        let gyujto = newContent.querySelector('.gyujto');
+ // Külső változó, ami jelzi, hogy már létrejött-e a .gyujto elem
 
-        if (!gyujto) {
-           
-
-            gyujto = document.createElement('div');
-            gyujto.classList.add("gyujto");
-            placeholder.appendChild(gyujto);
-    
-            const fel = document.createElement('button');
-            fel.textContent = 'Ugrás a tartalom tetejére';
-            fel.classList.add('fel');
-            gyujto.appendChild(fel);
-           
-            fel.addEventListener('click', function() {
-                placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
-            });
-            
-            
-            const kilep = document.createElement('button');
-            kilep.textContent = " Tartalom összecsukása";
-            kilep.classList.add('kilep');
-            gyujto.appendChild(kilep);
-            
-            const start = document.querySelector(".intezmenyvalaszto");
-    
-            kilep.addEventListener('click', function() {
-                placeholder.removeChild(newContent);
-                newContent.removeChild(gyujto);
-                start.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
-
-                   
-            });
-           
-        }
-
-      ;
-    
-        // Automatikusan görgetjük az új tartalomhoz
-        setTimeout(function () {
-            newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
-        }, 50);
+function changeContent(newContent, placeholder) {
+    if (!(placeholder instanceof Element)) {
+        console.error("A placeholder nem egy érvényes DOM elem.");
+        return;
     }
+
+    while (placeholder.firstChild) {
+        placeholder.removeChild(placeholder.firstChild);
+    }
+
+    let gyujto = document.querySelector(".gyujto")
+    // Csak akkor hozza létre a .gyujto elemet, ha még nem létezik
+    if (!gyujto) {
+        const gyujto = document.createElement('div');
+        gyujto.classList.add("gyujto");
+        placeholder.appendChild(gyujto);
+
+        const fel = document.createElement('button');
+        fel.textContent = 'Ugrás a tartalom tetejére';
+        fel.classList.add('fel');
+        gyujto.appendChild(fel);
+
+        fel.addEventListener('click', function() {
+            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+        });
+
+        const kilep = document.createElement('button');
+        kilep.textContent = " Tartalom összecsukása";
+        kilep.classList.add('kilep');
+        gyujto.appendChild(kilep);
+
+
+        kilep.addEventListener('click', function() {
+            while (placeholder.firstChild) {
+                placeholder.removeChild(placeholder.firstChild);
+            }
+            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+        });
+
+    }
+
+    // Hozzáadjuk az új tartalmat a placeholder-hez
+    placeholder.appendChild(newContent);
+    newContent.style.display = 'grid';
+
+    // Egyéb műveletek...
+    setTimeout(function () {
+        newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
+    }, 50);
+}
+
     
     
   const ures = document.querySelector("#ures")
@@ -242,6 +236,7 @@ for (const key in buttonContentPairs) {
             if (pair.content3 && pair.placeholder3) {
                 changeContent(pair.content3, pair.placeholder3);
             }
+            
         });
     }
 }

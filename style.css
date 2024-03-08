@@ -1032,6 +1032,16 @@ padding: 2%;
                 width: 100%;
                 border: 2px gold solid;
                 border-radius: 10px;}
+                #kozdok_tart{
+                  display: none;
+                  grid-template-columns: 100%;
+                  justify-items: center;
+                  align-items: center;
+                  text-align: center;
+                }
+                #placeholder{
+                display: flex;
+    flex-direction: column-reverse;}
     
 @media screen and (min-width:201px) and (max-width:1037px){
 /* DOKUMENTUMOK */
