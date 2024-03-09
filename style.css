@@ -1053,20 +1053,19 @@ padding: 2%;
       font-style: italic;}
       /* INTÉZMÉNYVÁLASZTÓ AL */
       #int_sul{
-        background-image: url(./media/Névtelen-2.png), 
-        linear-gradient(126deg, rgb(98 199 201) 24%, rgba(0, 78, 123, 1) 38%, #0d4965 100%);}
+        background-image: url(./media/intgrad.webp)}
         #kep2_mini,.kep2 {cursor: pointer;}
 
       .int_int{
         padding: 15px;
         margin: 5%;
         border: white 2px solid;
-        background-size: cover;
-        box-shadow: inset 0px 0px 165px 24px #2f96b3;
-        background-attachment: fixed;
-        background-position: left;}
-
-     #tart_tart #artcim {    color: gold;
+      background-repeat: no-repeat;
+        box-shadow: inset 0px 0px 110px 2px rgb(6 111 161);;
+        background-position: center;}
+      .link{ text-decoration: underline; color: #1a73e8; cursor: pointer;}
+     #tart_tart #artcim {    
+      color: gold;
       text-align: right;
       margin-bottom: 31px;
       text-shadow: 1px -2px 3px black;
@@ -1099,7 +1098,7 @@ padding: 2%;
 @media screen and (min-width:201px) and (max-width:1037px){
 /* INTÉZMÉNYEK */
 #tart_tart #artcim {    color: white;}
-.int_int{background-position: center; background-size: auto;}
+
 #tart1_kepes{ grid-template-columns: 100%;   justify-items: center;}
 #tart , #tart1, #tart1_kepes{text-align: center; margin: 15px auto; justify-self: center;    width: 100%;}
 .box{display: none;}
