@@ -1098,8 +1098,8 @@ padding: 2%;
 
 @media screen and (min-width:201px) and (max-width:1037px){
 /* INTÉZMÉNYEK */
-#tart_tart #artcim {    color: white};
-.int_int{background-position: center};
+#tart_tart #artcim {    color: white;}
+.int_int{background-position: center; background-size: auto;}
 #tart1_kepes{ grid-template-columns: 100%;   justify-items: center;}
 #tart , #tart1, #tart1_kepes{text-align: center; margin: 15px auto; justify-self: center;    width: 100%;}
 .box{display: none;}
