@@ -172,7 +172,11 @@ const kony = document.querySelector("#kony");
                 const kozdok_tart = document.querySelector("#kozdok_tart");
             const merdok = document.querySelector("#merdok");
                 const merdok_tart = document.querySelector("#merdok_tart");
-    
+    /* INTÉZMÉNYVÁLASZTÓ */
+    const int_sul = document.querySelector("#int_sul");
+    const kep2 =document.querySelector(".kep2");
+    const kep2_mini = document.querySelector("#kep2_mini")
+
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
@@ -212,6 +216,9 @@ const buttonContentPairs = {
     besdok: {gomb: besdok, content1: besdok_tart, placeholder1: megjelenito },
     kozdok:{gomb: kozdok, content1: kozdok_tart, placeholder1: megjelenito },
     merdok:{gomb: merdok, content1: merdok_tart, placeholder1: megjelenito },
+    /* INTÉZMÉNYVÁLASZTÓ */
+    kep2:{gomb:kep2, content1: int_sul, placeholder1:placeholder},
+    kep2_mini:{gomb:kep2_mini, content1: int_sul, placeholder1:placeholder},
 };
 
 for (const key in buttonContentPairs) {
