@@ -178,6 +178,11 @@ const kony = document.querySelector("#kony");
     const kep2_mini = document.querySelector("#kep2_mini");
     const sul_tev = document.querySelector("#sul_tev");
 
+    const int_szoc = document.querySelector("#int_szoc");
+    const kep =document.querySelector(".kep");
+    const kep_mini = document.querySelector("#kep_mini");
+    const szoc_tev = document.querySelector("#szoc_tev");
+
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
@@ -220,7 +225,12 @@ const buttonContentPairs = {
     /* INTÉZMÉNYVÁLASZTÓ */
     kep2:{gomb:kep2, content1: int_sul, placeholder1:placeholder},
     kep2_mini:{gomb:kep2_mini, content1: int_sul, placeholder1:placeholder},
+    kep:{gomb:kep, content1:int_szoc , placeholder1:placeholder},
+    kep_mini:{gomb:kep_mini, content1: int_szoc, placeholder1:placeholder},
+
     sul_tev: { gomb: sul_tev, content1: tagozatok, placeholder1: placeholder },
+    szoc_tev: { gomb: szoc_tev, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
+
 
 };
 

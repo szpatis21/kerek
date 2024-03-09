@@ -394,7 +394,6 @@ header p {
                                 100% {visibility:visible;text-shadow: rgb(0, 0, 0) 5px 5px 5px;color: gold;}}
                                 
 /* SLIDER */
-
 section {grid-area: slide;
     margin-left: auto;
     margin-right: auto;
@@ -523,7 +522,7 @@ footer {grid-area: footer;}
             .footer-distributed h3{color:  #ffffff;
             font: normal 36px 'Open Sans', cursive;margin: 0;}
         .footer-distributed h3 span{color:  gold;}
-        
+
         /* Footer links */
         .footer-distributed .footer-links{
             color:  #ffffff;margin: 20px 0 12px;padding: 0;}
@@ -846,6 +845,8 @@ padding: 2%;
     background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
 /* Szociális inézmények */
 #valaszto { margin: -3% 5% -5% 5%;}
+#szocik #valaszto {margin-bottom: 0%;}
+
 #valaszto p{ color: gold;
     font-size: x-large;
     margin: 15px;
@@ -1052,11 +1053,12 @@ padding: 2%;
       border-bottom-right-radius: 15px;
       font-style: italic;}
       /* INTÉZMÉNYVÁLASZTÓ AL */
-      #int_sul{
-        background-image: url(./media/intgrad.webp)}
-        #kep2_mini,.kep2 {cursor: pointer;}
+     #int_szoc .box{width: 31%;
+      margin: 0px 3%;}
+        #kep2_mini,.kep2,#kep_mini,.kep {cursor: pointer;}
 
       .int_int{
+        background-image: url(./media/intgrad.webp);
         padding: 15px;
         margin: 5%;
         border: white 2px solid;
@@ -1167,7 +1169,7 @@ padding: 2%;
      header{display:none;}
     .tevval1 {margin-top: 50px}
      /* INTÉZMÉNY VÁLASZTÓ */
-    
+    #szocik #almenuk img {width: 90%;}
     .intezmenyvalaszto {margin: 20% auto 0% auto ;}
     
         .info_mob0{ display: flex; justify-content: first baseline; color: white; font-size: x-small; margin: 3% 2%;}
@@ -1179,8 +1181,10 @@ padding: 2%;
             margin: auto 8%;
             transition: 0.5s;
             box-shadow: wheat 0px 0px 10px 1px;
-            padding: 5px;
-            height: 75px;}
+            padding: 4px;
+            height: 55px;}
+            #gold{color: gold;font-weight: bolder;}
+
             
 
             .info_mob p:hover, .info_mob2 p:hover { color: gold; border-color: gold;}
@@ -1348,7 +1352,8 @@ padding: 2%;
           margin-top: 15px;}
           .item {&:hover{flex: 5;}}
               .item-1, .item-2  { display: none;}
-      }
+
+            }
       
 
         
