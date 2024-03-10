@@ -15,13 +15,8 @@
     "footer";}
 .almenu{cursor: pointer;}
 .info_mob, .info_mob0,.info_mob2,.tamop_mob, .logobar p, .logobar span {display: none;}
-
 #cim3{cursor: pointer; width:70px;}
-#linear{    height: 40px;
-  background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
-
 /* HEADER */
-
 header{grid-area: nav;
 margin-top: 50px;
 height: 180px;
@@ -32,8 +27,6 @@ background-position: center;
 color: rgb(252, 227, 3);
 box-shadow: inset rgb(18, 85, 116)  -5px -5px 30px 1px;
 font-style: italic;}
-
-
 header p {
     padding: 0% 0%;
     margin-left: auto;
@@ -42,7 +35,6 @@ header p {
     font-size: x-large;
     text-shadow: rgba(0, 0, 0, 0.226) 1px 3px 5px;}
     #kozdok_tart .gyujto {display: none; position: absolute;}
-
 #artcim{
   color: white;
   font-size: x-large;
@@ -56,18 +48,14 @@ header p {
      font-size: large;
       text-align: left;
        margin-left: 0%;}
-
 /* NAV */
-
   nav{grid-area: nav;
     position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
     display: flex;
-    z-index: 1100;
-  }
-
+    z-index: 1100;}
         .navcont{ 
           width: 100%;
           font-family:'Times New Roman', Times, serif;
@@ -76,8 +64,7 @@ header p {
           height: 50px;
           background-image: linear-gradient(to left top, rgba(8, 45, 101, 1), rgba(0, 101, 145, 1), rgba(0, 156, 164, 0.9), rgba(132, 208, 173, 0.8), rgba(237, 255, 195, 0.5));
            border: 1px solid rgba(255, 255, 255, 0.33);
-           box-sizing: 0 5px 10px;
-           
+           box-sizing: 0 5px 10px;        
            padding: 0px 0%;
            display: grid;
            grid-template-columns: repeat(5,20%);
@@ -86,10 +73,11 @@ header p {
            justify-content: space-between;
            z-index: 900;}
            .logobar{grid-area: logo; display: flex;}
-     .navbar{grid-area: menu;          text-decoration: none;
+     .navbar{grid-area: menu;          
+      text-decoration: none;
       justify-content: right;
       justify-self: right;
-    justify-items: right;}
+      justify-items: right;}
         .navcont .logo{ display:inline-flex;
            flex-direction: row;
            width: 100%;
@@ -104,14 +92,12 @@ header p {
           font-style: italic;
           font-size: 14px;
           margin-left:10px;}
-  
         .logo img {width: 30px;
            margin: 0px 10px;
            transition: all 1s;
            border-radius: 100px;
            box-shadow: white 0px 0px 10px 2px;}
            .logo img:hover {transform: rotate(360deg);}
-
         .navcont .navbar ul{ list-style: none; width: 100%;}
         .navcont .navbar ul li{position: relative;float:left;}
         .navcont .navbar ul li a{
@@ -136,7 +122,6 @@ header p {
            width: 200px;
            background: rgba(0, 164, 214, 0.877);
            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          
            border: 1px solid rgba(255, 255, 255, 0.33);
            display: none;
           text-align: center;}   
@@ -146,26 +131,13 @@ header p {
         .navcont .navbar ul li ul li ul{left:148px;top:0; margin-top: -1%;} 
         .navcont .navbar ul li:focus-within > ul,  
         .navcont .navbar ul li:hover > ul{display: flex;flex-direction: column; width: 150px;}
-  
         #menu-bar{display: none;}
-     
         .navcont label{
            font-size: 20px;
            color:white;
            cursor: pointer;
            display: none;}
-        
-         .arrow {width: 15%;
-          position:absolute;
-          display: inline-flex;
-          transform: rotate(90deg);
-          transition: all 1s;
-          margin-left: -0px;
-          border-radius: 100px;
-          box-shadow:inset gold 0px 0px 5px 1px;
-        display: none;}
         .navcont .navbar .almenu:hover .arrow{transform: rotate(270deg)}
-     
         .menu { width: 8%;
            transform: translatey(-50px);
            margin-left: -10%;
@@ -175,21 +147,16 @@ header p {
            display: flex;
            padding: 0;
            position: absolute;}
-     
          .line {fill: none;
            stroke: gold;
            stroke-width: 6;
-           transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-           stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);}
+           transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);}
            .line1 {stroke-dasharray: 60 207;stroke-width: 6;}
            .line2 {stroke-dasharray: 60 60;stroke-width: 6;}
            .line3 {stroke-dasharray: 60 207;stroke-width: 6;}
-         
               .opened .line1 {stroke-dasharray: 90 207;stroke-dashoffset: -134;stroke-width: 6;}
               .opened .line2 {stroke-dasharray: 1 60;stroke-dashoffset: -30;stroke-width: 6;}
               .opened .line3 {stroke-dasharray: 90 207;stroke-dashoffset: -134;stroke-width: 6;}
-
-
 /* CONTENT - TEVÉKENYSÉGEK */
 .tevekenysegvalaszto p {padding: 4px; font-style: italic; color: whitesmoke; font-weight: bold; text-shadow: black 1px 4px 8px;}
 .kisikon{z-index: 50;}       
@@ -208,12 +175,7 @@ header p {
     padding: 4% 0% 0% 0%;
     justify-content: center;
  }
- 
- #tevekenysegvalaszto #artcim {
-  position: absolute;
-  margin-top: -2%;
-  margin-left: 2%;
-}
+ #tevekenysegvalaszto #artcim {position: absolute;margin-top: -2%;margin-left: 2%;}
         .tevval1,.tevval2,.tevval3,.tevval4 {
           display: grid;
           grid-template-columns:repeat(1, 100%);
@@ -234,7 +196,6 @@ header p {
           font-size: 12px;
         width: 100%;
       margin: 30px 0px 45px 0px;}
-   
           .nagyikon p {color:white;opacity: 100%;}
   #instrukcio {margin: 15px;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
@@ -242,9 +203,7 @@ header p {
     font-size: small;
     font-style: italic; font-weight: bold;
     text-align: center; font-size: large;}
-
 /* CONTENT -INTÉZMÉNYEK */
-        
 .intezmenyvalaszto { 
   grid-area: content;
     margin: 2% auto;
@@ -255,14 +214,12 @@ header p {
     "3 4";
     margin-left: auto;
     margin-right: auto;}
-
 .egyes,.kettes,.harmas,.negyes{ display: flex; width: 100%;}
     .egyes,.kettes{ grid-area: 1;}
     .harmas,.negyes{ grid-area: 3;}
     .egyes,.harmas{justify-content: right;}
     .kettes{justify-self: left;} 
     .negyes{justify-self: right;} 
-
 .egyes p , .kettes p , .harmas p, .negyes p{
       display:flex;
       visibility: hidden;
@@ -313,14 +270,12 @@ header p {
       color: gold;
       animation-delay: 2.5s;   
       animation-name: egyesp3;}
-
 .egyes img,.kettes img,.harmas img,.negyes img{
       animation-duration: 2.8s;  
       animation-fill-mode:none;
       transition: transform 1s, box-shadow 1s;
       width: 33%;
-      animation-name: harmas;
-    }
+      animation-name: harmas; }
     .egyes img{animation-name: egyes;
         animation-delay: 1s;
         border-top-left-radius: 100px;
@@ -346,12 +301,10 @@ header p {
         animation-name: negyes;
         animation-duration: 2.5s;  
         animation-delay: 2.5s;}
-
         .egyes img:hover{box-shadow:  yellow 5px 4px 5.5px 0px; transform: translate(-20px,-20px);}
         .harmas img:hover{box-shadow:  rgb(54, 158, 255) 5px -4px 5.5px 0px;transform: translate(-20px,20px);}
         .kettes img:hover{box-shadow: greenyellow -5px 4px 5.5px 0px;transform: translate(20px,-20px);}
         .negyes img:hover{box-shadow:  rgb(255, 0, 0) -5px -4px 5.5px 0px;transform: translate(20px,20px);}
-
               @keyframes egyes {
                         0% {box-shadow:  rgba(255, 0, 0, 0) 5px 4px 5.5px 0px;transform: translate(0px,0px);}
                         50% {box-shadow: yellow 5px 4px 5.5px 0px;transform: translate(-20px,-20px);}
@@ -385,14 +338,13 @@ header p {
                     100% {box-shadow:  rgba(255, 0, 0, 0) 5px -4px 5.5px 0px;transform: translate(0px,0px);}}       
               @keyframes negyes {
                             0% {box-shadow:  rgba(255, 0, 0, 0) -5px -4px 5.5px 0px;transform: translate(0px,0px);}
-                            50% {bfyoox-shadow:  rgb(255, 0, 0) -5px -4px 5.5px 0px;transform: translate(20px,20px);}
+                            50% {box-shadow:  rgb(255, 0, 0) -5px -4px 5.5px 0px;transform: translate(20px,20px);}
                             100% {box-shadow:  rgba(255, 0, 0, 0) -5px -4px 5.5px 0px;transform: translate(0px,0px);}}     
               @keyframes egyesp3 {
                                 0% {visibility:visible;text-shadow: rgb(0, 0, 0) 5px 5px 5px;color: gold;}
                                 15% {text-shadow: none;color: transparent; }
                                 85% {text-shadow: none;color: transparent; }
                                 100% {visibility:visible;text-shadow: rgb(0, 0, 0) 5px 5px 5px;color: gold;}}
-                                
 /* SLIDER */
 section {grid-area: slide;
     margin-left: auto;
@@ -400,31 +352,23 @@ section {grid-area: slide;
     width: 100%;
     display: flex;
     flex-direction: row;}
-
 .container{
   border: white 2px solid;
   margin:5% auto;
   width: 90%;
-  box-shadow: wheat 0px 0px 10px 1px;
-
-}
-
+  box-shadow: wheat 0px 0px 10px 1px;}
 h1{
   position: relative;
   margin-bottom: 45px;
   font-family: 'Oswald', sans-serif;
   font-size: 44px;
   text-transform: uppercase;
-  color: #424242;
-}
-
+  color: #424242;}
 .gallery-wrap {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 70vh;
-}
-
+  height: 70vh;}
 .item {
   flex: 1;
   height: 100%;
@@ -432,20 +376,15 @@ h1{
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease; 
-  &:hover{flex: 7;}
-}
+  &:hover{flex: 7;}}
     .item-1 { background-image: url(./media/1.webp);}
     .item-2 { background-image: url(./media/2.webp);}
     .item-3 { background-image: url(./media/3.webp);}
     .item-4 { background-image: url(./media/4.webp);}
     .item-5 { background-image: url(./media/5.webp);}
     .item-6 { background-image: url(./media/6.webp);}
-
-
-
 /* TÁMGOATÁS */
 .tamop{
-  
   display:grid;
   width: 100%;
   grid-template-columns: repeat(3,33%);
@@ -454,14 +393,12 @@ h1{
   height: 300px;
   margin-left: auto;
   margin-right: auto;}
-
   .tamop img {width:55%;display: flex;}
   .tamop p{color: rgb(0, 0, 125);
     font-style: italic;
     font-weight: 800;
     font-size: larger;
     text-indent:-90px;}
-
     .sor1, .sor2, .sor3 {      
       font-size: 15px;
       background-color: aliceblue;transition: all 1s;
@@ -472,31 +409,14 @@ h1{
       transition: width 1s, height 1s, color 1s, background-color 0.3s, transform 1s, visibility 1s;
       grid-template-columns: repeat(2, 50%);
       font-weight: 900;
-      display: grid;
-    }
-        .sor1{
-          transform: translate(90px,10px);
-          width: 250px;
-          height: 250px;
-        }
-        .sor2{
-          transform: translate(0px,30px);
-          width: 200px;
-          height: 200px;
-       }
-       .sor3{
-          transform: translate(-130px,-50px);
-          width: 180px;
-          height: 180px;
-        }
-        .sor1:hover, .sor2:hover,.sor3:hover{
-          width: 250px;height: 250px;background-color: rgb(255, 255, 255);transform: scale(1.4)
-        }
+      display: grid;}
+        .sor1{transform: translate(90px,10px);width: 250px;height: 250px;}
+        .sor2{transform: translate(0px,30px);width: 200px;height: 200px;}
+        .sor3{transform: translate(-130px,-50px);width: 180px;height: 180px;}
+        .sor1:hover, .sor2:hover,.sor3:hover{width: 250px;height: 250px;background-color: rgb(255, 255, 255);transform: scale(1.4)}
         .sor1 img,.sor2 img, .sor3 img {visibility: hidden;}
         .sor1:hover img, .sor2:hover img, .sor3:hover img{visibility: visible;}
-        
  /* FOOTER */
-
 footer {grid-area: footer;}
 .footer-distributed{
   background: linear-gradient(355deg, rgb(54, 158, 255) 0%, #1a73e8 50%);
@@ -510,19 +430,13 @@ footer {grid-area: footer;}
   font: bold 16px sans-serif;
   padding: 55px 50px 0px 55px;
   font-family: 'Times New Roman', Times, serif;}
-        .footer-distributed .footer-left,
-        .footer-distributed .footer-center,
-        .footer-distributed .footer-right{         
-          display: inline-block;vertical-align: top;}
-        
+        .footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right{ display: inline-block;vertical-align: top;}
         /* Footer left */
             .footer-distributed .footer-left{width: 40%;}
-        
         /*FOOTER-LOGO */
             .footer-distributed h3{color:  #ffffff;
             font: normal 36px 'Open Sans', cursive;margin: 0;}
         .footer-distributed h3 span{color:  gold;}
-
         /* Footer links */
         .footer-distributed .footer-links{
             color:  #ffffff;margin: 20px 0 12px;padding: 0;}
@@ -537,9 +451,7 @@ footer {grid-area: footer;}
             font-size: 14px;
             font-weight: normal;
             margin: 0;}
-
         /* Footer Center */
-
         .footer-distributed .footer-center{width: 30%;font-size: 12px;}
         .footer-distributed .footer-center i{
             background-color:  #ffffff;
@@ -575,9 +487,7 @@ footer {grid-area: footer;}
           color: #f0c402;
           display: inline-block;
           padding-right: 5px;}
-        .footer-distributed .footer-links .link-1:before {
-          content: none;}
-    
+        .footer-distributed .footer-links .link-1:before {content: none;}
         /* Footer Right */    
         .footer-distributed .footer-right{width: 20%;}
         .footer-distributed .footer-company-about{
@@ -606,15 +516,11 @@ footer {grid-area: footer;}
             line-height: 35px;
             margin-right: 3px;
             margin-bottom: 5px;}
-
-
-
             /* Gyűjtő */
             .gyujto{
             display: flex;
             flex-direction: row;
             justify-content: center}
-
             .kilep,.fel{
               width: fit-content;
               background-color: transparent;
@@ -626,15 +532,9 @@ footer {grid-area: footer;}
               margin: 10px;
               height: 30px;
               box-shadow: white 0px 0px 5px;
-              transition: 0.5s;
-            }
-
-            .kilep:hover,.fel:hover{
-              color: gold;
-              border-color: gold;
-            }
+              transition: 0.5s;}
+            .kilep:hover,.fel:hover{color: gold;border-color: gold;}
 /* Pályázatok */
-
 #paly_menp{    display: flex;
   margin: 20px auto;
   font-size: 160%;
@@ -647,8 +547,7 @@ display: flex;
 justify-content: center;
 text-align: center;
 font-size: small;
-font-style: italic;
-}
+font-style: italic;}
 .palymenu{border: white 2px solid;
   cursor: pointer;
   width: 150px;
@@ -660,12 +559,7 @@ font-style: italic;
   padding: 1px 3px;
   transition: 0.5s;
   box-shadow: white 0px 0px 5px 1px;}
-    .palymenu:hover{
-      box-shadow: gold 0px 0px 5px 1px;
-      border-color: gold;
-      color: gold;
-    }
-
+    .palymenu:hover{box-shadow: gold 0px 0px 5px 1px;border-color: gold;color: gold;}
 .paly_belso{
   display: none; 
   text-align: justify;
@@ -673,17 +567,12 @@ font-style: italic;
   background-color: white;
   justify-items:center;
   border: 2px solid gold;
-  padding: 7px 15px;
-  }
+  padding: 7px 15px;}
   #paly_02_tar ol li{ margin: 15px ; color: darkblue; font-style: italic; font-weight: bolder;}
   #paly_02_tar ol li li {margin:1% 5%; font-size: small; color: black; font-style: normal;}
-
   #felk{ font-style: italic; color: rgb(0, 0, 0); margin: 0px;
-  
     font-size: 0%; transition: 1s;width: 0%; }
-  #paly_tar h2 {    color: blue;
-    text-decoration: underline;
-    text-decoration-color: gold;}
+  #paly_tar h2 {color: blue; text-decoration: underline; text-decoration-color: gold;}
   #galleria{
     border-radius: 5px;
     box-shadow: 
@@ -694,17 +583,13 @@ font-style: italic;
     border: gold 2px solid;
     margin-right: 10px 0px 10px auto;
   margin: 10px;
-  text-align: center;
-  }
+  text-align: center;}
   #gb{
     cursor: pointer;
     font-size: smaller;
     font-weight: bolder ;
-    color: gold;
-  }
+    color: gold;}
   .content{display: none;}
-
-
   /* ELÉRHETŐSÁGEK */
 #map{
   margin: auto;
@@ -712,30 +597,23 @@ font-style: italic;
       height: 160px;
       border: white -1px solid;
       box-shadow: black 0px 0px 10px 1px;}
-
       #terkepek {
       display: flex;
       margin: auto;
       align-content: center;
       flex-wrap: wrap;
-      justify-content: space-around;
-}
-      
+      justify-content: space-around;}
 #terkepmenu, #paly,#doku{
   display: none;
   margin: 5%;
   border: 2px solid white;
-  padding: 2%;
-}
+  padding: 2%;}
 #ta, #hirek, .content{
 margin: 5%;
 border: 2px solid white;
-padding: 2%;
-}
+padding: 2%;}
 .content {border-top: none;}
-
 #terkepmenu h3, h2 { color: white; text-align: center; margin: 20px auto;}
-
   #int_adatok{
     margin: 10px auto;
     grid-template-columns: 25% 50% 25%;
@@ -748,9 +626,7 @@ padding: 2%;
     box-shadow: white 0px 0px 5px 1px;
     justify-content: center;
     justify-items: center;
-    align-items: center;
-  }
-
+    align-items: center;}
   #int_adatok img {width: 100%; margin: auto; display: grid; box-shadow: black 0px 0px 5px 1px; border-radius: 15px;}
   #int_adatok p {text-align: bold; color:rgb(2, 40, 83); margin-left: auto;}
   #int_adatok a { font-style: italic;padding-left: 15px;  color: white;}
@@ -758,9 +634,7 @@ padding: 2%;
   #int_adatok li {    grid-template-columns: 40% 60%;
     display: grid;}
   #int_adatok ul li ul li { margin: 5px auto; display: flex; justify-content: center;}
-    
 /* KÖTELEZŐ */
-
 #kotelezo_lent{
   z-index: 1000;
   position: fixed;
@@ -778,7 +652,6 @@ padding: 2%;
         0% {opacity: 0;}
         90%{opacity: 0;}
         100% {opacity: 1;}}
-
       #kotelezo_lent button{
       z-index: 1000;
       text-align: center; 
@@ -835,31 +708,21 @@ padding: 2%;
         right: 0;
       margin-top: -5%;}
         #kotelezo_fent img{z-index: 000;}
-
-#kotelezo_lent{
-  position:fixed;  left: auto;
-
-}
-          
-  #linear{    height: 40px;
-    background: linear-gradient(0deg, rgb(249 249 249 / 0%) 0%, rgb(91 161 195 / 0%) 4%, #0d4965 );}
+#kotelezo_lent{ position:fixed;  left: auto;}
 /* Szociális inézmények */
 #valaszto { margin: -3% 5% -5% 5%;}
 #szocik #valaszto {margin-bottom: 0%;}
-
 #valaszto p{ color: gold;
     font-size: x-large;
     margin: 15px;
     text-shadow: 1px 1px 5px black;} 
-
 #almenuk div, #almenukkicsi div{
     color: white;
     font-size: large;
     text-decoration: overline;
     text-shadow: 1px 1px 5px black;
     display: grid;
-    justify-items: center;
-}
+    justify-items: center;}
 #almenukkicsi { margin-top: -15px;}
 #almenukkicsi div{font-size:medium; justify-items:end; margin:-15px auto 40px auto;}
 #almenukkicsi img { width: 90%;}     
@@ -872,99 +735,65 @@ padding: 2%;
      border: rgb(255, 255, 255) 2px solid; 
      border-radius: 100px;
      box-shadow: rgb(255, 255, 255) 0px 0px 10px 1px;}
-
  #isknepk #valaszto img, #tagozatok #valaszto img, #terapiak #valaszto img { box-shadow: rgb(255, 0, 0) 0px 0px 10px 3px; background-color: rgba(255, 0, 0, 0.54); }
  #szocik #valaszto img, #tamopk #valaszto img, #fejfogk #valaszto img { box-shadow: rgb(255, 225, 0) 0px 0px 10px 3px; background-color: rgba(225, 255, 0, 0.54); }
  #csoportok img, #iskolak img, #konyvtar img { box-shadow: rgb(81, 255, 0) 0px 0px 10px 3px; background-color: rgba(119, 255, 0, 0.54);}
-
 #szocik, #tamopk, #fejfogk, #isknepk, #tagozatok, #terapiak, #csoportok, #iskolak, #konyvtar {margin-top: -5px; display: none;}
-
 #osztott {display: grid ;grid-template-columns: 70% 30%; margin-bottom: -100px; font-size: smaller;}
 #osztott #kozben {margin: 10px; text-align: justify;}
-
 #almenuk img {cursor: pointer;width: 80%; border: 2px solid white; border-radius: 45px; transition: 0.5s;}
     #almenuk img:hover{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px; border: gold 2px solid;}
-   
 #tamopkriszt, #tamopfejfog, #isknephagy{display: grid;
     margin: 50px;
     grid-column-gap: 30px;
    grid-template-columns: 70% 30%; }
-
    #csoporterz, #iskerz, #konyerz{display: flex; flex-direction: column; margin-top: -20px;}
-
 .alcikk, #alcikktart3 {display: none;
      margin: 50px;
      grid-column-gap: 30px;
     grid-template-columns: 70% 30%;
     background: white;
     border-left: gold 5px solid;
-    padding: 10px;
-}
+    padding: 10px;}
 #alcikktart3 { grid-template-columns: 100%;}
-
-.ter_kep{
-    text-align: center;
-}
-
-.content ul {
-    color: black;
-    font-style: italic;
-   margin-left: 10%;
-}
+.ter_kep{text-align: center;}
+.content ul {color: black; font-style: italic; margin-left: 10%;}
 .content li {margin: 5px auto}
-
 #tagozatok #almenuk {grid-template-columns: 50% 50%; }
-
-
 #almenuk p {text-align: center; height: 60px;}
-
 .kijelolt{box-shadow: rgb(255, 217, 0) 0px 0px 20px 5px;}
-
 .belso_tart{display: none; text-align:justify; color: black; text-shadow: none;}
 #pszitart, #ertaktart, #fejnevtart {grid-template-columns: 80% 20%; transition: 0.5s;}
-
 #cimp{
     color:rgb(18, 85, 116);
     margin: 15px;
     font-weight: 300;
-    font-style: italic;
-}
+    font-style: italic;}
 #alp{margin: 40px;}
-
 #el{width: fit-content;
     margin-right: 35px;
     color: rgb(54, 158, 255);
-    text-align: right;
-    }
-
+    text-align: right;}
 #kozben {text-align: center; 
     padding-bottom: 80px; 
     color: gold; 
     text-shadow: -2px 1px 13px black;    
-    margin: auto;
-}
-
+    margin: auto;}
 .listakurzor li { padding: 2px; color: #040eff; cursor: pointer;}
 .belso_tart p { margin: 20px 4px} 
-
     #kep, #kep2 {display: none;     
         border-bottom-left-radius: 50px;
         margin-right: -15px;
         display: none;
         border: rgb(252, 227, 3) 5px solid;
     margin-top: 5px;}
-  
-    #al-al{
-        display: flex;
-    }
-
+    #al-al{display: flex;}
     .kephely_5, .kephely_6, #kephely_4{    
         margin: 10px auto;
         display: flex;
         flex-direction: row;
         align-content: stretch;
         justify-content: center;}
-
         .nagyikon p{text-align: center;}
         #eler p { font-style: normal; color: rgb(0, 58, 204); font-weight: bold; }
         #eler{width: fit-content;
@@ -980,15 +809,11 @@ padding: 2%;
         border-top: rgb(0, 0, 0) 4px solid;
         text-shadow: rgba(55, 55, 55, 0.782) 2px 2px 3px;
     border-radius: 25px;}
-
     #eler a:link {color: rgb(39, 86, 255); padding: 2px; }
-           
     #f1, #f2, #f3, #f4, #f5, #f6 {font-size: 0%; transition: 1s;width: 0%; }
     #feladatok, #feladatok1, #feladatok2, #feladatok3, #feladatok4, #feladatok5{color:white ; text-align: center; cursor: pointer;}
-
     #osztott #kozben {padding: 0px;}
     #konyvtar .kisikon, #csoportok .kisikon, #iskolak .kisikon { margin-top:100px ;}
-
     /* DOKUMENTOMK */
           .kisikon2 {width: 30%;
              border: 2px solid white;
@@ -1004,9 +829,7 @@ padding: 2%;
             align-items: center; 
           color: white;}
           #doksik{display: flex;}
-          #dokumenu {display: grid;
-            grid-template-columns: 75% 25%;
-          }
+          #dokumenu {display: grid;grid-template-columns: 75% 25%;}
           #doku #eler { margin: 10px;}
           #tisztv { margin: auto;}
           .alcikk2{display: none;
@@ -1033,15 +856,9 @@ padding: 2%;
                 width: 100%;
                 border: 2px gold solid;
                 border-radius: 10px;}
-                #kozdok_tart{
-                  display: none;
-                  justify-items: center;
-                  text-align: center;
-                }
-                #placeholder{
-                display: flex;
-    flex-direction: column-reverse;}
-    #dokucim{    position: absolute;
+                #kozdok_tart{display: none;justify-items: center;text-align: center;}
+                #placeholder{ display: flex; flex-direction: column-reverse;}
+    #dokucim{position: absolute;
       background: white;
       box-shadow: 0px 4px 5px #3d80;
       font-size: smaller;
@@ -1053,10 +870,8 @@ padding: 2%;
       border-bottom-right-radius: 15px;
       font-style: italic;}
       /* INTÉZMÉNYVÁLASZTÓ AL */
-     #int_szoc .box{width: 31%;
-      margin: 0px 3%;}
+     #int_szoc .box{width: 31%; margin: 0px 3%;}
         #kep2_mini,.kep2,#kep_mini,.kep {cursor: pointer;}
-
       .int_int{
         background-image: url(./media/intgrad.webp);
         padding: 15px;
@@ -1074,11 +889,9 @@ padding: 2%;
       border-bottom: 3px #ffd400 solid;
       border-bottom-left-radius: 50px;
       padding: 10px;}
-
       .box{display: flex;
       width: 40%;
       margin: 0px 1%;}
-        
       #tart , #tart1,  #tart1_kepes{ 
       box-shadow: 0px 0px 4px 3px rgb(6 111 161);
       background-color: #ffffff;
@@ -1096,264 +909,3 @@ padding: 2%;
       align-items: center;
       justify-items: end;
     text-align: center;}
-
-@media screen and (min-width:201px) and (max-width:1037px){
-/* INTÉZMÉNYEK */
-#tart_tart #artcim {    color: white;}
-
-#tart1_kepes{ grid-template-columns: 100%;   justify-items: center;}
-#tart , #tart1, #tart1_kepes{text-align: center; margin: 15px auto; justify-self: center;    width: 100%;}
-.box{display: none;}
-  /* DOKUMENTUMOK */
-#dokumenu {display: flex; flex-direction: column;
-  font-size: small;
-}
-#doksik {    display: grid;
-  grid-template-columns: 33% 33% 33%;}
-  .kisikon2{width: 45%;}
-  .alcikk2 li {font-size: small; margin: 8px; color: blue;}
-  .alcikk2 ul p {font-size:medium; }
- .pdf object {height: 120px;}
-/* ELÉRHETŐSÉGEK */
-#int_adatok{font-size: small;
-  display: block;
-}
-#szamkeret { font-size: small; padding: 20px;}
-.alcikk2 {grid-template-columns:100%}
-      /* TEVÉKENYSÉG VÁLASZTÓ */
-    
-    #kriszt, #geszt {grid-template-columns: 100%;margin: 1px}
-      #alcikk, .alcikk {grid-template-columns: 100%; font-size: smaller;}
-      .alcikk, #alcikktart3{margin: 5px;}
-      #konyvtar .kisikon { margin-top:74px ;}
-      #almenuk p {font-size: small;}
-      #almenuk div { text-decoration: none; margin: 0px 2px ;}
-      #almenuk img {width: 25%; margin-bottom: 2%;}
-      #almenukkicsi #kep, #almenukkicsi #kep2 {width: 0%; margin: 0; border: none;}
-      #almenukkicsi img{ width: 70%;}
-    
-      #tamopkriszt, #tamopfejfog, #isknephagy{
-       grid-template-columns: 100%; margin: 2px; }
-      #kozben{ margin: auto 15px; font-size: small;}
-      #terapiak #almenuk{ display: grid; grid-template-columns: repeat(4,25%);}
-      #terapiak #almenuk img { width: 80%; margin-top: -0px;}
-      #terapiak #kozben { font-size: smaller;}
-      #el{ display: grid; grid-template-columns: repeat(2,50%); margin: 10% auto;}
-      
-      #tamopkriszt, #tamopfejfog, #isknephagy, #kriszt,#osztott {grid-template-columns: 100%; }
-      #pszitart, #ertaktart, #fejnevtart, #tanaktart {grid-template-columns: 100%}
-      #el { margin: auto 0px;grid-template-columns: 100%; font-size: smaller;}
-      #tagozatok #almenuk{display: grid;}       
-      .kephely_5 img,.kephely_6 img{width: 100%;}
-      #alp{margin: 5px;}
-    
-       .footer a {display: none;}
-      .footer-distributed {padding: 5px; display: grid; grid-template-rows: repeat(2, 50%); margin: 0; }
-      .footer-distributed .footer-center p{
-        display: none}
-        .footer-distributed .footer-center{width: 100%; display: flex;
-        justify-content: right; margin-left:-50px;}
-      .footer-right p {display: none;}
-    .footer-left p {display: grid}
-    
-    footer h3{text-align: center; width: 300px;
-      position: absolute; right: 0;
-    }
-    .footer-center a {display: none;}
-      /* HEADER */
-      #tevekenysegvalaszto #artcim {
-        position: absolute;
-        margin-top: -5%;
-        margin-left: 2%;
-      }
-     header{display:none;}
-    .tevval1 {margin-top: 50px}
-     /* INTÉZMÉNY VÁLASZTÓ */
-    #szocik #almenuk img {width: 90%;}
-    .intezmenyvalaszto {margin: 20% auto 0% auto ;}
-    
-        .info_mob0{ display: flex; justify-content: first baseline; color: white; font-size: x-small; margin: 3% 2%;}
-        .info_mob,.info_mob2{display:grid;grid-template-columns: repeat(2,50%); 
-          color: rgb(241, 241, 241);font-style: italic;text-align: center; margin: 5px;
-          justify-content: space-around;}
-          .info_mob p, .info_mob2 p{ font-size: 70%;
-            border: white 2px solid;
-            margin: auto 8%;
-            transition: 0.5s;
-            box-shadow: wheat 0px 0px 10px 1px;
-            padding: 4px;
-            height: 55px;}
-            #gold{color: gold;font-weight: bolder;}
-
-            
-
-            .info_mob p:hover, .info_mob2 p:hover { color: gold; border-color: gold;}
-    
-                .egyes p, .kettes p, .harmas p, .negyes p, .pp3 
-                .info, .info2, .info3, .info4 { display: none; animation:none;}
-                .info{display: none;}
-                .egyes img, .kettes img, .harmas img, .negyes img{width: 75%;}
-    
-                .info_mob0{ text-shadow: rgb(0, 0, 0) 5px 5px 5px;
-                  color:gold;
-                  font-style: italic; font-weight: normal;
-                  text-align: left; font-size: 12px;}
-    
-    
-    /* CONTENT - TEVÉKENYSÉGEK */
-    
-       #instrukcio{font-size: 13px; font-weight:normal ;}
-    
-       /* BODY */
-    
-    body {font-family: 'Times New Roman', Times, serif;
-      grid-template-areas: 
-      "nav"
-      "content"
-      "tevekenysegek"
-      "slide"
-      "tamop"
-      "footer";}
-    
-     /* NAV */
-    
-      .navcont{padding: 20px;
-              box-shadow: rgb(38, 126, 126) 1px 1px 10px 1px;
-              display:flex;
-              border-bottom: white 2px solid;
-
-            position:fixed; top: 2px;
-                background: linear-gradient(269deg, rgb(9 172 250) 0%, rgb(3 114 167) 47%);}    
-          .navcont label {display: initial;}
-          .navcont .navbar{transform: translateX(-1000px);
-                  position:absolute;
-                  top: 100%;left: 0;right: 0;
-                  background: rgb(58,153,180);
-                  background: linear-gradient(140deg, rgba(16, 113, 139, 0.815) 25%, rgb(26 118 227 / 100%) 75%, rgba(252, 176, 69, 0) 96%);
-                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                 
-                  border: 1px solid rgba(255, 255, 255, 0.33);
-                  border-top: 1px solid rgb(46, 31, 31);
-                  transition: all 1s;}
-            .almenu img{display: none;}
-            .navcont .navbar ul li { width: 100%; box-shadow: rgb(255, 255, 255) 0px 0px 2.1px 0.1px;}
-              .navcont .navbar ul li ul{ position: relative;width: 100%;}
-               .navcont .navbar ul li ul li{background: rgba(52, 208, 255, 0.486);
-                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                 
-                  border: 1px solid rgba(255, 255, 255, 0.33);
-                }
-               .navcont .navbar ul li ul li ul{  font-size: 1px;width: 100%;left: 0;}
-              #menu-bar:checked ~ .navbar{transform: translateX(0px);}
-              
-                .navcont .logo{width: 100%;}
-                .logobar i  {display: none;}
-                .logobar { position: absolute;}
-                .logo img {width: 30px;transform: translateX(5px);transition: all 1s;}
-                .logo img:hover{transform: translateX(-5px);}
-                #menu-bar2{position: relative;top: 40px;width: 40%;}
-              #menu-bar2 svg{
-              margin-top: -35px;
-              border-radius: 100px;
-              width: 85%;
-              height: 85%;
-              box-shadow: inset 0 0 10px 1px rgb(71, 145, 255), 0 0 10px 1px rgb(0, 255, 191);
-             transform: translateY(28px);
-                transition: all 1s;}
-                .logobar p{ background: #FFEDF1;
-                  background: linear-gradient(to right, #FFEDF1 , #E8CA07 70%);
-                  padding-left: 15px;
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  display: flex; font-size: 17px;}
-                  .logobar span{display: flex; font-size: 10px; width: 55%; margin-left: 2%;}
-    
-
-
-    /* TAMOGATÁS */
-    
-      .tamop p{color:crimson; text-shadow:rgb(255, 255, 255) -1px -1px 3px;
-        font-size: larger;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: italic;
-        text-indent:-10px;}
-        .sor1{background-color: aliceblue;
-          transform: translate(30px,10px);
-          width: 150px;
-          height: 150px; transition: all 1s;
-        }
-        .sor2{transform: translate(0px,30px);  
-          width: 170px;
-          height: 170px;
-          background-color: aliceblue;transition: all 1s;}
-        .sor3{transform: translate(-30px,-1px);
-          width: 155px;
-          height: 155px;
-          background-color: aliceblue;transition: all 1s;
-      }
-    
-      .sor1:hover{ margin-left: 300px;
-            width: 200px;height: 200px; z-index: 1000;}
-        .sor2:hover{width: 200px;height: 200px;z-index: 1000;}
-          .sor3:hover{ margin-left: -300px;z-index: 1000;
-            width: 200px;height: 200px;}
-      
-      /*FOOTER  */
-    
-      footer{grid-area:auto;text-align: center; margin: 0px 0px 10px 0px}
-        .footerp {font-size: 12px; color: whitesmoke;margin: 10px auto;}         
-        footer img{display: flex; width: 30px; height: 30px;}
-        .footerikonp{display: none;}
-      
-    /* KÖTELEZŐ */
-    #kotelezo_lent img{
-      height: 200px;
-      width: 110%;
-      position: absolute;
-      right: 0;
-      bottom: 0;}
-        
-    /* PÁLYÁZAT */
-    #paly_men{display: grid;
-      grid-template-columns: repeat(2,50%);
-    margin: 5%;
-    justify-items: center;}
-    
-
-    .paly_belso{ font-size: smaller; margin: 1px;}
-
-    /* DOKUMENTOMK */
-
-     /* TEVÉKENYSÉG VÁLASZTÓ */ 
-        .nagyikon{    position: absolute;
-          left: 5%;
-          z-index: 10;
-          margin-top: -15px;
-          display: flex;
-          padding:5px;      
-        }
-        .nagyikon img{ opacity: 70%;}
-        .kisikon{ z-index: 100;}
-        .kisikon img {width: 50%; height: 100%;}
-        #valaszto .kisikon img{ width: 10%;}
-        #galleria{font-size: x-small;
-          width: 100%;
-          padding: 10px;}
-    
-        .tevekenysegvalaszto {grid-template-columns: repeat(1,100%);
-          margin-left: auto;
-          margin-right: auto;
-          padding: 5px;
-          margin: 5px 5%;
-          padding-top: 15px;
-          padding-bottom: 0px;
-          border: whitesmoke solid 2px;
-          padding-top: 45px;
-          margin-top: 15px;}
-          .item {&:hover{flex: 5;}}
-              .item-1, .item-2  { display: none;}
-
-            }
-      
-
-        
