@@ -1,5 +1,3 @@
-
-
 fetch('tartalom.html')
   .then(response => response.text())
   .then(htmlContent => {
@@ -177,7 +175,6 @@ const kony = document.querySelector("#kony");
     const kep2 =document.querySelector(".kep2");
     const kep2_mini = document.querySelector("#kep2_mini");
     const sul_tev = document.querySelector("#sul_tev");
-
     const int_szoc = document.querySelector("#int_szoc");
     const kep =document.querySelector(".kep");
     const kep_mini = document.querySelector("#kep_mini");
@@ -227,11 +224,8 @@ const buttonContentPairs = {
     kep2_mini:{gomb:kep2_mini, content1: int_sul, placeholder1:placeholder},
     kep:{gomb:kep, content1:int_szoc , placeholder1:placeholder},
     kep_mini:{gomb:kep_mini, content1: int_szoc, placeholder1:placeholder},
-
     sul_tev: { gomb: sul_tev, content1: tagozatok, placeholder1: placeholder },
     szoc_tev: { gomb: szoc_tev, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
-
-
 };
 
 for (const key in buttonContentPairs) {
@@ -532,77 +526,30 @@ const info3 = document.querySelector('.info3');
 const pp2 = document.querySelector('.pp2');
 const kep2 = document.querySelector('.kep2');
 const info2 = document.querySelector('.info2');
-
-kep.addEventListener('mouseover', () => {
-  pp.style.visibility =  'visible'
-  pp.style.color = 'white';
-  pp.style.textShadow = 'black 5px 5px 5px';
-  pp.style.transition = "all 1s";
-  pp.style.transform = "scale(1.1)";
-  info.style.transition = "all 1s";
-  info.style.color = 'rgba(255, 255, 255, 0)'
-  info.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';  });
-kep.addEventListener('mouseout', () => {
-  pp.style.visibility =  'hidden'
-  pp.style.color = '';
-  pp.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
-  info.style.color = '';
-  info.style.textShadow = 'black 5px 5px 5px';
-  pp.style.transform = "scale(1)";});
-
-kep3.addEventListener('mouseover', () => {
-  pp3.style.visibility =  'visible'
-  pp3.style.transition = 'all 1s';
-  pp3.style.color = 'white';
-  pp3.style.textShadow = 'black 5px 5px 5px';
-  pp3.style.marginTop = '0px';
-  pp3.style.transform = "scale(1.1)";
-  info4.style.transition = "all 1s";
-  info4.style.color = 'rgba(255, 255, 255, 0)'
-  info4.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';  });
-kep3.addEventListener('mouseout', () => {
-  pp3.style.visibility =  'hidden'
-  pp3.style.color = '';
-  pp3.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
-  info4.style.color = '';
-  info4.style.textShadow = 'black 5px 5px 5px';
-  pp3.style.transform = "scale(1)";});
-
-kep4.addEventListener('mouseover', () => {
-  pp4.style.visibility =  'visible'
-  pp4.style.color = 'white';
-  pp4.style.textShadow = 'black 5px 5px 5px';
-  pp4.style.transition = "all 1s";
-  pp4.style.transform = "scale(1.1)";
-  info3.style.transition = "all 1s";
-  info3.style.color = 'rgba(255, 255, 255, 0)'
-  info3.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';  });
-kep4.addEventListener('mouseout', () => {
-  pp4.style.visibility =  'hidden'
-  pp4.style.color = '';
-  pp4.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
-  info3.style.color = '';
-  info3.style.textShadow = 'black 5px 5px 5px';
-  pp4.style.transform = "scale(1)";});
-
-kep2.addEventListener('mouseover', () => {
-  pp2.style.visibility =  'visible'
-  pp2.style.color = 'white';
-  pp2.style.textShadow = 'black 5px 5px 5px';
-  pp2.style.transition = "all 1s";
-  pp2.style.transform = "scale(1.1)";
-  info2.style.transition = "all 1s";
-  info2.style.color = 'rgba(255, 255, 255, 0)'
-  info2.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';});
-kep2.addEventListener('mouseout', () => {
-  pp2.style.visibility =  'hidden'
-  pp2.style.color = '';
-  pp2.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
-  info2.style.color = '';
-  info2.style.textShadow = 'black 5px 5px 5px';
-  pp2.style.transform = "scale(1)";});
-
 const fomenu = document.querySelector("#fomenu");
-const tamogati = document.querySelector("#szoci")
+const tamogati = document.querySelector("#szoci");
 
-
+function setMouseoverEffects(image, popup, info) {
+    image.addEventListener('mouseover', () => {
+      popup.style.visibility = 'visible';
+      popup.style.color = 'white';
+      popup.style.textShadow = 'black 5px 5px 5px';
+      popup.style.transition = "all 1s";
+      popup.style.transform = "scale(1.1)";
+      info.style.transition = "all 1s";
+      info.style.color = 'rgba(255, 255, 255, 0)';
+      info.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
+    });
+    image.addEventListener('mouseout', () => {
+      popup.style.visibility = 'hidden';
+      popup.style.color = '';
+      popup.style.textShadow = 'rgba(255, 255, 255, 0) 0px 0px 0px';
+      info.style.color = '';
+      info.style.textShadow = 'black 5px 5px 5px';
+      popup.style.transform = "scale(1)";
+    });
+  }
+  setMouseoverEffects(kep, pp, info);
+  setMouseoverEffects(kep3, pp3, info4);
+  setMouseoverEffects(kep4, pp4, info3);
+  setMouseoverEffects(kep2, pp2, info2);
