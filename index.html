@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kerek Világ Alapítvány">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_mobile.css">    
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -47,26 +48,26 @@
         <div class="navbar">
             <ul>
                 <li><a href="">Rólunk</a></li>
-                <li><a href="">Hírek</a></li>
-                <li class="almenu"><a >Intézményválasztó</a>
+<!--                 <li><a href="">Hírek</a></li>
+ -->                <li class="almenu"><a >Intézményválasztó</a>
                     <ul>
-                        <li><a style="font-size: 10px;" href="">Szociális Intézmény </a></li>
-                        <li><a style="font-size: 10px;" href="">Általános Iskola</a></li>
-                        <li><a style="font-size: 10px;" href="">Támogató Szolgálat</a></li>
-                        <li><a style="font-size: 10px;" href="">Lakó Otthon</a></li>
+                        <li><a id="kep2_mini3" style="font-size: 10px;" onclick="checkUncheck()">Szociális Intézmény </a></li>
+                        <li><a id="kep2_mini2" style="font-size: 10px;" onclick="checkUncheck()">Általános Iskola</a></li>
+                        <li><a style="font-size: 10px;" onclick="checkUncheck()">Támogató Szolgálat</a></li>
+                        <li><a style="font-size: 10px;" onclick="checkUncheck()">Támogatott lakhatás</a></li>
                     </ul>
                 </li>
-                <li class="almenu"><a href="#tevekenysegvalaszto" onclick="checkUncheck()">Tevékenységeink</a>
+                <li class="almenu"><a >Tevékenységeink</a>
                     <ul>
-                        <li><a style="font-size: 10px;" href="">Ellátó intézmények </a></li>
-                        <li><a style="font-size: 10px;" href="">Támogó szolgálat</a></li>
-                        <li><a style="font-size: 10px;" href="">Fejlesztő szolgáltatások</a></li>
-                        <li><a style="font-size: 10px;" href="">Néphagyomány őrzés iskolánkban</a></li>
-                        <li><a style="font-size: 10px;" href="">Iskolai Tagozatok </a></li>
-                        <li><a style="font-size: 10px;" href="">Terápiáink iskolánkban</a></li>
-                        <li><a style="font-size: 10px;" href="">Érézkenyítés Iskoláknak</a></li>
-                        <li><a style="font-size: 10px;" href="">Érzénytés csoportoknak</a></li>
-                        <li><a style="font-size: 10px;" href="">Érzékenyítés "Élő Könyvtár"-ral</a></li>                        
+                        <li><a id="ellint_mini" style="font-size: 10px;" onclick="checkUncheck()">Szociális alapszolgáltatások: Ellátó intézmények</a></li>
+                        <li><a id="taszo_mini" style="font-size: 10px;" onclick="checkUncheck()">Szociális alapszolgáltatások: Támogató szolgálat</a></li>
+                        <li><a id="fejfog_mini" style="font-size: 10px;" onclick="checkUncheck()">Szociális alapszolgáltatások: Fejlesztő szolgáltatások</a></li>
+                        <li><a id="nephagy_mini" style="font-size: 10px;" onclick="checkUncheck()">Iskolai Néphagyomány őrzés</a></li>
+                        <li><a id="tag_mini" style="font-size: 10px;" onclick="checkUncheck()">Iskolai Tagozatok </a></li>
+                        <li><a id="terap_mini" style="font-size: 10px;" onclick="checkUncheck()">Terápiáink iskolánkban</a></li>
+                        <li><a id="erz_mini1" style="font-size: 10px;" onclick="checkUncheck()">Érézkenyítés Iskoláknak</a></li>
+                        <li><a id="erz_mini2" style="font-size: 10px;" onclick="checkUncheck()">Érzénytés csoportoknak</a></li>
+                        <li><a id="erz_mini3" style="font-size: 10px;" onclick="checkUncheck()">Érzékenyítés "Élő Könyvtár"-ral</a></li>                        
                     </ul>
                 </li>
 
@@ -95,8 +96,8 @@
                     </ul>
                 </li>
                  <li><a id="dok" onclick="checkUncheck()">Dokumentumtár</a></li>
-                 <li><a>Karrier</a></li>
-                 <li><a id="terkepekel" onclick="checkUncheck()">Kapcsolat</a></li>
+<!--                  <li><a>Karrier</a></li>
+ -->                 <li><a id="terkepekel" onclick="checkUncheck()">Kapcsolat</a></li>
             </ul>
         </div>
     </div>
@@ -165,8 +166,8 @@
                 <span class="info3">
                     ...mindennek életnek értelme <br> és célja van"
                 </span>
-                <p class="pp4">Lakó otthon<br><br>
-                    Berek utcai lakóotthonunk lehetőséget <br>
+                <p class="pp4">Támogatott lakhatás<br><br>
+                    Berek utcai telephelyünk lehetőséget <br>
                     kívál a megváltozott munkaképességű,<br>
                      fogyatékkal élő felnőtteknek<br>
                     az önálló életvitel megvalósítására.
@@ -253,11 +254,11 @@
          <article id="foldal">    
 
 
-<article id="hirek">
+<!-- <article id="hirek">
     <div id = "artcim">HÍREK</div>
     <div>
     </div>
-</article>
+</article> -->
 <div class="container">
   <div class="gallery-wrap">
     <div class="item item-1"></div>
@@ -316,8 +317,8 @@
                 <p class="footer-links">
                     <a href="#iv">Intézményeink</a>
                     <a href="#tevekenysegvalaszto">Tevékenységeink</a>
-                    <a href="#">Hírek</a>
-                    <a id="dok2">Adatkezelés</a>
+<!--                     <a href="#">Hírek</a>
+ -->                    <a id="dok2">Adatkezelés</a>
                     <a id="terkepekel2">Kapcsolat</a>
 
                 </p>

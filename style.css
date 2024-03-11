@@ -119,7 +119,7 @@ header p {
         .navcont .navbar ul li ul{
            position:absolute;
            left: 0;
-           width: 200px;
+           width: 75%;
            background: rgba(0, 164, 214, 0.877);
            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
            border: 1px solid rgba(255, 255, 255, 0.33);

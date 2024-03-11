@@ -65,6 +65,18 @@ const keps2 = document.querySelector('#kep2');
     const kephely_5 = document.querySelector(".kephely_5");
     const kephely_6 = document.querySelector(".kephely_6");
  // Fő területek   
+const ellint_mini = document.querySelector("#ellint_mini");
+const taszo_mini = document.querySelector("#taszo_mini");
+const fejfog_mini = document.querySelector("#fejfog_mini");
+const nephagy_mini = document.querySelector("#nephagy_mini");
+const tag_mini = document.querySelector("#tag_mini");
+const terap_mini = document.querySelector("#terap_mini");
+const erz_mini1 = document.querySelector("#erz_mini1");
+const erz_mini2 = document.querySelector("#erz_mini2");
+const erz_mini3 = document.querySelector("#erz_mini3");
+const kep2_mini2 = document.querySelector("#kep2_mini2");
+const kep2_mini3 = document.querySelector("#kep2_mini3");
+
 const csop = document.querySelector("#csop");
     const csoportok = document.querySelector("#csoportok");
 const isk = document.querySelector('#iskerzk');
@@ -183,14 +195,23 @@ const kony = document.querySelector("#kony");
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
     taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
+        taszo_mini: { gomb: taszo_mini, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },    
     ellint: { gomb: ellint, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
+        ellint_mini: { gomb: ellint_mini, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
     fejfog: { gomb: fejfog, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
+        fejfog_mini: { gomb: fejfog_mini, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
     isknep: { gomb: isknep, content1: isknepk, placeholder1: placeholder, content2: keps, placeholder2: kephely_2 },
+        tag_mini: { gomb: tag_mini, content1: tagozatok, placeholder1: placeholder },
     tag: { gomb: tag, content1: tagozatok, placeholder1: placeholder },
+        nephagy_mini: { gomb: nephagy_mini, content1: isknepk, placeholder1: placeholder, content2: keps, placeholder2: kephely_2 },
     ter: { gomb: ter, content1: terapiak, placeholder1: placeholder },
+        terap_mini: { gomb: terap_mini, content1: terapiak, placeholder1: placeholder },
     csop: { gomb: csop, content1: csoportok, placeholder1: placeholder },
+        erz_mini1: { gomb: erz_mini1, content1: csoportok, placeholder1: placeholder },
     isk: { gomb: isk, content1: iskolak, placeholder1: placeholder },
+        erz_mini2: { gomb: erz_mini2, content1: iskolak, placeholder1: placeholder },
     kony: { gomb: kony, content1: konyvtar, placeholder1: placeholder },
+        erz_mini3: { gomb: erz_mini3, content1: konyvtar, placeholder1: placeholder },    
     pszi: {gomb: pszi, content1:pszitart, placeholder1: alcikktart2},
     tanak: {gomb:tanak, content1:tanaktart, placeholder1: alcikktart2, content2: keps2,placeholder2: kephely_4},
     ertak: {gomb:ertak, content1:ertaktart, placeholder1: alcikktart2},
@@ -222,8 +243,12 @@ const buttonContentPairs = {
     /* INTÉZMÉNYVÁLASZTÓ */
     kep2:{gomb:kep2, content1: int_sul, placeholder1:placeholder},
     kep2_mini:{gomb:kep2_mini, content1: int_sul, placeholder1:placeholder},
+    kep2_mini2:{gomb:kep2_mini2, content1: int_sul, placeholder1:placeholder},
+
     kep:{gomb:kep, content1:int_szoc , placeholder1:placeholder},
     kep_mini:{gomb:kep_mini, content1: int_szoc, placeholder1:placeholder},
+    kep2_mini3:{gomb:kep2_mini3, content1: int_szoc, placeholder1:placeholder},
+    
     sul_tev: { gomb: sul_tev, content1: tagozatok, placeholder1: placeholder },
     szoc_tev: { gomb: szoc_tev, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
 };
@@ -231,6 +256,10 @@ const buttonContentPairs = {
 for (const key in buttonContentPairs) {
     if (buttonContentPairs.hasOwnProperty(key)) {
         const pair = buttonContentPairs[key];
+        if (!pair || !pair.gomb || !pair.content1 || !pair.placeholder1) {
+            console.error(`Hiba: Hiányzó adatok a "${key}" kulcs-érték párnál.`);
+            continue;
+        }
         pair.gomb.addEventListener('click', function() {
             changeContent(pair.content1, pair.placeholder1);
             if (pair.content2 && pair.placeholder2) {

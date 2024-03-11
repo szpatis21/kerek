@@ -107,10 +107,14 @@
                 .almenu img{display: none;}
                 .navcont .navbar ul li { width: 100%; box-shadow: rgb(255, 255, 255) 0px 0px 2.1px 0.1px;}
                   .navcont .navbar ul li ul{ position: relative;width: 100%;}
-                   .navcont .navbar ul li ul li{background: rgba(52, 208, 255, 0.486);
+                   .navcont .navbar ul li ul li{
+                    width: 100%;
+                    background: rgba(52, 208, 255, 0.486);
                       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                       border: 1px solid rgba(255, 255, 255, 0.33);}
                    .navcont .navbar ul li ul li ul{  font-size: 1px;width: 100%;left: 0;}
+                   .navcont .navbar ul li:focus-within > ul,  
+                   .navcont .navbar ul li:hover > ul{display: flex;flex-direction: column; width: 100%;}
                   #menu-bar:checked ~ .navbar{transform: translateX(0px);}
                     .navcont .logo{width: 100%;}
                     .logobar i  {display: none;}
