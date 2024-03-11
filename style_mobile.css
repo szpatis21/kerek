@@ -92,7 +92,7 @@
                   box-shadow: rgb(38, 126, 126) 1px 1px 10px 1px;
                   display:flex;
                   border-bottom: white 2px solid;
-                position:fixed; top: 2px;
+                position:fixed; top: 0px;
                     background: linear-gradient(269deg, rgb(9 172 250) 0%, rgb(3 114 167) 47%);}    
               .navcont label {display: initial;}
               .navcont .navbar{transform: translateX(-1000px);

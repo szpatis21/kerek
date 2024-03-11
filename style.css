@@ -434,7 +434,13 @@ footer {grid-area: footer;}
         /* Footer left */
             .footer-distributed .footer-left{width: 40%;}
         /*FOOTER-LOGO */
-            .footer-distributed h3{color:  #ffffff;
+        #logokor{    position: absolute;
+          right: 15%;
+          opacity: 40%;
+          width: 33%;
+          height: 20%;
+          z-index: 50;}
+            .footer-distributed h3{color:  #ffffff; z-index: 60;
             font: normal 36px 'Open Sans', cursive;margin: 0;}
         .footer-distributed h3 span{color:  gold;}
         /* Footer links */
@@ -613,7 +619,7 @@ margin: 5%;
 border: 2px solid white;
 padding: 2%;}
 .content {border-top: none;}
-#terkepmenu h3, h2 { color: white; text-align: center; margin: 20px auto;}
+#terkepmenu h3, h2 { color: rgb(0, 0, 0); text-align: center; margin: 20px auto;}
   #int_adatok{
     margin: 10px auto;
     grid-template-columns: 25% 50% 25%;

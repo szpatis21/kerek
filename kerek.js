@@ -49,6 +49,8 @@ function changeContent(newContent, placeholder) {
 
     setTimeout(function () {
         newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
+        window.scrollBy(0, 50);
+
     }, 50);
 }
     
