@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style_mobile.css">    
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-    
-    <title>Kerek Világ Alapítvány</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="language" content="Hungary">
+
+    <title>Kerek  Alapítvány</title>
     
 </head>
 <div>
@@ -47,13 +50,13 @@
 
         <div class="navbar">
             <ul>
-                <li><a href="">Rólunk</a></li>
+                <li><a href="#rolunk"onclick="checkUncheck()" >Rólunk</a></li>
 <!--                 <li><a href="">Hírek</a></li>
  -->                <li class="almenu"><a >Intézményválasztó</a>
                     <ul>
                         <li><a id="kep2_mini3" style="font-size: 10px;" onclick="checkUncheck()">Szociális Intézmény </a></li>
                         <li><a id="kep2_mini2" style="font-size: 10px;" onclick="checkUncheck()">Általános Iskola</a></li>
-                        <li><a style="font-size: 10px;" onclick="checkUncheck()">Támogató Szolgálat</a></li>
+                        <li><a id="kep3_mini4" style="font-size: 10px;" onclick="checkUncheck()">Támogató Szolgálat</a></li>
                         <li><a style="font-size: 10px;" onclick="checkUncheck()">Támogatott lakhatás</a></li>
                     </ul>
                 </li>
@@ -76,28 +79,25 @@
                         <li class="almenu"><a  id="paly_01" style="font-size: 10px;"  onclick="checkUncheck()">EFOP–2.2.25-22-2022-00013</a>
                         </li>	
                         <li class="almenu"><a id="paly_02" style="font-size: 10px;" onclick="checkUncheck()">EFOP-3.1.6-16-2017-00007</a>
-
                         </li>
                         <li class="almenu"><a id="paly_03" style="font-size: 10px;" onclick="checkUncheck()">EFOP-4-1-6-16-2017-00009 </a>
- 
                         </li>
                         <li class="almenu"><a id="paly_04" style="font-size: 10px;" onclick="checkUncheck()">CNK-KP-1-2020-1-000071 </a>
-
                         </li>
                         <li class="almenu"><a id="paly_05" style="font-size: 10px;" onclick="checkUncheck()">Gyógyító zene A MOL támogatásával</a>
 
                         </li>
                     </ul>
                 </li>	
-                <li class="almenu"><a >Médiatár</a>
+           <!--      <li class="almenu"><a >Médiatár</a>
                     <ul>
                         <li><a style="font-size: 10px;" href="">grid gallery </a></li>
                         <li><a style="font-size: 10px;" href="">flex gallery</a></li>
                     </ul>
-                </li>
+                </li> -->
                  <li><a id="dok" onclick="checkUncheck()">Dokumentumtár</a></li>
 <!--                  <li><a>Karrier</a></li>
- -->                 <li><a id="terkepekel" onclick="checkUncheck()">Kapcsolat</a></li>
+ -->             <li><a id="terkepekel" onclick="checkUncheck()">Kapcsolat</a></li>
             </ul>
         </div>
     </div>
@@ -175,15 +175,15 @@
             </div>
         </div>
         <div class="info_mob2">
-            <p><span id="gold">Támogató szolgálat </span>
+            <p id="kep3_mini"><span id="gold">Támogató szolgálat </span>
             <br>Ápolásra szorulóknak és fogyatékkal élőknek. 
             </p>
             <p ><span id="gold">Lakó otthon</span> 
                 <br>A Berek utcában, felnőtt fogyatékkal élők részére.
             </p> 
         </div>
+    
 <article id="valtozo_tartalmak">
-
 
         <article id="tevekenysegvalaszto" class="tevekenysegvalaszto">
             <div id = "artcim">TEVÉKENYSÉGEINK</div>
@@ -246,8 +246,64 @@
             </div> -->
         </article>  
 
-        <article id="placeholder"> </article>
+        <article id="placeholder" > </article>
 
+        <article  id="rolunk" class="int_int">
+            <div id="artcim" > RÓLUNK</div>
+
+            <div id="tart_tart">    
+                <p id="tartp">..három évtizedes tapasztalat</p>  
+                    <div id="tart1_kepes_r" style="background-image: url(./media/3.webp);">
+
+                        <p id="tart"> 
+                            <span id="tarts">Általános Iskola</span> 
+                            <br>
+                            Általános Iskolánk szerettel várja azon halmozottan sérült és különleges 
+                            bánásmódot igénylő gyermekeket akik nyugodt körülmények között, családias
+                            légkörben és főleg szerető közegben folytatnák tanulmányaikat. 
+                        </p>
+                    </div>
+                <p id="tartp" style='margin-right: auto;'>... szakértelem, szolgálat, törődés </p> 
+                    <div id="tart1_kepes_r" style="background-image: url(./media/4.webp);" class="forditva">
+                                <p id="tart" class="forditva2" > 
+                                    <span id="tarts">Szociális Intézmény</span> 
+                                   Szociális intézményünk felnőtt, fiatal illetve gyermek mozgáskorlátozott vagy értelmi fogyatékkal élő személyek ellátásával és fejlesztésével foglalkozik. <br> Óvodánk és nappali ellátó intézményünk tökéletes választás sérült gyermekeknek, fiataloknak és felnőteknek. <br>
+                                    Terápiáink sokszínűsége és magasan képzett szakembereink elősegítik a szintentartást és fejlődést!                
+                                </p>
+                    </div>
+                <p id="tartp" style='margin-left: 0;'>...együtt könyebb, együtt kerekebb</p> 
+                    <div id="tart1_kepes_r" style="background-image: url(./media/tamopbus.jpg); text-align: left;">
+                        <p id="tart"> 
+                            <span id="tarts">Támogató Szolgálat</span> 
+                            A támogató szolgálatunk tevékenysége valamennyi fogyatékossági csoportba tartozó személyre kiterjed. 
+                            Szolgátatásunk közé tartozik a fogyatékossággal élő személyek szállítása, személyi segítése, mindennapi életük megkönnyítése. 
+                        </p>
+                    </div>
+                <p id="tartp" style='margin: auto;'>... rátermett szakemberek, modern eszközök</p> 
+                    <div id="tart1_kepes_r" class="forditva" style="background-image: url(./media/1.webp);">
+                        <p id="tart" class="forditva2"> 
+                            <span id="tarts">Terápiák</span> 
+
+                            Terápiáink széles skáláját kínáljuk a hozzánk rendszeresen járó gyerekeknek és felnőtteknek.
+                            Ezek a terápiák (mint a szenzoros fényterápia, gyógytorna, beszédterápia stb) jótékony hatással vannak az idegrendszerre , továbbá több fejlesztési területet érintve megakadályozhatják az esetleges álllapotromlást.
+                        </p>
+                    </div>
+                <p id="tartp" style='margin-right: 0;'>... kis létszámú csoportok, nagy odafigyelés</p> 
+                    <div id="tart1_kepes_r" style="background-image: url(./media/prom\ \(3\).webp); text-align: left;">
+                        <p id="tart"> 
+                            <span id="tarts">Néphagyomány őrzés</span> 
+                            Iskolánk tagozatainak fontos eleme a néphagyományőzés, kultúrális örökségünk erősítése.
+                            Ezen közösségi élmények és kapcsolatok fontosságát hangsúlyozva ösztönözzük a gyerekeket az együttműködés és játék örömteli tapasztalataira.
+                    </div>
+            </div>
+            <div>            
+                    <p id="tart" style="margin: auto;">  
+                        Tudjon meg többet: <span class="link">tevékenységeinkről</span>, <span class="link">pedagógia programunkról</span>, <span class="link">terápinkról</span>,<span class="link"> legyen csapatunk tagja </span> és ha lehet <span class="link">támogasson minket.</span>
+                    </p>      
+                    <img id="logokor" src="./media/logo kör.png" alt="">
+            </div>
+            
+        </article>      
 
         <article id="ures"></article>
 
@@ -313,32 +369,38 @@
             <img id="kotelezo_lentimg"  src="./media/lenti.png" id="kotelezo2" alt="" width="280" height="180">
         </div>
             <div class="footer-left">
-                <h3>Kerek <span>a világ</span></h3>
-                <img id="logokor" src="./media/logo kör.png" alt="">
+                <h3>Kerek <span>a világ  <p class="mobfot" >
+                    Minden támogatással kerekebb a világunk!
+                        <br> <br>Adószámunk:<br>19031628-1-02 <br><br>
+                        Bankszámlaszámunk: <br>Takarékbank Zrt. 71800264-16026209
+                    </p></span></h3>
+              
                 <p class="footer-links">
                     <a href="#iv">Intézményeink</a>
                     <a href="#tevekenysegvalaszto">Tevékenységeink</a>
-<!--                     <a href="#">Hírek</a>
- -->                    <a id="dok2">Adatkezelés</a>
+                     <a href="#rolunk">Rólunk</a>
+                     <a id="dok2">Adatkezelés</a>
                     <a id="terkepekel2">Kapcsolat</a>
 
                 </p>
                 <p class="footer-company-name">Kerek VIlág Alapítvány © 2024</p>
+                
             </div>
         
             <div class="footer-center">
                 <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span>7627</span> Pécs, Gesztenyés u. 2</p>
+                    <a style="display: block;" href="https://maps.app.goo.gl/cXETuaT6VcjQ4ubE8"><i  class="fa fa-map-marker"></i></a>
+                    <a href="https://maps.app.goo.gl/cXETuaT6VcjQ4ubE8"><span>7627</span> Pécs, Gesztenyés u. 2</a>
                 </div>
                 <div>
                    <a style="display: block;" href="tel:+36204006717"> <i class="fa fa-phone"></i></a>
                     <a href="tel:+36204006717">+3620 400 6717</a>
                 </div>
+                <div>
                    <a href="mailto:kerek.vilag.alapitvany@gmail.com"style="display: block;"><i class="fa fa-envelope"></i></a> 
                     <a href="mailto:kerek.vilag.alapitvany@gmail.com">kerek.vilag.alapitvany@gmail.com</a>
                 </div>
-        
+        </div>
             <div class="footer-right">
                 <p class="footer-company-about">
                 Minden támogatással kerekebb a világunk!

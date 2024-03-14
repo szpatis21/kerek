@@ -16,7 +16,7 @@ function changeContent(newContent, placeholder) {
         placeholder.removeChild(placeholder.firstChild);
     }
 
-    let gyujto = document.querySelector(".gyujto")
+        let gyujto = document.querySelector(".gyujto")
     if (!gyujto) {
         const gyujto = document.createElement('div');
         gyujto.classList.add("gyujto");
@@ -40,17 +40,21 @@ function changeContent(newContent, placeholder) {
             while (placeholder.firstChild) {
                 placeholder.removeChild(placeholder.firstChild);
             }
-            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start' });
+            placeholder.scrollIntoView({ behavior: "smooth", block: 'start', inline: 'start'}
+            
+            );
         });
     }
-
+ 
     placeholder.appendChild(newContent);
     newContent.style.display = 'grid';
 
     setTimeout(function () {
-        newContent.scrollIntoView({ behavior: "smooth", block: 'nearest', inline: 'start' });
-        window.scrollBy(0, 50);
-
+        newContent.scrollIntoView({ 
+            behavior: "smooth", 
+            block: 'start', 
+            inline: 'start',
+             });
     }, 50);
 }
     
@@ -189,6 +193,13 @@ const kony = document.querySelector("#kony");
     const kep2 =document.querySelector(".kep2");
     const kep2_mini = document.querySelector("#kep2_mini");
     const sul_tev = document.querySelector("#sul_tev");
+
+    const int_tam = document.querySelector("#int_tam");
+    const kep3 =document.querySelector(".kep3");
+    const kep3_mini = document.querySelector("#kep3_mini");
+    const tam_tev = document.querySelector("#tam_tev");
+    const kep3_mini4 = document.querySelector("#kep3_mini4");
+
     const int_szoc = document.querySelector("#int_szoc");
     const kep =document.querySelector(".kep");
     const kep_mini = document.querySelector("#kep_mini");
@@ -196,13 +207,15 @@ const kony = document.querySelector("#kony");
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
-    taszo: { gomb: taszo, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
-        taszo_mini: { gomb: taszo_mini, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },    
-    ellint: { gomb: ellint, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
-        ellint_mini: { gomb: ellint_mini, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
-    fejfog: { gomb: fejfog, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
-        fejfog_mini: { gomb: fejfog_mini, content1: fejfogk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_1 },
-    isknep: { gomb: isknep, content1: isknepk, placeholder1: placeholder, content2: keps, placeholder2: kephely_2 },
+    taszo: { gomb: taszo, content2: tamopk, placeholder2: placeholder, content1: keps2, placeholder1: kephely_3 },
+        taszo_mini: { gomb: taszo_mini, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },  
+
+    ellint: { gomb: ellint, content3: szocik, placeholder3: placeholder, content1: keps, placeholder1: kephely_5, content2: keps2, placeholder2: kephely_6 },  
+    ellint_mini: { gomb: ellint_mini, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
+    
+    fejfog: { gomb: fejfog, content2: fejfogk, placeholder2: placeholder, content1: keps2, placeholder1: kephely_1 },
+        fejfog_mini: { gomb: fejfog_mini, content2: fejfogk, placeholder2: placeholder, content1: keps2, placeholder1: kephely_1 },
+    isknep: { gomb: isknep, content2: isknepk, placeholder2: placeholder, content1: keps, placeholder1: kephely_2 },
         tag_mini: { gomb: tag_mini, content1: tagozatok, placeholder1: placeholder },
     tag: { gomb: tag, content1: tagozatok, placeholder1: placeholder },
         nephagy_mini: { gomb: nephagy_mini, content1: isknepk, placeholder1: placeholder, content2: keps, placeholder2: kephely_2 },
@@ -215,7 +228,7 @@ const buttonContentPairs = {
     kony: { gomb: kony, content1: konyvtar, placeholder1: placeholder },
         erz_mini3: { gomb: erz_mini3, content1: konyvtar, placeholder1: placeholder },    
     pszi: {gomb: pszi, content1:pszitart, placeholder1: alcikktart2},
-    tanak: {gomb:tanak, content1:tanaktart, placeholder1: alcikktart2, content2: keps2,placeholder2: kephely_4},
+    tanak: {gomb:tanak, content2:tanaktart, placeholder2: alcikktart2},
     ertak: {gomb:ertak, content1:ertaktart, placeholder1: alcikktart2},
     fejnev: {gomb:fejnev, content1:fejnevtart, placeholder1: alcikktart2},
     gesztint: {gomb:gesztint, content1:geszttart, placeholder1: alcikktart},
@@ -246,12 +259,16 @@ const buttonContentPairs = {
     kep2:{gomb:kep2, content1: int_sul, placeholder1:placeholder},
     kep2_mini:{gomb:kep2_mini, content1: int_sul, placeholder1:placeholder},
     kep2_mini2:{gomb:kep2_mini2, content1: int_sul, placeholder1:placeholder},
+    sul_tev: { gomb: sul_tev, content1: tagozatok, placeholder1: placeholder },
+
+    kep3:{gomb:kep3, content1: int_tam, placeholder1:placeholder},
+    kep3_mini:{gomb:kep3_mini, content1: int_tam, placeholder1:placeholder},
+    kep3_mini4:{gomb:kep3_mini4, content1: int_sul, placeholder1:placeholder},
+    tam_tev: { gomb: tam_tev, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },
 
     kep:{gomb:kep, content1:int_szoc , placeholder1:placeholder},
     kep_mini:{gomb:kep_mini, content1: int_szoc, placeholder1:placeholder},
     kep2_mini3:{gomb:kep2_mini3, content1: int_szoc, placeholder1:placeholder},
-    
-    sul_tev: { gomb: sul_tev, content1: tagozatok, placeholder1: placeholder },
     szoc_tev: { gomb: szoc_tev, content1: szocik, placeholder1: placeholder, content2: keps, placeholder2: kephely_5, content3: keps2, placeholder3: kephely_6 },
 };
 

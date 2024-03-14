@@ -1,4 +1,31 @@
 @media screen and (min-width:201px) and (max-width:1037px){
+  /* RÓLUNK */
+  #tart1_kepes_r #tart {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+  }
+  #tart1_kepes_r {
+    background-attachment: local;
+    background-size: cover;
+  }
+  #tarts{    font-size: small;
+}
+  #tartp{background-color: rgba(54, 158, 255, 0.53);
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: small;
+  box-shadow: none;
+color: white;
+margin: auto;
+padding: 0px;}
+ #forditva2{flex-direction: column-reverse;}
+
     /* INTÉZMÉNYEK */
     #tart_tart #artcim {color: white;}
     #tart1_kepes{ grid-template-columns: 100%;   justify-items: center;}
@@ -39,6 +66,7 @@
           .kephely_5 img,.kephely_6 img{width: 100%;}
           #alp{margin: 5px;}
            .footer a {display: none;}
+           .mobfot{display: flex;}
           .footer-distributed {padding: 5px; display: grid; grid-template-rows: repeat(2, 50%); margin: 0; }
           .footer-distributed .footer-center p{
             display: none}
@@ -132,11 +160,10 @@
                     transition: all 1s;}
                     .logobar p{ background: #FFEDF1;
                       background: linear-gradient(to right, #FFEDF1 , #E8CA07 70%);
-                      padding-left: 15px;
                       -webkit-background-clip: text;
                       -webkit-text-fill-color: transparent;
-                      display: flex; font-size: 17px;}
-                      .logobar span{display: flex; font-size: 10px; width: 55%; margin-left: 2%;}
+                      display: flex; font-size: 10px;}
+                      .logobar span{display: flex; font-size: 8px; width: 55%; margin-left: 2%;}
         /* TAMOGATÁS */
           .tamop p{color:crimson; text-shadow:rgb(255, 255, 255) -1px -1px 3px;
             font-size: larger;
@@ -204,6 +231,10 @@
               margin-top: 15px;}
               .item {&:hover{flex: 5;}}
                   .item-1, .item-2 {display: none;}
+
+
+
+
 }
           
     
