@@ -204,9 +204,36 @@ const kony = document.querySelector("#kony");
     const kep =document.querySelector(".kep");
     const kep_mini = document.querySelector("#kep_mini");
     const szoc_tev = document.querySelector("#szoc_tev");
+//Pályázati gallériák és felhívások
+const gall_gomb_0 = document.querySelector("#gall_gomb_0");
+const gall_tart_0 = document.querySelector("#gall_tart_0");
+const szov_gomb_0 = document.querySelector("#szov_gomb_0");
+const szov_tart_0 = document.querySelector("#szov_tart_0");
+
+ const gall_gomb_1 = document.querySelector("#gall_gomb_1");
+ const gall_tart_1 = document.querySelector("#gall_tart_1");
+ const szov_gomb_1 = document.querySelector("#szov_gomb_1");
+ const szov_tart_1 = document.querySelector("#szov_tart_1");
+
+ const gall_gomb_2 = document.querySelector("#gall_gomb_2");
+ const gall_tart_2 = document.querySelector("#gall_tart_2");
+ const szov_gomb_2 = document.querySelector("#szov_gomb_2");
+ const szov_tart_2 = document.querySelector("#szov_tart_2");
+
+ const paly_kulso_ures = document.querySelector("#paly_kulso_ures");
+
+ const paly_kulso = document.querySelector("#paly_kulso");
+ const rolunk = document.querySelector("#rolunk");
+ const rol = document.querySelector("#rol");
+ const rol2 = document.querySelector("#rol2");
+
+
 
 const buttonContentPairs = {
     kilep : {gomb: kilep, content1: ures, placeholder1: placeholder},
+    rol : {gomb: rol, content1: rolunk, placeholder1: placeholder},
+    rol2 : {gomb: rol2, content1: rolunk, placeholder1: placeholder},
+
     taszo: { gomb: taszo, content2: tamopk, placeholder2: placeholder, content1: keps2, placeholder1: kephely_3 },
         taszo_mini: { gomb: taszo_mini, content1: tamopk, placeholder1: placeholder, content2: keps2, placeholder2: kephely_3 },  
 
@@ -228,22 +255,30 @@ const buttonContentPairs = {
     kony: { gomb: kony, content1: konyvtar, placeholder1: placeholder },
         erz_mini3: { gomb: erz_mini3, content1: konyvtar, placeholder1: placeholder },    
     pszi: {gomb: pszi, content1:pszitart, placeholder1: alcikktart2},
-    tanak: {gomb:tanak, content2:tanaktart, placeholder2: alcikktart2},
+    tanak: {gomb:tanak, content2:tanaktart, placeholder2: alcikktart2, content1: keps2, placeholder1: kephely_4},
     ertak: {gomb:ertak, content1:ertaktart, placeholder1: alcikktart2},
     fejnev: {gomb:fejnev, content1:fejnevtart, placeholder1: alcikktart2},
     gesztint: {gomb:gesztint, content1:geszttart, placeholder1: alcikktart},
     krisztint: {gomb:krisztint, content1:kriszttart, placeholder1: alcikktart},
     /* PÁLYÁZATOK */
-    paly_01: { gomb: paly_01, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
-    paly_01_2: { gomb: paly_01_2, content1: paly, placeholder1: placeholder, content2: paly_01_tar, placeholder2: paly_tar},
-    paly_02: { gomb: paly_02, content1: paly, placeholder1: placeholder, content2: paly_02_tar, placeholder2: paly_tar},
-    paly_02_2: { gomb: paly_02_2, content1: paly, placeholder1: placeholder, content2: paly_02_tar, placeholder2: paly_tar},
-    paly_03: { gomb: paly_03, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
-    paly_03_2: { gomb: paly_03_2, content1: paly, placeholder1: placeholder, content2: paly_03_tar, placeholder2: paly_tar},
-    paly_04: { gomb: paly_04, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},
-    paly_04_2: { gomb: paly_04_2, content1: paly, placeholder1: placeholder, content2: paly_04_tar, placeholder2: paly_tar},    
-    paly_05: { gomb: paly_05, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
-    paly_05_2: { gomb: paly_05_2, content1: paly, placeholder1: placeholder, content2: paly_05_tar, placeholder2: paly_tar},
+    paly_01: { gomb: paly_01, content3: paly, placeholder3: placeholder, content2: paly_01_tar, placeholder2: paly_tar, content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_01_2: { gomb: paly_01_2, content3: paly, placeholder: placeholder, content2: paly_01_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_02: { gomb: paly_02, content3: paly, placeholder3: placeholder, content2: paly_02_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_tar},
+    paly_02_2: { gomb: paly_02_2, content3: paly, placeholder3: placeholder, content2: paly_02_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_03: { gomb: paly_03, content3: paly, placeholder3: placeholder, content2: paly_03_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_03_2: { gomb: paly_03_2, content3: paly, placeholder3: placeholder, content2: paly_03_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_04: { gomb: paly_04, content3: paly, placeholder3: placeholder, content2: paly_04_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_04_2: { gomb: paly_04_2, content3: paly, placeholder3: placeholder, content2: paly_04_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},    
+    paly_05: { gomb: paly_05, content3: paly, placeholder3: placeholder, content2: paly_05_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+    paly_05_2: { gomb: paly_05_2, content3: paly, placeholder3: placeholder, content2: paly_05_tar, placeholder2: paly_tar,content1:paly_kulso_ures, placeholder1:paly_kulso},
+
+    szov_gomb_0: {gomb:szov_gomb_0, content1: szov_tart_0, placeholder1:paly_kulso},
+    gall_gomb_0: {gomb:gall_gomb_0, content1: gall_tart_0, placeholder1:paly_kulso},
+    szov_gomb_1: {gomb:szov_gomb_1, content1: szov_tart_1, placeholder1:paly_kulso},
+    gall_gomb_1: {gomb:gall_gomb_1, content1: gall_tart_1, placeholder1:paly_kulso},
+    szov_gomb_2: {gomb:szov_gomb_2, content1: szov_tart_2, placeholder1:paly_kulso},
+    gall_gomb_2: {gomb:gall_gomb_2, content1: gall_tart_2, placeholder1:paly_kulso},
+
     /* ELÉRHETŐSÉG */
     terkepekel: { gomb: terkepekel, content1: terkepmenu, placeholder1: placeholder},
     terkepekel2: { gomb: terkepekel2, content1: terkepmenu, placeholder1: placeholder},

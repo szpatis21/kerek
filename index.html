@@ -50,11 +50,11 @@
 
         <div class="navbar">
             <ul>
-                <li><a href="#rolunk"onclick="checkUncheck()" >Rólunk</a></li>
+                <li><a id="rol2" onclick="checkUncheck()" >Rólunk</a></li>
 <!--                 <li><a href="">Hírek</a></li>
  -->                <li class="almenu"><a >Intézményválasztó</a>
                     <ul>
-                        <li><a id="kep2_mini3" style="font-size: 10px;" onclick="checkUncheck()">Szociális Intézmény </a></li>
+                        <li><a id="kep2_mini3" style="font-size: 10px;" onclick="checkUncheck()">Nappali ellátás </a></li>
                         <li><a id="kep2_mini2" style="font-size: 10px;" onclick="checkUncheck()">Általános Iskola</a></li>
                         <li><a id="kep3_mini4" style="font-size: 10px;" onclick="checkUncheck()">Támogató Szolgálat</a></li>
                         <li><a style="font-size: 10px;" onclick="checkUncheck()">Támogatott lakhatás</a></li>
@@ -114,7 +114,7 @@
         </span>
 
         <div class="info_mob">
-            <p id="kep_mini" ><span id="gold">Szociális intézmény </span>
+            <p id="kep_mini" ><span id="gold">Nappali Ellátás </span>
                 <br>Fogyatékkal élő fiatal felnőtteknek, felnőtekknek
 
                 <p id="kep2_mini"><span id="gold">Általános Iskola </span><br>
@@ -129,8 +129,8 @@
                     Ha érdeklődik Alapítványunk intézményei iránt, <br>
                      mozgassa az egeret a választott intézmény fölé majd kattintson. 
                 </span>
-                <p class="pp">Szociális intézmény <br><br>
-                    Ismerkedjen meg szociális intézményünkkel,<br>
+                <p class="pp">Nappali Ellátás <br><br>
+                    Ismerkedjen meg szociális intézményeinkkel,<br>
                     szolgáltatásainkkal és kapjon betekintést<br>
                     szervezetünk mindennapjaiba.
                 </p>
@@ -155,7 +155,7 @@
                     Bankszámlaszámunk: <br>Takarékbank Zrt. 71800264-16026209</span>
                 <p class="pp3">Támogató szolgálat <br><br>
                     Keresse támogató szolgálatunkat, ha <br>
-                    megváltozott munkaképességű vagy ápolásra szorul.<br> 
+                    fogyatékkal élő és személyi segítést igényelne.<br> 
                     Korszerű mikrobuszaink és tapaszalt ápolóink <br>
                     a repertoárunk részét képezik.
                 </p>
@@ -176,9 +176,9 @@
         </div>
         <div class="info_mob2">
             <p id="kep3_mini"><span id="gold">Támogató szolgálat </span>
-            <br>Ápolásra szorulóknak és fogyatékkal élőknek. 
+            <br>Támogatásra szoruló, fogyatékkal élőknek. 
             </p>
-            <p ><span id="gold">Lakó otthon</span> 
+            <p ><span id="gold">Támogatott lakhatás</span> 
                 <br>A Berek utcában, felnőtt fogyatékkal élők részére.
             </p> 
         </div>
@@ -230,7 +230,7 @@
                     <p>Élő könyvár</p>
                 </div>
             </div>
-        <!--  <div class="tevval4" id="akr">
+       <!--   <div class="tevval4" id="akr">
                 <div class="nagyikon">
                     <img src="./media/icons/akkreditalt fog.svg" alt="">
                     <p>Akkreditált foglalkozások</p>
@@ -243,123 +243,64 @@
                     <p>Akkreditált2</p>
                     <p>Akkreditált3</p>
                 </div>
-            </div> -->
+            </div>  -->
         </article>  
 
         <article id="placeholder" > </article>
 
-        <article  id="rolunk" class="int_int">
-            <div id="artcim" > RÓLUNK</div>
-
-            <div id="tart_tart">    
-                <p id="tartp">..három évtizedes tapasztalat</p>  
-                    <div id="tart1_kepes_r" style="background-image: url(./media/3.webp);">
-
-                        <p id="tart"> 
-                            <span id="tarts">Általános Iskola</span> 
-                            <br>
-                            Általános Iskolánk szerettel várja azon halmozottan sérült és különleges 
-                            bánásmódot igénylő gyermekeket akik nyugodt körülmények között, családias
-                            légkörben és főleg szerető közegben folytatnák tanulmányaikat. 
-                        </p>
-                    </div>
-                <p id="tartp" style='margin-right: auto;'>... szakértelem, szolgálat, törődés </p> 
-                    <div id="tart1_kepes_r" style="background-image: url(./media/4.webp);" class="forditva">
-                                <p id="tart" class="forditva2" > 
-                                    <span id="tarts">Szociális Intézmény</span> 
-                                   Szociális intézményünk felnőtt, fiatal illetve gyermek mozgáskorlátozott vagy értelmi fogyatékkal élő személyek ellátásával és fejlesztésével foglalkozik. <br> Óvodánk és nappali ellátó intézményünk tökéletes választás sérült gyermekeknek, fiataloknak és felnőteknek. <br>
-                                    Terápiáink sokszínűsége és magasan képzett szakembereink elősegítik a szintentartást és fejlődést!                
-                                </p>
-                    </div>
-                <p id="tartp" style='margin-left: 0;'>...együtt könyebb, együtt kerekebb</p> 
-                    <div id="tart1_kepes_r" style="background-image: url(./media/tamopbus.jpg); text-align: left;">
-                        <p id="tart"> 
-                            <span id="tarts">Támogató Szolgálat</span> 
-                            A támogató szolgálatunk tevékenysége valamennyi fogyatékossági csoportba tartozó személyre kiterjed. 
-                            Szolgátatásunk közé tartozik a fogyatékossággal élő személyek szállítása, személyi segítése, mindennapi életük megkönnyítése. 
-                        </p>
-                    </div>
-                <p id="tartp" style='margin: auto;'>... rátermett szakemberek, modern eszközök</p> 
-                    <div id="tart1_kepes_r" class="forditva" style="background-image: url(./media/1.webp);">
-                        <p id="tart" class="forditva2"> 
-                            <span id="tarts">Terápiák</span> 
-
-                            Terápiáink széles skáláját kínáljuk a hozzánk rendszeresen járó gyerekeknek és felnőtteknek.
-                            Ezek a terápiák (mint a szenzoros fényterápia, gyógytorna, beszédterápia stb) jótékony hatással vannak az idegrendszerre , továbbá több fejlesztési területet érintve megakadályozhatják az esetleges álllapotromlást.
-                        </p>
-                    </div>
-                <p id="tartp" style='margin-right: 0;'>... kis létszámú csoportok, nagy odafigyelés</p> 
-                    <div id="tart1_kepes_r" style="background-image: url(./media/prom\ \(3\).webp); text-align: left;">
-                        <p id="tart"> 
-                            <span id="tarts">Néphagyomány őrzés</span> 
-                            Iskolánk tagozatainak fontos eleme a néphagyományőzés, kultúrális örökségünk erősítése.
-                            Ezen közösségi élmények és kapcsolatok fontosságát hangsúlyozva ösztönözzük a gyerekeket az együttműködés és játék örömteli tapasztalataira.
-                    </div>
-            </div>
-            <div>            
-                    <p id="tart" style="margin: auto;">  
-                        Tudjon meg többet: <span class="link">tevékenységeinkről</span>, <span class="link">pedagógia programunkról</span>, <span class="link">terápinkról</span>,<span class="link"> legyen csapatunk tagja </span> és ha lehet <span class="link">támogasson minket.</span>
-                    </p>      
-                    <img id="logokor" src="./media/logo kör.png" alt="">
-            </div>
             
-        </article>      
 
         <article id="ures"></article>
+            <!-- <article id="hirek">
+                <div id = "artcim">HÍREK</div>
+                <div>
+                </div>
+            </article> -->
+            
+            <div class="container">
+                <div class="gallery-wrap">
+                    <div class="item item-1"></div>
+                    <div class="item item-2"></div>
+                    <div class="item item-3"></div>
+                    <div class="item item-4"></div>
+                    <div class="item item-5"></div>
+                    <div class="item item-6"></div>
+                </div>
+            </div>
 
-         <article id="foldal">    
+            <article id="ta">
+            <div id = "artcim">TÁMOGATÓINK</div>
 
+                <div class="tamop">
+                    
 
-<!-- <article id="hirek">
-    <div id = "artcim">HÍREK</div>
-    <div>
-    </div>
-</article> -->
-<div class="container">
-  <div class="gallery-wrap">
-    <div class="item item-1"></div>
-    <div class="item item-2"></div>
-    <div class="item item-3"></div>
-    <div class="item item-4"></div>
-    <div class="item item-5"></div>
-    <div class="item item-6"></div>
-  </div>
- </div>
-
- <article id="ta">
- <div id = "artcim">TÁMOGATÓINK</div>
-
-    <div class="tamop">
-        
-
-        <div class="sor1">
-            <p>Köszönjük</p>
-            <img src="./media/tamog/tm (1).jpg" alt="">
-            <img src="./media/tamog/tm (2).jpg" alt="">
-            <img src="./media/tamog/tm (3).jpg" alt="">
-            <img src="./media/tamog/tm (4).jpg" alt="">
-            <img src="./media/tamog/tm (5).jpg" alt="">        
-        </div>
-        <div class="sor2">
-            <p>támogatóink</p>
-            <img src="./media/tamog/tm (6).jpg" alt="">
-            <img src="./media/tamog/tm (7).jpg" alt="">
-            <img src="./media/tamog/tm (8).jpg" alt="">
-            <img src="./media/tamog/tm (10).jpg" alt="">
-            <img src="./media/tamog/tm (9).jpg" alt="">
-        </div>
-        <div class="sor3">
-            <p> segítségét!</p>
-            <img src="./media/tamog/tm (12).jpg" alt="">
-            <img src="./media/tamog/tm (13).jpg" alt="">
-            <img src="./media/tamog/tm (14).jpg" alt="">
-            <img src="./media/tamog/tm (15).jpg" alt="">
-            <img src="./media/tamog/tm (16).jpg" alt="">
-        </div>
-    </div>
-</article>    
-        
-        </article>
+                    <div class="sor1">
+                        <p>Köszönjük</p>
+                        <img src="./media/tamog/tm (1).jpg" alt="">
+                        <img src="./media/tamog/tm (2).jpg" alt="">
+                        <img src="./media/tamog/tm (3).jpg" alt="">
+                        <img src="./media/tamog/tm (4).jpg" alt="">
+                        <img src="./media/tamog/tm (5).jpg" alt="">        
+                    </div>
+                    <div class="sor2">
+                        <p>támogatóink</p>
+                        <img src="./media/tamog/tm (6).jpg" alt="">
+                        <img src="./media/tamog/tm (7).jpg" alt="">
+                        <img src="./media/tamog/tm (8).jpg" alt="">
+                        <img src="./media/tamog/tm (10).jpg" alt="">
+                        <img src="./media/tamog/tm (9).jpg" alt="">
+                    </div>
+                    <div class="sor3">
+                        <p> segítségét!</p>
+                        <img src="./media/tamog/tm (12).jpg" alt="">
+                        <img src="./media/tamog/tm (13).jpg" alt="">
+                        <img src="./media/tamog/tm (14).jpg" alt="">
+                        <img src="./media/tamog/tm (15).jpg" alt="">
+                        <img src="./media/tamog/tm (16).jpg" alt="">
+                    </div>
+                </div>
+            </article>    
+                
 
 </article>
 
@@ -378,7 +319,7 @@
                 <p class="footer-links">
                     <a href="#iv">Intézményeink</a>
                     <a href="#tevekenysegvalaszto">Tevékenységeink</a>
-                     <a href="#rolunk">Rólunk</a>
+                     <a id="rol">Rólunk</a>
                      <a id="dok2">Adatkezelés</a>
                     <a id="terkepekel2">Kapcsolat</a>
 

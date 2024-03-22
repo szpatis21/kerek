@@ -544,6 +544,18 @@ footer {grid-area: footer;}
               transition: 0.5s;}
             .kilep:hover,.fel:hover{color: gold;border-color: gold;}
 /* Pályázatok */
+#paly_focim{
+  border: gold 2px solid;
+    box-shadow: rgb(0, 0, 0) 0px 0px 8px 3px;
+    color: white;
+    border-radius: 12px;
+}
+#paly_div{    
+  width: 100%;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;}
+
 #paly_menp{    display: flex;
   margin: 20px auto;
   font-size: 160%;
@@ -569,19 +581,20 @@ font-style: italic;}
   transition: 0.5s;
   box-shadow: white 0px 0px 5px 1px;}
     .palymenu:hover{box-shadow: gold 0px 0px 5px 1px;border-color: gold;color: gold;}
-.paly_belso{
+.paly_belso, #paly_kulso{
   display: none; 
   text-align: justify;
   margin: 10px 5%;
   background-color: white;
   justify-items:center;
   border: 2px solid gold;
-  padding: 7px 15px;}
+  padding: 7px 15px;
+  padding-top: 50px;}
+  #paly_kulso{display: flex; padding: 0px;}
   #paly_02_tar ol li{ margin: 15px ; color: darkblue; font-style: italic; font-weight: bolder;}
   #paly_02_tar ol li li {margin:1% 5%; font-size: small; color: black; font-style: normal;}
-  #felk{ font-style: italic; color: rgb(0, 0, 0); margin: 0px;
-    font-size: 0%; transition: 1s;width: 0%; }
-  #paly_tar h2 {color: blue; text-decoration: underline; text-decoration-color: gold;}
+  #felk, #szov_tart_0,#szov_tart_1, #gall_tart_0, #gall_tart_1, #gall_tart_2, #szov_tart_2 { padding: 50px; font-style: italic; color: rgb(0, 0, 0); margin: 0px; display: none;}
+  #paly_tar h2 {color: black; text-decoration: underline; text-decoration-color: gold;}
   #galleria{
     border-radius: 5px;
     box-shadow: 
@@ -593,11 +606,12 @@ font-style: italic;}
     margin-right: 10px 0px 10px auto;
   margin: 10px;
   text-align: center;}
-  #gb{
+  .gb{
     cursor: pointer;
     font-size: smaller;
     font-weight: bolder ;
-    color: gold;}
+    color: black;
+  }
   .content{display: none;padding-top: 50px;}
   /* ELÉRHETŐSÁGEK */
   #szocik .gyujto{display: none;}
@@ -623,7 +637,7 @@ font-style: italic;}
 margin: 5%;
 border: 2px solid white;
 padding: 2%;
-padding-top: 50px;}
+}
 .content {border-top: none;}
 #terkepmenu h3, h2 { color: rgb(0, 0, 0); text-align: center; margin: 20px auto;}
   #int_adatok{
@@ -885,8 +899,8 @@ padding-top: 50px;}
      #int_szoc .box{width: 31%; margin: 0px 3%;}
         #kep2_mini,.kep2,#kep_mini,.kep, .kep3, #kep3_mini {cursor: pointer;}
       .int_int{
-        background-image: url(./media/intgrad.webp);
-        padding: 15px;
+/*         background-image: url(./media/intgrad.webp);
+ */        padding: 15px;
         margin: 5%;
         border: white 2px solid;
       background-repeat: no-repeat;
@@ -935,7 +949,7 @@ padding-top: 50px;}
               margin: 10px;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: scroll;
    }
         #tartp{background-color: rgba(54, 158, 255, 0.53);
           width: fit-content;
@@ -958,8 +972,6 @@ padding-top: 50px;}
       font-weight: bolder;
     }
     .forditva{flex-direction: row-reverse; text-align: left;}
-
-
       #tart1_kepes_r #tart {text-align: right;
       width: 55%;
       margin: auto 0px;
@@ -968,11 +980,48 @@ padding-top: 50px;}
       height: fit-content;  
       align-items: center;}
 
-    #tart_tart {display: grid;     padding-top: 50px;}
-      #tart1{justify-self: right; text-align: right; }
+    #tart_tart {display: grid; padding-top: 50px;}
+      #tart1{justify-self: right; text-align: right;}
     #tart1_kepes li {list-style-position: inside;}
     #tart1_kepes{display: grid;
       grid-template-columns: 50% 50%;
       align-items: center;
       justify-items: end;
     text-align: center;}
+/* GALLÉRIA */
+    .gallery {
+      display: flex;
+      padding: 2px;
+      transition: .3s;}
+      
+      .gallery:hover .gallery__image {filter: grayscale(1);}
+      
+      .gallery__column {
+        display: flex;
+        flex-direction: column;
+        width: 33.4%;}
+      
+      .gallery__link {margin: 2px; overflow: hidden; }
+        .gallery__link:hover  .gallery__image {filter: grayscale(0);}
+        .gallery:hover  .gallery__caption { opacity: 1;}
+      .gallery__thumb {position: relative;}
+      
+      .gallery__image {
+        display: block;
+        width: 100%;
+        transition: .5s;}
+        .gallery__image:hover {transform: scale(1.1);}
+      .gallery__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 25px 15px 15px;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+        color:white;
+        opacity: 0;
+        font-weight: 100;
+        font-size: smaller;
+        font-style: normal;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+        transition: .3s;}

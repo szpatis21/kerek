@@ -204,7 +204,7 @@ padding: 0px;}
           grid-template-columns: repeat(2,50%);
         margin: 5%;
         justify-items: center;}
-        .paly_belso{ font-size: smaller; margin: 1px;}
+        .paly_belso{ font-size: smaller; margin: auto;}
          /* TEVÉKENYSÉG VÁLASZTÓ */ 
             .nagyikon{ position: absolute;
               left: 5%;
@@ -231,10 +231,33 @@ padding: 0px;}
               margin-top: 15px;}
               .item {&:hover{flex: 5;}}
                   .item-1, .item-2 {display: none;}
+                  
+    .wrapper IMG {
+      height: 150px;
+      &:nth-child(7n + 1) {
+        grid-column: 2 / span 2;
+      }
+      
+      &:hover {
+        z-index: 2;
+        transform: scale(2);
+      }
+    }
+#paly{padding: 0;}
+#felk_02{padding: 50px 5px 50px 5px;}
+#paly_focim{font-size: x-small; grid-column: 1 / -1;}
+#galleria{width: 100%; height: fit-content; padding: 5px; 
+margin: 10px 0px}
+#paly_div{ grid-template-columns: 50% 50%;}
+#paly_kulso{font-size: x-small; margin: 0; 
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-gap: 10px;}
+.half{grid-column: span 1;}
 
 
-
-
+.wrapper{grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);}
 }
           
     
